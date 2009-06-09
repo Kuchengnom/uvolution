@@ -1,5 +1,4 @@
 package {
-	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	import flash.utils.*;
 
@@ -7,10 +6,10 @@ package {
 	
 	public class uVoluion extends Sprite
 	{
+		
 		public function uVoluion()
 		{
-			var mcBG:MovieClip = new ScreenTest;
-            this.addChild(mcBG);
+            this.addChild(new ScreenTest);
 		}
 	}
 }
