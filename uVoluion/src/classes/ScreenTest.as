@@ -35,6 +35,12 @@ package classes
 			
 			this.addChild(oUpperBox);
 			
+			oLogo.x = 150;
+			oLogo.y = 45;
+			oLogo.scaleX = 0.4;
+			oLogo.scaleY = 0.4;
+			oUpperBox.addChild(oLogo);
+			
 		}
 		
 	}

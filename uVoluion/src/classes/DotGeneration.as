@@ -1,9 +1,7 @@
 package classes
 {
 	import caurina.transitions.Tweener;
-	
 	import fl.controls.Button;
-	
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	import flash.events.*;
@@ -37,7 +35,7 @@ package classes
 			
 			generate_btn.addEventListener(MouseEvent.CLICK, generate);
 			generate_btn.x = 1000;
-			generate_btn.y = 750;
+			generate_btn.y = 500;
 			this.addChild(generate_btn);
 			
 			speechBaloon = new Main_app_speechbaloon;
