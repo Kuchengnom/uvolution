@@ -23,7 +23,18 @@ package classes
 			oSpeech = new Main_app_speechbaloon;
 			oTabPreHistorics = new Main_Disp_TabsPreHistorics;
 			oLogo = new Main_logo_jon_1;
+			
+			this.addChild(oBg);
+			
+			oMap.y = 50;
+			oMap.x = 20;
+			this.addChild(oMap);
+			
+			oLowerBox.y = 620;
+			this.addChild(oLowerBox);
+			
 			this.addChild(oUpperBox);
+			
 		}
 		
 	}

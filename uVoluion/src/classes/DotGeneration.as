@@ -6,6 +6,11 @@ package classes
 	
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
+	import flash.events.*;
+	import flash.net.URLLoader;
+	import flash.net.URLRequest;
+	import flash.xml.*;
+	
 
 	public class DotGeneration extends Sprite
 	{
@@ -14,6 +19,17 @@ package classes
 		
 		private var speechBaloon:MovieClip;
 		private var generate_btn:Button;
+		
+		private var clip:MovieClip=new MovieClip();
+		
+		private var n:int = 0;
+		
+		private var myLoader:URLLoader = new URLLoader();
+		
+		private var myURL:URLRequest = new URLRequest("xml/PreHistorics.xml");
+		
+		private var preHisXML:XML;
+		
 		
 		public function DotGeneration()
 		{
@@ -29,13 +45,20 @@ package classes
 			speechBaloon.mouseChildren = true;
 			speechBaloon.close_mc.addEventListener(MouseEvent.CLICK, alf);
 			this.addChild(speechBaloon);
+			
+			myLoader.addEventListener(Event.COMPLETE, onLoadComplete);
+			
+			myLoader.load(myURL);
+			
+			XML.ignoreComments = true;
+			XML.ignoreWhitespace = true;
+		}
 		public function generate(event:MouseEvent):void
 		{
 			trace(coArray);
 	
 			for(var i:int=0;i<4;i++)
 			{
-				var clip:MovieClip=new MovieClip();
 				clip.graphics.beginFill(0x996600,1);
 				clip.graphics.drawCircle(2,2,8);
 				clip.graphics.endFill();
@@ -61,3 +84,39 @@ package classes
 			n = parseInt(evt.target.name);
 			cycleDis();
 		}
+		// --------------------------------------
+		// ---------------XML--------------------
+		// --------------------------------------
+		
+		
+		public function onLoadComplete(evt:Event):void {
+				trace("oncomplete");
+				preHisXML = new XML(evt.target.data);
+				trace ("TimelineEvents: " + preHisXML.TimelineEventsTyp.text() +"  Type: " + preHisXML.TimelineEventsTyp.@type);
+				trace ("Die Timeline enthält " + preHisXML.Events.item.length()) + " Events";  // 2 items
+				/*
+				var i:Number;
+				for (i = 0; i <preHisXML.Events.item.length(); i++) {
+					trace ("	 Name des Events :" + preHisXML.Events.item[i].title.text()) + "\n";
+				}
+				
+				trace ("Event 5 ist vom " + preHisXML..era[0].text() + preHisXML..@year[4]);
+				
+				trace ("Von 440 Million years BC sind: " + preHisXML.Events.item.(era.@year == "440 Million years BC")..title.text());
+				
+				var searchResult:XMLList = new XMLList (preHisXML.Events.item.(era.@year == "440 Million years BC"));
+				for (i = 0; i <searchResult.length(); i++) {
+					trace ("(searchResult) Von 440 Million years BC ist: " + searchResult.title[i]);
+				}*/
+		}		
+		public function cycleDis():void
+		{
+			speechBaloon.headline.text = preHisXML..title[n].text();
+			speechBaloon.subline.text = "Cycle: " + preHisXML..cycle[n].text();
+			speechBaloon.txt.text = preHisXML..text[n].text()
+			speechBaloon.era.text = "Era: " + preHisXML..era[n].text();
+			trace(n);
+		}
+		
+	}
+}
