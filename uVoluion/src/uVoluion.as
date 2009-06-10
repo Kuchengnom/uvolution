@@ -1,6 +1,7 @@
 package {
 	import flash.display.Sprite;
 	import flash.utils.*;
+	import classes.ScreenTest;
 
 	[SWF(width="1024", height = "756", backgroundColor = "0xFFFFFF", frameRate = "24")]
 	
