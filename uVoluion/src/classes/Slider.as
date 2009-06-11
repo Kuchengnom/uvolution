@@ -18,8 +18,8 @@ package classes
 			xMin = 0;
 			xMax = oTrack.width;
 			
-			oTrack.x = 50;
-			oTrack.y = 50;
+			oTrack.x = 3*16;
+			oTrack.y = 39*16;
 			this.addChild(oTrack);
 			
 			oThumb.x = 0;
