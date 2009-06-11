@@ -16,45 +16,47 @@ package classes
 		{
 			
 			xMin = 0;
-			xMax = oTrack.width - oThumb.width;
+			xMax = oTrack.width;
 			
 			oTrack.x = 50;
 			oTrack.y = 50;
 			this.addChild(oTrack);
 			
-			oThumb.x = 50;
-			oThumb.y = 50;
-			this.addChild(oThumb);
+			oThumb.x = 0;
+			oThumb.y = 0;
+			oTrack.addChild(oThumb);
 			
 			oThumb.addEventListener(MouseEvent.MOUSE_DOWN, thumbDown);
 			
 			
-			this.stage.addEventListener(MouseEvent.MOUSE_UP, thumbUp);
+			this.addEventListener(MouseEvent.MOUSE_UP, thumbUp);
 			
 		}
 		
 		public function thumbDown(evt:MouseEvent):void 
 		{
 			
-			this.stage.addEventListener(MouseEvent.MOUSE_MOVE, thumbMove);
-			//xOffset = mouseX - thumb.x;
+			this.addEventListener(MouseEvent.MOUSE_MOVE, thumbMove);
+			xOffset = this.mouseX - oThumb.x;
 			
 		}
 		
 		public function thumbUp(evt:MouseEvent):void
 		{
-			this.stage.removeEventListener(MouseEvent.MOUSE_MOVE, thumbMove);
+			this.removeEventListener(MouseEvent.MOUSE_MOVE, thumbMove);
 		}
 		
 		public function thumbMove(evt:MouseEvent):void
 		{
-			oThumb.x = mouseX - xOffset;
+			oThumb.x = this.mouseX - xOffset;
 			
 			if(oThumb.x <= xMin)
 				oThumb.x = xMin;
 				
 			if(oThumb.x >= xMax)
 				oThumb.x = xMax;
+	
+	
 			
 			evt.updateAfterEvent();	
 		}
