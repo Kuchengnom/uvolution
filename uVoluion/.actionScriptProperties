@@ -20,6 +20,8 @@
 </libraryPathEntry>
 <libraryPathEntry kind="3" linkType="1" path="src/TestSWC.swc" useDefaultLinkType="false"/>
 <libraryPathEntry kind="1" linkType="1" path="graphics"/>
+<libraryPathEntry kind="3" linkType="1" path="C:/Users/Christian/Desktop/track.swc" useDefaultLinkType="false"/>
+<libraryPathEntry kind="3" linkType="1" path="C:/Users/Christian/Desktop/thumb.swc" useDefaultLinkType="false"/>
 </libraryPath>
 <sourceAttachmentPath/>
 </compiler>

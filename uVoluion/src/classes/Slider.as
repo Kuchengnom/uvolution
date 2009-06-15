@@ -29,7 +29,7 @@ package classes
 			oThumb.addEventListener(MouseEvent.MOUSE_DOWN, thumbDown);
 			
 			
-			this.addEventListener(MouseEvent.MOUSE_UP, thumbUp);
+			this.stage.addEventListener(MouseEvent.MOUSE_UP, thumbUp);
 			
 		}
 		
