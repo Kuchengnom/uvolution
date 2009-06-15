@@ -2,6 +2,7 @@ package classes
 {
 	import flash.display.Sprite;
 	import flash.events.MouseEvent;
+	import caurina.transitions.Tweener;
 	
 	public class Slider extends Sprite
 	{	
@@ -28,8 +29,9 @@ package classes
 			
 			oThumb.addEventListener(MouseEvent.MOUSE_DOWN, thumbDown);
 			
+			oTrack.addEventListener(MouseEvent.CLICK, moveThumb);
 			
-			this.stage.addEventListener(MouseEvent.MOUSE_UP, thumbUp);
+			this.addEventListener(MouseEvent.MOUSE_UP, thumbUp);
 			
 		}
 		
@@ -61,6 +63,12 @@ package classes
 			evt.updateAfterEvent();	
 		}
 		
+		public function moveThumb(evt:MouseEvent):void
+		{
+			Tweener.addTween(oThumb, {x:this.mouseX-xOffset, time:0.8, transition:"linear"});
+			
+			
+		}
 
 	}
 }
