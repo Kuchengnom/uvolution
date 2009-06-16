@@ -2,6 +2,7 @@ package {
 	import classes.*;
 	
 	import flash.display.Sprite;
+	import flash.events.MouseEvent;
 	import flash.utils.*;
 	
 
@@ -14,8 +15,9 @@ package {
 		private var bottombar:Main_Disp_lowerbar = new Main_Disp_lowerbar;
 		private var map:Main_bg_map = new Main_bg_map;
 		private var logo:Main_logo_jon_1 = new Main_logo_jon_1;
+		private var oDot:DotGeneration = new DotGeneration();
 		
-		public function uVoluion()
+		public function uVoluion():void
 		{
 			
 			
@@ -39,6 +41,7 @@ package {
 			
 			map.x = 0;
 			map.y = 5*16;
+			map.addEventListener(MouseEvent.CLICK, generator);
 			main.addChild(map);
 			
 			bottombar.x = 0;
@@ -62,7 +65,13 @@ package {
             this.addChild(new Slider);
             
             
-           // this.addChild(new DotGeneration);
+            this.addChild(new DotGeneration);
+		}
+		public function generator(e:MouseEvent):void
+		{
+			oDot.generate();
+			map.addChild(oDot);
+			trace("generate function");
 		}
 	}
 }

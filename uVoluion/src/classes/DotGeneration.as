@@ -1,7 +1,9 @@
 package classes
 {
 	import caurina.transitions.Tweener;
+	
 	import fl.controls.Button;
+	
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	import flash.events.*;
@@ -24,19 +26,23 @@ package classes
 		
 		private var myLoader:URLLoader = new URLLoader();
 		
-		private var myURL:URLRequest = new URLRequest("xml/PreHistorics.xml");
+		private var myURL:URLRequest;
 		
 		private var preHisXML:XML;
 		
 		
-		public function DotGeneration()
+		public function DotGeneration():void
 		{
 			super();
 			
-			generate_btn.addEventListener(MouseEvent.CLICK, generate);
-			generate_btn.x = 1000;
-			generate_btn.y = 500;
-			this.addChild(generate_btn);
+			myLoader.addEventListener(Event.COMPLETE, onLoadComplete);
+			myLoader.load(new URLRequest("classes/xml/PreHistorics.xml"));
+			
+			//generate_btn.addEventListener(MouseEvent.CLICK, generate);
+			//generate_btn = new Button();
+			//generate_btn.x = 1000;
+			//generate_btn.y = 500;
+			//this.addChild(generate_btn);
 			
 			speechBaloon = new Main_app_speechbaloon;
 			speechBaloon.alpha = 0;
@@ -44,14 +50,14 @@ package classes
 			speechBaloon.close_mc.addEventListener(MouseEvent.CLICK, alf);
 			this.addChild(speechBaloon);
 			
-			myLoader.addEventListener(Event.COMPLETE, onLoadComplete);
 			
-			myLoader.load(myURL);
+			
+			
 			
 			XML.ignoreComments = true;
 			XML.ignoreWhitespace = true;
 		}
-		public function generate(event:MouseEvent):void
+		public function generate():void
 		{
 			trace(coArray);
 	
@@ -91,7 +97,7 @@ package classes
 				trace("oncomplete");
 				preHisXML = new XML(evt.target.data);
 				trace ("TimelineEvents: " + preHisXML.TimelineEventsTyp.text() +"  Type: " + preHisXML.TimelineEventsTyp.@type);
-				trace ("Die Timeline enthält " + preHisXML.Events.item.length()) + " Events";  // 2 items
+				trace ("Die Timeline enthält " + preHisXML.Events.item.length()) + " Events";
 				/*
 				var i:Number;
 				for (i = 0; i <preHisXML.Events.item.length(); i++) {
