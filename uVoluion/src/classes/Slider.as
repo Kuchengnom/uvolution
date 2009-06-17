@@ -1,8 +1,9 @@
 package classes
 {
+	import caurina.transitions.Tweener;
+	
 	import flash.display.Sprite;
 	import flash.events.MouseEvent;
-	import caurina.transitions.Tweener;
 	
 	public class Slider extends Sprite
 	{	
@@ -10,8 +11,12 @@ package classes
 		private var xOffset:Number;
 		private var xMin:Number;
 		private var xMax:Number;
+		private var xTarget:Number;
 		private var oTrack:track = new track();
 		private var oThumb:thumb = new thumb();
+		private var contentLength:int;
+		
+		private var oDots:DotGeneration = new DotGeneration;
 		
 		public function Slider()
 		{
@@ -20,7 +25,7 @@ package classes
 			xMax = oTrack.width;
 			
 			oTrack.x = 3*16;
-			oTrack.y = 39*16;
+			oTrack.y = 45*16;
 			this.addChild(oTrack);
 			
 			oThumb.x = 0;
@@ -33,9 +38,13 @@ package classes
 			
 			this.addEventListener(MouseEvent.MOUSE_UP, thumbUp);
 			
+			contentLength = oDots.lengthXML;
+			
 		}
 		
-		public function thumbDown(evt:MouseEvent):void 
+
+		
+		private function thumbDown(evt:MouseEvent):void 
 		{
 			
 			this.addEventListener(MouseEvent.MOUSE_MOVE, thumbMove);
@@ -43,12 +52,12 @@ package classes
 			
 		}
 		
-		public function thumbUp(evt:MouseEvent):void
+		private function thumbUp(evt:MouseEvent):void
 		{
 			this.removeEventListener(MouseEvent.MOUSE_MOVE, thumbMove);
 		}
 		
-		public function thumbMove(evt:MouseEvent):void
+		private function thumbMove(evt:MouseEvent):void
 		{
 			oThumb.x = this.mouseX - xOffset;
 			
@@ -59,15 +68,16 @@ package classes
 				oThumb.x = xMax;
 	
 	
-			
 			evt.updateAfterEvent();	
 		}
 		
-		public function moveThumb(evt:MouseEvent):void
-		{
-			Tweener.addTween(oThumb, {x:this.mouseX-xOffset, time:0.8, transition:"linear"});
+		private function moveThumb(evt:MouseEvent):void
+		{	
+			xTarget = this.mouseX-xOffset;
 			
+			Tweener.addTween(oThumb, {x:xTarget, time:0.8, transition:"easeOutCubic"});
 			
+			trace(contentLength);
 		}
 
 	}
