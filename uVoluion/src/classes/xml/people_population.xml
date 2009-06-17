@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TimelineEvents>
+<TimelineEventsTyp type="PeoplePopulation">People and Population</TimelineEventsTyp>
+<Events>
+		<item>
+			<title>Upstanding Movement</title>
+			<description>Upstanding Movement</description>
+			<date year="2500000 BC">2,500,000 BC</date>
+			<text>The first ape-similar-creatures get the ability to walk on their feet.</text>
+		</item>
+		<item>
+			<title>First Human Being</title>
+			<description>First Human Being</description>
+			<date year="2000000 BC">2,000,000 BC</date>
+			<text>Belonging to bone remains, the first human beings, Homo Erectus, lived on earth at this time.</text>
+		</item>
+		<item>
+			<title>Homo Neanderthalensis</title>
+			<description>Homo Neanderthalensis</description>
+			<date year="130000 BC">130,000 BC</date>
+			<text>Belonging to bone remains, Homo Neanderthalensis, lived on earth at this time.</text>
+		</item>
+		<item>
+			<title>Movement To Iran</title>
+			<description>Movement To Iran</description>
+			<date year="100000 BC">100,000 BC</date>
+			<text>People started to move from the center of Africa towards the contemporary Iran.</text>
+		</item>
+		<item>
+			<title>Movement To China</title>
+			<description>Movement To China</description>
+			<date year="67000 BC">67,000 BC</date>
+			<text>People started to move from the center of Africa towards the contemporary China.</text>
+		</item>
+		<item>
+			<title>Movement To Australia</title>
+			<description>Movement To Australia</description>
+			<date year="50000 BC">50,000 BC</date>
+			<text>People started to move from the center of Africa towards the contemporary Australia.</text>
+		</item>
+		<item>
+			<title>Movement To Spain</title>
+			<description>Movement To Spain</description>
+			<date year="40000 BC">40,000 BC</date>
+			<text>People started to move from the center of Africa towards the contemporary Spain.</text>
+		</item>
+		<item>
+			<title>Homo Sapiens</title>
+			<description>Homo Sapiens</description>
+			<date year="30000 BC">30,000 BC</date>
+			<text>Belonging to bone remains, Homo Sapiens (Sapiens), the final human being stated his reign on earth.</text>
+		</item>
+		<item>
+			<title>Movement To Russia</title>
+			<description>Movement To Russia</description>
+			<date year="20000 BC">20,000 BC</date>
+			<text>People started to move from the center of Africa towards the contemporary Russia.</text>
+		</item>
+</Events>
+</TimelineEvents>

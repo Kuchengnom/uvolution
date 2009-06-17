@@ -15,7 +15,7 @@ package {
 		private var bottombar:Main_Disp_lowerbar = new Main_Disp_lowerbar;
 		private var map:Main_bg_map = new Main_bg_map;
 		private var logo:Main_logo_jon_1 = new Main_logo_jon_1;
-		private var oDot:DotGeneration = new DotGeneration();
+		private var oDot:PreHistoricsClass = new PreHistoricsClass();
 		
 		public function uVoluion():void
 		{
@@ -65,7 +65,7 @@ package {
             this.addChild(new Slider);
             
             
-            this.addChild(new DotGeneration);
+            this.addChild(new PreHistoricsClass);
 		}
 		public function generator(e:MouseEvent):void
 		{

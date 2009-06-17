@@ -10,7 +10,7 @@ package classes
 	import flash.xml.*;
 	
 
-	public class DotGeneration extends Sprite
+	public class PreHistoricsClass extends Sprite
 	{
 		private var dotArray:Array=new Array();
 		private var coArray:Array= new Array([50, 50], [89, 90], [100,200], [300,200]);
@@ -24,7 +24,7 @@ package classes
 		
 		private var _lengthXML:int;
 		
-		public function DotGeneration():void
+		public function PreHistoricsClass():void
 		{
 			super();
 			
