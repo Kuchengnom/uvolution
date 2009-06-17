@@ -28,8 +28,6 @@ package classes
 		{
 			super();
 			
-			_lengthXML = _myXML.myXML.Events.item.length();
-			
 			//generate_btn.addEventListener(MouseEvent.CLICK, generate);
 			//generate_btn = new Button();
 			//generate_btn.x = 1000;
@@ -46,7 +44,7 @@ package classes
 		public function generate():void
 		{
 			trace(coArray);
-	
+			
 			for(var i:int=0;i<4;i++)
 			{
 				var clip:MovieClip=new MovieClip();
@@ -91,6 +89,7 @@ package classes
 		}
 		public function get lengthXML():int
 		{
+			_lengthXML = _myXML.myXML.Events.item.length();
 			return _lengthXML;
 		}
 	}
