@@ -7,36 +7,28 @@ package classes
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	import flash.events.*;
-	import flash.net.URLLoader;
-	import flash.net.URLRequest;
 	import flash.xml.*;
 	
 
 	public class DotGeneration extends Sprite
 	{
 		private var dotArray:Array=new Array();
-		private var coArray:Array= new Array([241, 431], [444, 488], [800,600], [700,320]);
+		private var coArray:Array= new Array([50, 50], [89, 90], [100,200], [300,200]);
 		
 		private var speechBaloon:MovieClip;
 		private var generate_btn:Button;
 		
-		private var clip:MovieClip=new MovieClip();
-		
 		private var n:int = 0;
 		
-		private var myLoader:URLLoader = new URLLoader();
+		private var _myXML:XmlClass = new XmlClass('PreHistorics.xml');
 		
-		private var myURL:URLRequest;
-		
-		private var preHisXML:XML;
-		
+		private var _lengthXML:int;
 		
 		public function DotGeneration():void
 		{
 			super();
 			
-			myLoader.addEventListener(Event.COMPLETE, onLoadComplete);
-			myLoader.load(new URLRequest("classes/xml/PreHistorics.xml"));
+			_lengthXML = _myXML.myXML.Events.item.length();
 			
 			//generate_btn.addEventListener(MouseEvent.CLICK, generate);
 			//generate_btn = new Button();
@@ -47,15 +39,9 @@ package classes
 			speechBaloon = new Main_app_speechbaloon;
 			speechBaloon.alpha = 0;
 			speechBaloon.mouseChildren = true;
-			speechBaloon.close_mc.addEventListener(MouseEvent.CLICK, alf);
+			speechBaloon.close_mc.addEventListener(MouseEvent.CLICK, removeBaloon);
 			this.addChild(speechBaloon);
 			
-			
-			
-			
-			
-			XML.ignoreComments = true;
-			XML.ignoreWhitespace = true;
 		}
 		public function generate():void
 		{
@@ -63,6 +49,7 @@ package classes
 	
 			for(var i:int=0;i<4;i++)
 			{
+				var clip:MovieClip=new MovieClip();
 				clip.graphics.beginFill(0x996600,1);
 				clip.graphics.drawCircle(2,2,8);
 				clip.graphics.endFill();
@@ -76,51 +63,35 @@ package classes
 			}
 		}
 
-		public function alf (evt:MouseEvent):void{
-			trace("alpha = 0");
-			Tweener.addTween(speechBaloon,{alpha:0,time:0.3,transition:"linear"});
+		public function removeBaloon (evt:MouseEvent):void{
+			this.removeChild(speechBaloon);
 		}
 		public function buttonHover(evt:MouseEvent):void{
 			trace(evt.target.name);
+			this.addChild(speechBaloon);
 			speechBaloon.x=evt.target.x;
 			speechBaloon.y=evt.target.y;
 			Tweener.addTween(speechBaloon,{alpha:1,time:2,transition:"easeInOut"});
 			n = parseInt(evt.target.name);
-			cycleDis();
+			Content();
 		}
 		// --------------------------------------
 		// ---------------XML--------------------
 		// --------------------------------------
 		
 		
-		public function onLoadComplete(evt:Event):void {
-				trace("oncomplete");
-				preHisXML = new XML(evt.target.data);
-				trace ("TimelineEvents: " + preHisXML.TimelineEventsTyp.text() +"  Type: " + preHisXML.TimelineEventsTyp.@type);
-				trace ("Die Timeline enthält " + preHisXML.Events.item.length()) + " Events";
-				/*
-				var i:Number;
-				for (i = 0; i <preHisXML.Events.item.length(); i++) {
-					trace ("	 Name des Events :" + preHisXML.Events.item[i].title.text()) + "\n";
-				}
 				
-				trace ("Event 5 ist vom " + preHisXML..era[0].text() + preHisXML..@year[4]);
-				
-				trace ("Von 440 Million years BC sind: " + preHisXML.Events.item.(era.@year == "440 Million years BC")..title.text());
-				
-				var searchResult:XMLList = new XMLList (preHisXML.Events.item.(era.@year == "440 Million years BC"));
-				for (i = 0; i <searchResult.length(); i++) {
-					trace ("(searchResult) Von 440 Million years BC ist: " + searchResult.title[i]);
-				}*/
-		}		
-		public function cycleDis():void
+		public function Content():void
 		{
-			speechBaloon.headline.text = preHisXML..title[n].text();
-			speechBaloon.subline.text = "Cycle: " + preHisXML..cycle[n].text();
-			speechBaloon.txt.text = preHisXML..text[n].text()
-			speechBaloon.era.text = "Era: " + preHisXML..era[n].text();
+			speechBaloon.headline.text = _myXML.myXML..title[n].text();
+			speechBaloon.subline.text = "Cycle: " + _myXML.myXML..cycle[n].text();
+			speechBaloon.txt.text = _myXML.myXML..text[n].text();
+			speechBaloon.era.text = "Era: " + _myXML.myXML..era[n].text();
 			trace(n);
 		}
-		
+		public function get lengthXML():int
+		{
+			return _lengthXML;
+		}
 	}
 }
