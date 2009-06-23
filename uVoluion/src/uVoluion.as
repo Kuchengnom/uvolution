@@ -6,7 +6,7 @@ package {
 	import flash.utils.*;
 	
 
-	[SWF(width="1024", height = "658", backgroundColor = "0xFFFFFF", frameRate = "24")]
+	[SWF(width="1024", height = "768", backgroundColor = "0xFFFFFF", frameRate = "24")]
 	
 	public class uVoluion extends Sprite
 	{
@@ -27,7 +27,7 @@ package {
             for (var i:int = 1; i < 60; i++)
             {
                 this.graphics.moveTo(i * 16 - 0.5, 0);
-                this.graphics.lineTo(i * 16 - 0.5, 658);
+                this.graphics.lineTo(i * 16 - 0.5, 768);
             }
             for (i = 1; i < 64; i++)
             {
@@ -45,7 +45,7 @@ package {
 			main.addChild(map);
 			
 			bottombar.x = 0;
-			bottombar.y = 39*16;
+			bottombar.y = 45*16;
 			this.addChild(bottombar);
 			
 			logo.x = (logo.width * 0.25) + 2*16;

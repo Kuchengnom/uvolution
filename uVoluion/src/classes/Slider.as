@@ -16,7 +16,7 @@ package classes
 		private var oThumb:thumb = new thumb();
 		private var contentLength:int;
 		
-		private var oDots:DotGeneration = new DotGeneration;
+		private var oDots:PreHistoricsClass = new PreHistoricsClass;
 		
 		public function Slider()
 		{
