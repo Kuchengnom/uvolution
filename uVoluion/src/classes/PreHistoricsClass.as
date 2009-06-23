@@ -20,7 +20,7 @@ package classes
 		
 		private var n:int = 0;
 		
-		private var _myXML:XmlClass = new XmlClass('PreHistorics.xml');
+		private var _myXML:theXML = new theXML('PreHistorics.xml');
 		
 		private var _lengthXML:int;
 		

@@ -4,7 +4,7 @@ package classes
 	import flash.net.*;
 	import flash.xml.*;
 
-	public class XmlClass extends XMLDocument
+	public class theXML extends XMLDocument
 	{
 		private var _myLoader:URLLoader = new URLLoader();
 		
@@ -12,7 +12,7 @@ package classes
 		
 		private var _myXML:XML;
 		
-		public function XmlClass(source:String=null)
+		public function theXML(source:String=null)
 		{
 			super(source);
 			
