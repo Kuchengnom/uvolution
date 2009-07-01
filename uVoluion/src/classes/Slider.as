@@ -14,9 +14,12 @@ package classes
 		private var xTarget:Number;
 		private var oTrack:track = new track();
 		private var oThumb:thumb = new thumb();
-		private var contentLength:int;
+		//private var position:Number=oThumb.x;
+		public var _contentLength:int;
+		private var percental:int;
+		private var event:int;
 		
-		private var oDots:PreHistoricsClass = new PreHistoricsClass;
+		//private var oField:Field = new Field();
 		
 		public function Slider()
 		{
@@ -38,7 +41,10 @@ package classes
 			
 			this.addEventListener(MouseEvent.MOUSE_UP, thumbUp);
 			
-			contentLength = oDots.lengthXML;
+			
+			//_contentLength = oField.lengthXML;
+			//_contentLength = 5;
+			
 			
 		}
 		
@@ -49,6 +55,8 @@ package classes
 			
 			this.addEventListener(MouseEvent.MOUSE_MOVE, thumbMove);
 			xOffset = this.mouseX - oThumb.x;
+			
+			
 			
 		}
 		
@@ -67,7 +75,10 @@ package classes
 			if(oThumb.x >= xMax)
 				oThumb.x = xMax;
 	
-	
+			trace(oThumb.x);
+		
+			trace(Math.floor(oThumb.x/percental));
+			
 			evt.updateAfterEvent();	
 		}
 		
@@ -75,9 +86,24 @@ package classes
 		{	
 			xTarget = this.mouseX-xOffset;
 			
+			if(xTarget <= xMin)
+				oThumb.x = xMin;
+				
+			if(xTarget >= xMax)
+				oThumb.x = xMax;
+			
 			Tweener.addTween(oThumb, {x:xTarget, time:0.8, transition:"easeOutCubic"});
 			
-			trace(contentLength);
+			//trace(contentLength);
+			trace(xTarget);
+		}
+		
+		public function set contentLength(length:int):void {
+			
+			_contentLength = length;
+			
+			percental = oTrack.width / _contentLength;
+			event = oThumb.x / percental;
 		}
 
 	}

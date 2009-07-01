@@ -5,7 +5,13 @@ package classes
 		public function PreHistorics()
 		{
 			super();
+			
+			_myXML = new theXML('template.xml', this);
+			
+			
 		}
+		
+		
 		
 	}
 }
