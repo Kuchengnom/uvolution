@@ -22,6 +22,7 @@
 <libraryPathEntry kind="1" linkType="1" path="graphics"/>
 <libraryPathEntry kind="3" linkType="1" path="src/track.swc" useDefaultLinkType="false"/>
 <libraryPathEntry kind="3" linkType="1" path="src/thumb.swc" useDefaultLinkType="false"/>
+<libraryPathEntry kind="3" linkType="1" path="src/uVolution.swc" useDefaultLinkType="false"/>
 </libraryPath>
 <sourceAttachmentPath/>
 </compiler>
