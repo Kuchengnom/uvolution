@@ -20,10 +20,14 @@ package {
 		private var map:Main_bg_map = new Main_bg_map;
 		private var logo:Main_logo_jon_1 = new Main_logo_jon_1;
 		private var slider:Slider;
+		private var counter:int=0;
 		
 		//private var oHistory:History = new History();
 		private var oPreHistorics:PreHistorics = new PreHistorics();
+		private var oHistory:History = new History();
 		private var oPeople:Main_Disp_TabsPeoples = new Main_Disp_TabsPeoples;
+		
+		private var fieldArray:Array = new Array();
 		
 		public function uVoluion():void
 		{
@@ -74,7 +78,7 @@ package {
 			main.alpha = 0.75;
 			this.addChild(main);
 			
-			oPreHistorics.addEventListener("XML_LOADED", xmlLoaded);
+			this.addEventListener("XML_LOADED", xmlLoaded);
          	slider = new Slider();
             this.addChild(slider);
             
@@ -82,14 +86,37 @@ package {
            // this.addChild(new Climate);
             
            // this.addChild(new PreHistoricsClass);
+           
+           fieldArray["History"] = new theXML('template.xml', this);
+           fieldArray["PreHistorics"] = new theXML('PreHistorics.xml', this);
+           
+           
 		}
 		
 		private function xmlLoaded(event:Event):void
 		{
+			trace("::::::::");
+			counter++;
+			
 			if (map.contains(DisplayObject(event.target)))
 			{
 				slider.contentLength = Field(event.target)._lengthXML;
 			}
+			
+			
+			if(counter>=fieldArray.length)
+			{
+					init();	
+			}
+			
+		}
+		
+		
+		private function init():void {
+			
+			oHistory._myXML = fieldArray["History"];
+			
+			generator(null);
 		}
 		
 		private function startMap(evt:MouseEvent):void {
@@ -111,8 +138,8 @@ package {
 		//### TEST DOTS GENERIEREN! ##
 		public function generator(evt:MouseEvent):void
 		{
-			oPreHistorics.generateDots();
-			map.addChild(oPreHistorics);
+			oHistory.generateDots();
+			map.addChild(oHistory);
 			trace("generate function");
 		}
 	}

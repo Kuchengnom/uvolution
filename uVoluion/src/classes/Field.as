@@ -31,10 +31,10 @@ package classes
 			speechBubble.close_mc.addEventListener(MouseEvent.CLICK, closeSpeechBubble);
 			
 			
-			//this.getCoords();
+			this.getCoords();
 		}
 		
-		/*
+		
 		public function getCoords():void {
 			
 
@@ -46,7 +46,7 @@ package classes
 			
 			
 		}
-		*/
+		
 		
 		public function generateDots():void {
 			

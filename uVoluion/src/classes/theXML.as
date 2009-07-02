@@ -26,7 +26,7 @@ package classes
 		}
 		private function onLoadComplete(evt:Event):void {
 				trace("oncomplete");
-				//trace("MYXML LENGTH: "+_myXML.length());
+				//trace("MYXML LENGTH: "+_myXML.Events.item.length());
 				_myXML = new XML(evt.target.data);
 				_myXML.ignoreComments = true;
 				_myXML.ignoreWhitespace = true;
