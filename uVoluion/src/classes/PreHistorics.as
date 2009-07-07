@@ -6,7 +6,7 @@ package classes
 		{
 			super();
 			
-			_myXML = new theXML('template.xml', this);
+		//	_myXML = new theXML('template.xml', this);
 			
 			
 		}

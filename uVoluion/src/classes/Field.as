@@ -4,7 +4,6 @@ package classes
 	
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
-	import flash.events.Event;
 	import flash.events.MouseEvent;
 	
 	public class Field extends Sprite
@@ -16,9 +15,10 @@ package classes
 		
 		public var speechBubble:MovieClip;
 		public var _n:int=0;
+		public var itemID:int;
 		
 		public var dotArray:Array = new Array();
-		public var coArray:Array = new Array([50, 50], [89, 90], [100,200], [300,200]);
+		public var coArray:Array = new Array();
 		
 	
 		
@@ -26,41 +26,48 @@ package classes
 		public function Field()
 		{	
 			
-			speechBubble = new Main_app_speechbaloon;
+
+			speechBubble = new Screen_Speechbaloon;
 			speechBubble.mouseChildren = true;
-			speechBubble.close_mc.addEventListener(MouseEvent.CLICK, closeSpeechBubble);
 			
 			
-			this.getCoords();
+	
+			speechBubble.addEventListener(MouseEvent.CLICK, closeSpeechBubble);
+	
+		
 		}
 		
 		
 		public function getCoords():void {
 			
 
-			for(var j:int=0;j<_lengthXML;j++){     //_myXML.myXML.length()
+			for(var j:int=0;j<_myXML.myXML.Events.item.length();j++) { 
 			
-				coArray[j]=[_myXML.myXML..coordinates[j].text()];
-				trace("coarray["+j+"]: "+coArray[j]);
+				coArray[j]=_myXML.myXML..coordinates[j].text().split(", ");
+				trace("coarray["+j+"][0]: "+coArray[j][0]);
+				trace("coarray["+j+"][1]: "+coArray[j][1]);
+				
 			}
 			
+			//_Slider._contentLength = _myXML.myXML.Events.item.length();
 			
 		}
 		
 		
 		public function generateDots():void {
-			
-			
+
+
 				trace("coArray:"+coArray);
-			
-			for(var i:int=0;i<4;i++)
+				
+
+			for(var i:int=0;i<_myXML.myXML.Events.item.length();i++)
 			{
 				var clip:MovieClip=new MovieClip();
 				clip.graphics.beginFill(0x996600,1);
 				clip.graphics.drawCircle(2,2,8);
 				clip.graphics.endFill();
 				clip.name = i.toString();
-				trace(clip.name);
+				//trace(clip.name);
 				this.addChild(clip);
 				dotArray.push(clip);
 				clip.x=coArray[i][0];
@@ -68,19 +75,20 @@ package classes
 				clip.addEventListener(MouseEvent.MOUSE_OVER, showSpeechBubble);
 			}
 			
+			
 		}
 		
 		public function showSpeechBubble(evt:MouseEvent):void {
 			
-				trace(evt.target.name);
+				//trace(evt.target.name);
 					
 			this.addChild(speechBubble);
-			speechBubble.x=evt.target.x;
-			speechBubble.y=evt.target.y;
+			speechBubble.x=evt.target.x - (speechBubble.width/2);
+			speechBubble.y=evt.target.y - speechBubble.height;
 			Tweener.addTween(speechBubble,{alpha:1,time:2,transition:"easeInOut"});
 			_n = parseInt(evt.target.name);
 			setContent();
-			trace(this.lengthXML);
+			//trace(this.lengthXML);
 		}
 		
 		public function closeSpeechBubble(evt:MouseEvent):void {
@@ -92,11 +100,11 @@ package classes
 			trace(_myXML);
 			trace("ausgewaehlt: "+_n);
 			trace("item anzahl: "+_myXML.myXML.Events.item.length());
-			//_Slider._contentLength = _myXML.myXML.Evens.item.length();
-			speechBubble.headline.text = _myXML.myXML..title[_n].text();
-			//speechBubble.subline.text = "Cycle: " + _myXML.myXML..cycle[_n].text();
-			speechBubble.txt.text = _myXML.myXML..text[_n].text();
-			//speechBubble.era.text = "Era: " + _myXML.myXML..era[_n].text();
+			
+			speechBubble.Headline.text = _myXML.myXML..title[_n].text();
+			speechBubble.Subline.text = _myXML.myXML..description[_n].text();
+			speechBubble.Text.text = _myXML.myXML..text[_n].text();
+			speechBubble.Date.text = _myXML.myXML..date[_n].text();
 			
 		}
 		

@@ -13,16 +13,9 @@ package classes
 			
 			super();
 			
-			_myXML = new theXML('PreHistorics.xml', this);
+			//_myXML = new theXML('PreHistorics.xml', this);
 		
 		}
 		
-		/*
-		public function get lengthXML():int
-		{
-			_lengthXML = _myXML.myXML.Events.item.length();
-			return _lengthXML;
-		}
-		*/
 	}
 }

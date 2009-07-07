@@ -14,7 +14,8 @@ package classes
 		private var xTarget:Number;
 		private var oTrack:track = new track();
 		private var oThumb:thumb = new thumb();
-		//private var position:Number=oThumb.x;
+		
+		public var position:int;
 		public var _contentLength:int;
 		private var percental:int;
 		private var event:int;
@@ -41,10 +42,7 @@ package classes
 			
 			this.addEventListener(MouseEvent.MOUSE_UP, thumbUp);
 			
-			
-			//_contentLength = oField.lengthXML;
-			//_contentLength = 5;
-			
+	
 			
 		}
 		
@@ -56,8 +54,7 @@ package classes
 			this.addEventListener(MouseEvent.MOUSE_MOVE, thumbMove);
 			xOffset = this.mouseX - oThumb.x;
 			
-			
-			
+
 		}
 		
 		private function thumbUp(evt:MouseEvent):void
@@ -105,6 +102,14 @@ package classes
 			percental = oTrack.width / _contentLength;
 			event = oThumb.x / percental;
 		}
+		
+		/*
+		public function get position():int {
+			
+			return position;
+		}
+		
+		*/
 
 	}
 }
