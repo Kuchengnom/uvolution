@@ -5,6 +5,7 @@ package {
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
+	import flash.text.TextField;
 	import flash.utils.*;
 	
 	
@@ -14,18 +15,24 @@ package {
 	public class uVoluion extends Sprite
 	{	
 		
-		private var main:Main_bg_blue = new Main_bg_blue;
-		private var headbar:Main_Disp_upperbar = new Main_Disp_upperbar;
-		private var bottombar:Main_Disp_lowerbar = new Main_Disp_lowerbar;
-		private var map:Main_bg_map = new Main_bg_map;
-		private var logo:Main_logo_jon_1 = new Main_logo_jon_1;
+		private var startscreen:Screen_Startpanel = new Screen_Startpanel;
+		private var Panel:Screen_Panel = new Screen_Panel;
+		private var Background:Screen_Background = new Screen_Background;
+		private var Map:Screen_Map = new Screen_Map;
+		private var Search_btn:Screen_Search_btn = new Screen_Search_btn;
+		
+		private var Geschichte:TextField = new TextField;
+		private var Klima:TextField = new TextField;
+		private var Evolution:TextField = new TextField;
+		private var Voelker:TextField = new TextField;
+	
 		private var slider:Slider;
 		private var counter:int=0;
+		private var complete:Boolean = false;
 		
-		//private var oHistory:History = new History();
 		private var oPreHistorics:PreHistorics = new PreHistorics();
 		private var oHistory:History = new History();
-		private var oPeople:Main_Disp_TabsPeoples = new Main_Disp_TabsPeoples;
+		//private var oPeople:Main_Disp_TabsPeoples = new Main_Disp_TabsPeoples;
 		
 		private var fieldArray:Array = new Array();
 		
@@ -46,49 +53,84 @@ package {
                 this.graphics.lineTo(1024, i * 16 - 0.5);
             }
 			*/
-			headbar.x = 0;
-			headbar.y = 0;
-			this.addChild(headbar);
 			
-			map.x = 0;
-			map.y = 5*16;
-			map.addEventListener(MouseEvent.CLICK, generator);
-			main.addChild(map);
+		
 			
-			bottombar.x = 0;
-			bottombar.y = 45*16;
-			this.addChild(bottombar);
+			startscreen.x = 512 - (startscreen.width/2);
+			startscreen.y = Panel.height;
+			startscreen.visible=true;
+			Background.addChild(startscreen);
+		
+	
+
+			this.addChild(Background);
 			
-			logo.x = (logo.width * 0.25) + 2*16;
-			logo.y = 2*16;
-			logo.width *= 0.5;
-			logo.height *= 0.5;
-			headbar.addChild(logo);
+			Map.visible=false;
+			Background.addChild(Map);
+			
+		
+			
+			Panel.y = Background.height - Panel.height;
+			Background.addChild(Panel);
+			
+			Search_btn.x = 930;
+			Search_btn.y = 20;
+			Panel.addChild(Search_btn);
+			
+			Map.addEventListener(MouseEvent.CLICK, generator);
+		
+			slider = new Slider();
+			slider.x = 20;
+         	slider.y = 100;
+            Panel.addChild(slider);
 			
 			
+			//########################## M E N U ############################
 			
-			oPeople.x = 25*16;
-			oPeople.y = 1*16;
-			oPeople.name = 'People';
-			oPeople.addEventListener(MouseEvent.CLICK, startMap);
-			headbar.addChild(oPeople);
+			Geschichte.x=20;
+			Geschichte.y=20;
+			Geschichte.text = "Geschichte";
+			Geschichte.height=20;
+			Panel.addChild(Geschichte);
 			
-			main.x = 0;
-			main.y = 0;
-			main.alpha = 0.75;
-			this.addChild(main);
+			Klima.x = 20 + Geschichte.width;
+			Klima.y = 20;
+			Klima.text = "Klima";
+			Klima.height=20;
+			Panel.addChild(Klima);
+			
+			Evolution.x = 20 + Geschichte.width + Klima.width;
+			Evolution.y = 20;
+			Evolution.text = "Evolution";
+			Evolution.height=20;
+			Panel.addChild(Evolution);
+			
+			Voelker.x = 20 + Geschichte.width + Klima.width + Evolution.width;
+			Voelker.y = 20;
+			Voelker.text = "Völker";
+			Voelker.height=20;
+			Panel.addChild(Voelker);
+			
+			//##############################################################
+			
+			this.addEventListener(MouseEvent.CLICK, startMap);
+		
 			
 			this.addEventListener("XML_LOADED", xmlLoaded);
+         	/*
          	slider = new Slider();
-            this.addChild(slider);
-            
+         	slider.x = 20;
+         	slider.y = 100;
+            Panel.addChild(slider);
+   			*/
+   			
          //   this.addChild(new History);
            // this.addChild(new Climate);
             
            // this.addChild(new PreHistoricsClass);
            
            fieldArray["History"] = new theXML('template.xml', this);
-           fieldArray["PreHistorics"] = new theXML('PreHistorics.xml', this);
+           //fieldArray["PreHistorics"] = new theXML('PreHistorics.xml', this);
            
            
 		}
@@ -98,31 +140,53 @@ package {
 			trace("::::::::");
 			counter++;
 			
-			if (map.contains(DisplayObject(event.target)))
+			if (Map.contains(DisplayObject(event.target)))
 			{
 				slider.contentLength = Field(event.target)._lengthXML;
+
 			}
 			
-			
+
 			if(counter>=fieldArray.length)
 			{
 					init();	
+					complete = true;
 			}
+			else
+			{
+				showStartscreen();	
+			}
+		}
+		
+		private function showStartscreen():void {
+			
+			startscreen.visible=true;
+			startscreen.alpha=1;
+			
 			
 		}
 		
-		
 		private function init():void {
 			
+
 			oHistory._myXML = fieldArray["History"];
+			oHistory.getCoords();
+			
+			slider.contentLength = oHistory.lengthXML;
+			trace("Slider Length: "+slider._contentLength);
+         
 			
 			generator(null);
 		}
 		
 		private function startMap(evt:MouseEvent):void {
+			
+			if(complete) {
+			
+				startscreen.visible=false;
+				Map.visible=true;
 				
-				
-				
+				/*
 				switch (evt.target.name)
 	        	{
 	        		case "People":
@@ -132,6 +196,9 @@ package {
 	            		trace("Default!");
 	            		break;
 	        	}
+	        	*/
+			}	
+
 				
 		}
 		
@@ -139,7 +206,7 @@ package {
 		public function generator(evt:MouseEvent):void
 		{
 			oHistory.generateDots();
-			map.addChild(oHistory);
+			Map.addChild(oHistory);
 			trace("generate function");
 		}
 	}
