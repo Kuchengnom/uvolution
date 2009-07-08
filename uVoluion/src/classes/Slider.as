@@ -15,12 +15,11 @@ package classes
 		private var oTrack:track = new track();
 		private var oThumb:thumb = new thumb();
 		
-		public var position:int;
+		public var _position:int;
 		public var _contentLength:int;
 		private var percental:int;
 		private var event:int;
 		
-		//private var oField:Field = new Field();
 		
 		public function Slider()
 		{
@@ -28,8 +27,8 @@ package classes
 			xMin = 0;
 			xMax = oTrack.width;
 			
-			oTrack.x = 3*16;
-			oTrack.y = 45*16;
+			oTrack.x = 0;
+			oTrack.y = 0;
 			this.addChild(oTrack);
 			
 			oThumb.x = 0;
@@ -72,7 +71,7 @@ package classes
 			if(oThumb.x >= xMax)
 				oThumb.x = xMax;
 	
-			trace(oThumb.x);
+			//trace(oThumb.x);
 		
 			trace(Math.floor(oThumb.x/percental));
 			
@@ -92,7 +91,8 @@ package classes
 			Tweener.addTween(oThumb, {x:xTarget, time:0.8, transition:"easeOutCubic"});
 			
 			//trace(contentLength);
-			trace(xTarget);
+			trace(Math.floor(xTarget/percental));
+			//trace(xTarget);
 		}
 		
 		public function set contentLength(length:int):void {
@@ -103,13 +103,13 @@ package classes
 			event = oThumb.x / percental;
 		}
 		
-		/*
+		
 		public function get position():int {
 			
-			return position;
+			return _position;
 		}
 		
-		*/
+		
 
 	}
 }

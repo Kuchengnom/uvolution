@@ -1,7 +1,6 @@
 package {
 	import classes.*;
 	
-	import flash.display.DisplayObject;
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
@@ -32,44 +31,23 @@ package {
 		
 		private var oPreHistorics:PreHistorics = new PreHistorics();
 		private var oHistory:History = new History();
-		//private var oPeople:Main_Disp_TabsPeoples = new Main_Disp_TabsPeoples;
+	
 		
 		private var fieldArray:Array = new Array();
 		
 		public function uVoluion():void
 		{
-			
-			/*#######G R I D########
-			this.graphics.lineStyle(1, 0x000000, 1);
-			
-            for (var i:int = 1; i < 60; i++)
-            {
-                this.graphics.moveTo(i * 16 - 0.5, 0);
-                this.graphics.lineTo(i * 16 - 0.5, 768);
-            }
-            for (i = 1; i < 64; i++)
-            {
-                this.graphics.moveTo(0, i * 16 - 0.5);
-                this.graphics.lineTo(1024, i * 16 - 0.5);
-            }
-			*/
-			
-		
-			
-			startscreen.x = 512 - (startscreen.width/2);
-			startscreen.y = Panel.height;
-			startscreen.visible=true;
-			Background.addChild(startscreen);
-		
-	
 
 			this.addChild(Background);
+			
+			startscreen.x = 512 - (startscreen.width/2);
+			startscreen.y = ((Background.height - Panel.height)/2) - (startscreen.height/2);
+			Background.addChild(startscreen);
 			
 			Map.visible=false;
 			Background.addChild(Map);
 			
-		
-			
+
 			Panel.y = Background.height - Panel.height;
 			Background.addChild(Panel);
 			
@@ -80,8 +58,9 @@ package {
 			Map.addEventListener(MouseEvent.CLICK, generator);
 		
 			slider = new Slider();
+			slider.visible=true;
 			slider.x = 20;
-         	slider.y = 100;
+         	slider.y = 80;
             Panel.addChild(slider);
 			
 			
@@ -91,45 +70,43 @@ package {
 			Geschichte.y=20;
 			Geschichte.text = "Geschichte";
 			Geschichte.height=20;
+			Geschichte.selectable=false;
+			Geschichte.addEventListener(MouseEvent.CLICK, startMap);
 			Panel.addChild(Geschichte);
 			
 			Klima.x = 20 + Geschichte.width;
 			Klima.y = 20;
 			Klima.text = "Klima";
 			Klima.height=20;
+			Klima.selectable=false;
+			Klima.addEventListener(MouseEvent.CLICK, startMap);
 			Panel.addChild(Klima);
 			
 			Evolution.x = 20 + Geschichte.width + Klima.width;
 			Evolution.y = 20;
+			Evolution.selectable=false;
 			Evolution.text = "Evolution";
 			Evolution.height=20;
+			Evolution.addEventListener(MouseEvent.CLICK, startMap);
 			Panel.addChild(Evolution);
 			
 			Voelker.x = 20 + Geschichte.width + Klima.width + Evolution.width;
 			Voelker.y = 20;
+			Voelker.selectable=false;
 			Voelker.text = "Völker";
 			Voelker.height=20;
+			Voelker.addEventListener(MouseEvent.CLICK, startMap);
 			Panel.addChild(Voelker);
 			
 			//##############################################################
+
 			
-			this.addEventListener(MouseEvent.CLICK, startMap);
+			//this.addEventListener(MouseEvent.CLICK, startMap);
 		
-			
 			this.addEventListener("XML_LOADED", xmlLoaded);
-         	/*
-         	slider = new Slider();
-         	slider.x = 20;
-         	slider.y = 100;
-            Panel.addChild(slider);
-   			*/
-   			
-         //   this.addChild(new History);
-           // this.addChild(new Climate);
-            
-           // this.addChild(new PreHistoricsClass);
-           
-           fieldArray["History"] = new theXML('template.xml', this);
+			
+
+           fieldArray["History"] = new theXML('people_population.xml', this);
            //fieldArray["PreHistorics"] = new theXML('PreHistorics.xml', this);
            
            
@@ -139,36 +116,25 @@ package {
 		{
 			trace("::::::::");
 			counter++;
-			
+			/*
 			if (Map.contains(DisplayObject(event.target)))
 			{
 				slider.contentLength = Field(event.target)._lengthXML;
 
 			}
-			
+			*/
 
 			if(counter>=fieldArray.length)
 			{
 					init();	
 					complete = true;
 			}
-			else
-			{
-				showStartscreen();	
-			}
+
 		}
 		
-		private function showStartscreen():void {
-			
-			startscreen.visible=true;
-			startscreen.alpha=1;
-			
-			
-		}
 		
 		private function init():void {
 			
-
 			oHistory._myXML = fieldArray["History"];
 			oHistory.getCoords();
 			
@@ -186,19 +152,27 @@ package {
 				startscreen.visible=false;
 				Map.visible=true;
 				
-				/*
-				switch (evt.target.name)
+				
+				switch (evt.target.text)
 	        	{
-	        		case "People":
-	            		this.addChild(new History);
+	        		case "Geschichte":
+	            		trace("new History");
+	            		break;
+	            	case "Klima":
+	            		trace("new Climate");
+	            		break;
+	            	case "Evolution":
+	            		trace("new Evolution");
+	            		break;
+	            	case "Völker":
+	            		trace("new People");
 	            		break;
 	            	default:
-	            		trace("Default!");
+	            		trace("NOTHING!");
 	            		break;
 	        	}
-	        	*/
+	        	
 			}	
-
 				
 		}
 		

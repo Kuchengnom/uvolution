@@ -12,6 +12,7 @@ package classes
 		public var _myXML:theXML;
 		public var _lengthXML:int;
 		public var _Slider:Slider;
+		public var _Position:int=0;
 		
 		public var speechBubble:MovieClip;
 		public var _n:int=0;
@@ -55,8 +56,10 @@ package classes
 		
 		
 		public function generateDots():void {
-
-
+			
+			//_Position = _Slider._position
+		
+	
 				trace("coArray:"+coArray);
 				
 
