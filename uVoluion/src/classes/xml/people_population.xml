@@ -1,60 +1,198 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <TimelineEvents>
-<TimelineEventsTyp type="PeoplePopulation">People and Population</TimelineEventsTyp>
+<TimelineEventsTyp type="PeoplePopulation">Völker und Bevölkerung</TimelineEventsTyp>
 <Events>
 		<item>
-			<title>Upstanding Movement</title>
-			<description>Upstanding Movement</description>
-			<date year="2500000 BC">2,500,000 BC</date>
+			<title>Aufrechter Gang</title>
+			<description>Aufrechter Gang</description>
+			<date year="-2500000">2.500.000 v. Chr.</date>
 			<text>The first ape-similar-creatures get the ability to walk on their feet.</text>
+			<coordinates>530, 393</coordinates>
+			<population></population>
 		</item>
 		<item>
-			<title>First Human Being</title>
-			<description>First Human Being</description>
-			<date year="2000000 BC">2,000,000 BC</date>
-			<text>Belonging to bone remains, the first human beings, Homo Erectus, lived on earth at this time.</text>
+			<title>Der erste Mensch</title>
+			<description>2.000.000 v. Chr. (Anthropologie)</description>
+			<date year="-2000000">2.000.000 v. Chr.</date>
+			<text>Knochenfunden zufolge lebte der erste Mensch (Homo Erectus) zu dieser Zeit.</text>
+			<coordinates>530, 393</coordinates>
+			<population>9</population>
 		</item>
 		<item>
 			<title>Homo Neanderthalensis</title>
-			<description>Homo Neanderthalensis</description>
-			<date year="130000 BC">130,000 BC</date>
-			<text>Belonging to bone remains, Homo Neanderthalensis, lived on earth at this time.</text>
+			<description>Homo Neanderthalensis-Funde</description>
+			<date year="-130000">130.000 v. Chr.</date>
+			<text>Knochenfunden zufolge lebte der Neanderthaler (Homo Neanderthalensis) zu dieser Zeit.</text>
+			<coordinates>495, 279</coordinates>
+			<population>800</population>
 		</item>
 		<item>
-			<title>Movement To Iran</title>
-			<description>Movement To Iran</description>
-			<date year="100000 BC">100,000 BC</date>
-			<text>People started to move from the center of Africa towards the contemporary Iran.</text>
+			<title>Völkerwanderung in den Iran</title>
+			<description>Afrika (Anthropologie)</description>
+			<date year="-100000">100.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen Iran zu bewegen.</text>
+			<coordinates>530, 393</coordinates>
+			<population>1000</population>
 		</item>
 		<item>
-			<title>Movement To China</title>
-			<description>Movement To China</description>
-			<date year="67000 BC">67,000 BC</date>
-			<text>People started to move from the center of Africa towards the contemporary China.</text>
+			<title>Völkerwanderung in den Iran</title>
+			<description>Iran (Anthropologie)</description>
+			<date year="-100000">100.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen Iran zu bewegen.</text>
+			<coordinates>625, 338</coordinates>
+			<population>1000</population>
 		</item>
 		<item>
-			<title>Movement To Australia</title>
-			<description>Movement To Australia</description>
-			<date year="50000 BC">50,000 BC</date>
-			<text>People started to move from the center of Africa towards the contemporary Australia.</text>
+			<title>Völkerwanderung nach China</title>
+			<description>Afrika (Anthropologie)</description>
+			<date year="-67000">67.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen China zu bewegen.</text>
+			<coordinates>530, 393</coordinates>
+			<population>13000</population>
 		</item>
 		<item>
-			<title>Movement To Spain</title>
-			<description>Movement To Spain</description>
-			<date year="40000 BC">40,000 BC</date>
-			<text>People started to move from the center of Africa towards the contemporary Spain.</text>
+			<title>Völkerwanderung nach China</title>
+			<description>China (Anthropologie)</description>
+			<date year="-67000">67.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen China zu bewegen.</text>
+			<coordinates>733, 337</coordinates>
+			<population>13000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung in nach Australien</title>
+			<description>Afrika (Anthropologie)</description>
+			<date year="-50000">50.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen Australien zu bewegen.</text>
+			<coordinates>530, 393</coordinates>
+			<population>15000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung in nach Australien</title>
+			<description>Australien (Anthropologie)</description>
+			<date year="-50000">50.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen Australien zu bewegen.</text>
+			<coordinates>821, 484</coordinates>
+			<population>15000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung nach Spanien</title>
+			<description>Afrika (Anthropologie)</description>
+			<date year="-40000">40.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen Spanien zu bewegen.</text>
+			<coordinates>530, 393</coordinates>
+			<population>1000000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung nach Spanien</title>
+			<description>Spanien (Anthropologie)</description>
+			<date year="-40000">40.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen Spanien zu bewegen.</text>
+			<coordinates>513, 246</coordinates>
+			<population>100000</population>
 		</item>
 		<item>
 			<title>Homo Sapiens</title>
-			<description>Homo Sapiens</description>
-			<date year="30000 BC">30,000 BC</date>
-			<text>Belonging to bone remains, Homo Sapiens (Sapiens), the final human being stated his reign on earth.</text>
+			<description>Homo Sapiens (Sapiens)</description>
+			<date year="-30000">30.000 v. Chr.</date>
+			<text>Knochenfunden zufolge, begann der finale Mensch (Homo Sapiens) seine Herrschaft auf der Erde in diesen Jahren.</text>
+			<coordinates>530, 393</coordinates>
+			<population>2500000</population>
 		</item>
 		<item>
-			<title>Movement To Russia</title>
-			<description>Movement To Russia</description>
-			<date year="20000 BC">20,000 BC</date>
-			<text>People started to move from the center of Africa towards the contemporary Russia.</text>
+			<title>Völkerwanderung nach Russland</title>
+			<description>Afrika (Anthropologie)</description>
+			<date year="-20000">20.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen Russland zu bewegen.</text>
+			<coordinates>530, 393</coordinates>
+			<population>3000000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung nach Russland</title>
+			<description>Russland (Anthropologie)</description>
+			<date year="-20000">20.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen Russland zu bewegen.</text>
+			<coordinates>467, 313</coordinates>
+			<population>3000000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung der Gothen</title>
+			<description>In den Jahren 150 - 200 n. Chr. begann die Bewegung</description>
+			<date year="150">150 n. Chr.</date>
+			<text>Die Völkerwanderung der Gothen verlief aus Nordeuropa über das heutige Polen, die Slowakei und endete in der Ukraine und Rumänien.</text>
+			<coordinates>700, 200</coordinates>
+			<population>184974947</population>
+		</item>
+		<item>
+			<title>Völkerwanderung der Gothen</title>
+			<description>In den Jahren 200-400 n. Chr. begann die Bewegung</description>
+			<date year="400">400 n. Chr.</date>
+			<text>Die Völkerwanderung der Gothen verlief aus Nordeuropa über das heutige Polen, die Slowakei und endete in der Ukraine und Rumänien.</text>
+			<coordinates>543, 293</coordinates>
+			<population>195000000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung der Langobarden</title>
+			<description>Die Langobarden wanderten nach Italien</description>
+			<date year="370">370 n. Chr.</date>
+			<text>Die Langobarden begannen ihren langen Marsch von Deutschland (Germanien) aus zur Mitte des römischen Reichs (Italien).</text>
+			<coordinates>503, 283</coordinates>
+			<population>194250000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung der Langobarden</title>
+			<description>Die Langobarden wanderten nach Italien</description>
+			<date year="568">568 n. Chr.</date>
+			<text>In den Jahren 568 bis 774 n. Chr. beendeten die Langobarden ihre Völkerwanderung.</text>
+			<coordinates>508, 304</coordinates>
+			<population>199200000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung der Hunen</title>
+			<description>Im Jahr 433 n. Chr. begann die Bewegung</description>
+			<date year="433">433 n. Chr.</date>
+			<text>Die Hunen erreichten Osteuropa im Jahr 433 auf ihrem Weg, der in Frankreich (Gallien) endete.</text>
+			<coordinates>537, 277</coordinates>
+			<population>195825000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung der Hunen</title>
+			<description>Im Jahr 451 n. Chr. endete die Bewegung</description>
+			<date year="451">451 n. Chr.</date>
+			<text>Die Hunen erreichten Osteuropa im Jahr 433 auf ihrem Weg, der in Frankreich (Gallien) endete.</text>
+			<coordinates>482, 292</coordinates>
+			<population>196275000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung der Angeln</title>
+			<description>Die Angeln starteten ihre Reise von Dänemark aus.</description>
+			<date year="450">450 n. Chr.</date>
+			<text>Nur ein Jahr vor den Sachsen beendeten die Angeln ihre Bewegung aus Dänemark.</text>
+			<coordinates>500, 255</coordinates>
+			<population>196250000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung der Angeln</title>
+			<description>Die Angeln schlugen im Jahr 450 n. Chr. in Groß Britannien (Britannien) auf.</description>
+			<date year="450">450 n. Chr.</date>
+			<text>Nur ein Jahr vor den Sachsen beendeten die Angeln ihre Bewegung aus Dänemark.</text>
+			<coordinates>475, 265</coordinates>
+			<population>196250000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung der Sachsen</title>
+			<description>Die Völkerbewegung der Sachsen startete in Deutschland (Germanien).</description>
+			<date year="451">451 n. Chr.</date>
+			<text>Die Sachsen erreichten ihr Ziel Groß Britannien von Deutschland (Germanien) aus im Jahr 451 n. Chr..</text>
+			<coordinates>469, 271</coordinates>
+			<population>196275000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung der Sachsen</title>
+			<description>Die Völkerbewegung der Sachsen nach Groß Britannien (Britannien)</description>
+			<date year="451">451 n. Chr.</date>
+			<text>Die Sachsen erreichten ihr Ziel Groß Britannien von Deutschland (Germanien) aus im Jahr 451 n. Chr..</text>
+			<coordinates>475, 265</coordinates>
+			<population>196275000</population>
 		</item>
 </Events>
 </TimelineEvents>
