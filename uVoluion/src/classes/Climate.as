@@ -8,7 +8,7 @@ package classes
 		{
 			super();
 			
-			_myXML:theXML = new theXML('climate.xml');
+			
 		}
 		
 	}

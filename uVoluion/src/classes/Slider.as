@@ -13,8 +13,10 @@ package classes
 		private var xMin:Number;
 		private var xMax:Number;
 		private var xTarget:Number;
-		private var oTrack:track = new track();
-		private var oThumb:thumb = new thumb();
+		private var oTrack:track = new track;
+		private var oThumb:thumb = new thumb;
+		//private var oTrack:Screen_Slider_Timeline = new Screen_Slider_Timeline;
+		//private var oThumb:Screen_Slider_Slider = new Screen_Slider_Slider;
 		
 		public var _position:int;
 		public var _contentLength:int;

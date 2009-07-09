@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TimelineEvents>
+<TimelineEventsTyp type="PeoplePopulation">Völker und Bevölkerung</TimelineEventsTyp>
+<Events>
+		<item>
+			<title>Aufrechter Gang</title>
+			<description>Aufrechter Gang</description>
+			<date year="-2500000">2.500.000 v. Chr.</date>
+			<text>The first ape-similar-creatures get the ability to walk on their feet.</text>
+			<coordinates>530, 393</coordinates>
+			<population></population>
+		</item>
+		<item>
+			<title>Der erste Mensch</title>
+			<description>2.000.000 v. Chr. (Anthropologie)</description>
+			<date year="-2000000">2.000.000 v. Chr.</date>
+			<text>Knochenfunden zufolge lebte der erste Mensch (Homo Erectus) zu dieser Zeit.</text>
+			<coordinates>530, 393</coordinates>
+			<population>9</population>
+		</item>
+		<item>
+			<title>Homo Neanderthalensis</title>
+			<description>Homo Neanderthalensis-Funde</description>
+			<date year="-130000">130.000 v. Chr.</date>
+			<text>Knochenfunden zufolge lebte der Neanderthaler (Homo Neanderthalensis) zu dieser Zeit.</text>
+			<coordinates>495, 279</coordinates>
+			<population>800</population>
+		</item>
+		<item>
+			<title>Völkerwanderung in den Iran</title>
+			<description>Afrika (Anthropologie)</description>
+			<date year="-100000">100.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen Iran zu bewegen.</text>
+			<coordinates>530, 393</coordinates>
+			<population>1000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung in den Iran</title>
+			<description>Iran (Anthropologie)</description>
+			<date year="-100000">100.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen Iran zu bewegen.</text>
+			<coordinates>625, 338</coordinates>
+			<population>1000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung nach China</title>
+			<description>Afrika (Anthropologie)</description>
+			<date year="-67000">67.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen China zu bewegen.</text>
+			<coordinates>530, 393</coordinates>
+			<population>13000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung nach China</title>
+			<description>China (Anthropologie)</description>
+			<date year="-67000">67.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen China zu bewegen.</text>
+			<coordinates>733, 337</coordinates>
+			<population>13000</population>
+		</item>
+		<item>
+			<title>Völkerwanderung in nach Australien</title>
+			<description>Afrika (Anthropologie)</description>
+			<date year="-50000">50.000 v. Chr.</date>
+			<text>Die Menschen begannen, sich von Zentralafrika aus zum heutigen Australien zu bewegen.</text>
+			<coordinates>530, 393</coordinates>
+			<population>15000</population>
+		</item>
+		
+</Events>
+</TimelineEvents>

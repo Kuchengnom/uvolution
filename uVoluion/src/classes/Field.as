@@ -15,6 +15,7 @@ package classes
 		public var _Position:int=0;
 		
 		public var speechBubble:MovieClip;
+		public var exit_btn:Screen_Speechbaloon_Exit_btn = new Screen_Speechbaloon_Exit_btn;
 		public var _n:int=0;
 		public var active:Boolean;
 		public var itemID:int;
@@ -22,22 +23,19 @@ package classes
 		public var dotArray:Array = new Array();
 		public var coArray:Array = new Array();
 		
-	
+		private var Pop_Ticker:Screen_Poulation_Ticker = new Screen_Poulation_Ticker;
 		
 		
 		public function Field()
 		{	
 			
-						
-
 			speechBubble = new Screen_Speechbaloon;
 			speechBubble.mouseChildren = true;
 			
-			
-		
-			speechBubble.addEventListener(MouseEvent.CLICK, closeSpeechBubble);
-	
-		
+			Pop_Ticker.x = 1024 - Pop_Ticker.width - 20;
+			Pop_Ticker.y = 20;
+			//Pop_Ticker.text.text = "";
+			this.addChild(Pop_Ticker);
 		}
 		
 		
@@ -46,22 +44,18 @@ package classes
 
 			for(var j:int=0;j<_myXML.myXML.Events.item.length();j++) { 
 			
-				coArray[j]=_myXML.myXML..coordinates[j].text().split(", ");
+				coArray[j]=_myXML.myXML..coordinates[j].text().split(",");
 				trace("coarray["+j+"][0]: "+coArray[j][0]);
 				trace("coarray["+j+"][1]: "+coArray[j][1]);
 				
 			}
-			
-			//_Slider._contentLength = _myXML.myXML.Events.item.length();
 			
 		}
 		
 		
 		public function generateDots():void {
 				
-			
-			
-			
+
 			for(var j:int=0;j<_myXML.myXML.Events.item.length();j++) {
 				
 				var clip:MovieClip = new MovieClip();
@@ -72,62 +66,50 @@ package classes
 				dotArray.push(clip);
 				clip.x = coArray[j][0];
 				clip.y = coArray[j][1];
-				
-			}
-
-				trace("DOTTTTT: "+dotArray[_Position].name);
-				this.addChild(dotArray[_Position]);
-
 				clip.addEventListener(MouseEvent.MOUSE_OVER, showSpeechBubble);
 				
+			}
+		
+		}
+		
+		public function showDot():void {
 			
-			
-			for(var i:int=0;i<_Position;i++){
+			for(var i:int=0;i<_myXML.myXML.Events.item.length();i++){
 				
-				//this.removeChild(dotArray[i]);
-				trace("prev dot: "+dotArray[i].name);	
+				dotArray[i].visible=false;
 			}
 			
+			if(_Position>=_myXML.myXML.Events.item.length())	
+				_Position = _myXML.myXML.Events.item.length() - 1;
+
+			if(_Position<0)
+				_Position = 0;
 			
-			/*
-			for(var i:int=0;i<_myXML.myXML.Events.item.length();i++)
-			{
-				var clip:MovieClip=new MovieClip();
-				clip.graphics.beginFill(0x996600,1);
-				clip.graphics.drawCircle(2,2,8);
-				clip.graphics.endFill();
-				clip.name = i.toString();
-				//trace(clip.name);
-				this.addChild(clip);
-				dotArray.push(clip);
-				clip.x=coArray[i][0];
-				clip.y=coArray[i][1];
-				clip.addEventListener(MouseEvent.MOUSE_OVER, showSpeechBubble);
-			}
-			*/
+			
+			this.addChild(dotArray[_Position]);
+			dotArray[_Position].visible=true;
 			
 		}
 		
 		public function showSpeechBubble(evt:MouseEvent):void {
 			
-				//trace(evt.target.name);
-					
+				
 			this.addChild(speechBubble);
 			speechBubble.x=evt.target.x - (speechBubble.width/2);
 			speechBubble.y=evt.target.y - speechBubble.height;
 			Tweener.addTween(speechBubble,{alpha:1,time:2,transition:"easeInOut"});
 			_n = parseInt(evt.target.name);
 			setContent();
-			//trace(this.lengthXML);
+			
 		}
 		
 		public function closeSpeechBubble(evt:MouseEvent):void {
 			
-			this.removeChild(speechBubble)
+			this.removeChild(speechBubble);
 		}
 		
 		public function setContent():void {
-			trace(_myXML);
+		
 			trace("ausgewaehlt: "+_n);
 			trace("item anzahl: "+_myXML.myXML.Events.item.length());
 			
@@ -141,7 +123,6 @@ package classes
 		
 		public function get lengthXML():int
 		{
-			trace("length", _myXML);	
 			_lengthXML = _myXML.myXML.Events.item.length();
 		
 			return _lengthXML;
