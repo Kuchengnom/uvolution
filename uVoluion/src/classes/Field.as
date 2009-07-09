@@ -16,6 +16,7 @@ package classes
 		
 		public var speechBubble:MovieClip;
 		public var _n:int=0;
+		public var active:Boolean;
 		public var itemID:int;
 		
 		public var dotArray:Array = new Array();
@@ -27,12 +28,13 @@ package classes
 		public function Field()
 		{	
 			
+						
 
 			speechBubble = new Screen_Speechbaloon;
 			speechBubble.mouseChildren = true;
 			
 			
-	
+		
 			speechBubble.addEventListener(MouseEvent.CLICK, closeSpeechBubble);
 	
 		
@@ -56,13 +58,38 @@ package classes
 		
 		
 		public function generateDots():void {
-			
-			//_Position = _Slider._position
-		
-	
-				trace("coArray:"+coArray);
 				
+			
+			
+			
+			for(var j:int=0;j<_myXML.myXML.Events.item.length();j++) {
+				
+				var clip:MovieClip = new MovieClip();
+				clip.graphics.beginFill(0x996600,1);
+				clip.graphics.drawCircle(2,2,6);
+				clip.graphics.endFill();
+				clip.name = j.toString();
+				dotArray.push(clip);
+				clip.x = coArray[j][0];
+				clip.y = coArray[j][1];
+				
+			}
 
+				trace("DOTTTTT: "+dotArray[_Position].name);
+				this.addChild(dotArray[_Position]);
+
+				clip.addEventListener(MouseEvent.MOUSE_OVER, showSpeechBubble);
+				
+			
+			
+			for(var i:int=0;i<_Position;i++){
+				
+				//this.removeChild(dotArray[i]);
+				trace("prev dot: "+dotArray[i].name);	
+			}
+			
+			
+			/*
 			for(var i:int=0;i<_myXML.myXML.Events.item.length();i++)
 			{
 				var clip:MovieClip=new MovieClip();
@@ -77,7 +104,7 @@ package classes
 				clip.y=coArray[i][1];
 				clip.addEventListener(MouseEvent.MOUSE_OVER, showSpeechBubble);
 			}
-			
+			*/
 			
 		}
 		
@@ -120,5 +147,9 @@ package classes
 			return _lengthXML;
 		}
 		
+		public function set position(pos:int):void {
+			
+			_Position = pos;
+		}
 	}
 }

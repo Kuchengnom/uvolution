@@ -2,8 +2,9 @@ package classes
 {
 	import caurina.transitions.Tweener;
 	
+	import flash.display.DisplayObject;
 	import flash.display.Sprite;
-	import flash.events.MouseEvent;
+	import flash.events.*;
 	
 	public class Slider extends Sprite
 	{	
@@ -20,15 +21,20 @@ package classes
 		private var percental:int;
 		private var event:int;
 		
+		private var _Dispatcher:DisplayObject;
 		
-		public function Slider()
+		
+		
+		public function Slider(dispatcher:DisplayObject)
 		{
+			
+			_Dispatcher = dispatcher;
 			
 			xMin = 0;
 			xMax = oTrack.width;
 			
-			oTrack.x = 0;
-			oTrack.y = 0;
+			oTrack.x = 20;
+			oTrack.y = 80;
 			this.addChild(oTrack);
 			
 			oThumb.x = 0;
@@ -74,6 +80,10 @@ package classes
 			//trace(oThumb.x);
 		
 			trace(Math.floor(oThumb.x/percental));
+			_position = Math.floor(oThumb.x/percental);
+			
+			this.dispatchEvent(new Event("Slider_Moved", true));
+			
 			
 			evt.updateAfterEvent();	
 		}
@@ -92,6 +102,8 @@ package classes
 			
 			//trace(contentLength);
 			trace(Math.floor(xTarget/percental));
+			_position = Math.floor(xTarget/percental);
+			this.dispatchEvent(new Event("Slider_Moved", true));
 			//trace(xTarget);
 		}
 		

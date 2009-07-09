@@ -34,6 +34,7 @@ package {
 	
 		
 		private var fieldArray:Array = new Array();
+		private var sliderArray:Array = new Array();
 		
 		public function uVoluion():void
 		{
@@ -57,12 +58,9 @@ package {
 			
 			Map.addEventListener(MouseEvent.CLICK, generator);
 		
-			slider = new Slider();
-			slider.visible=true;
-			slider.x = 20;
-         	slider.y = 80;
-            Panel.addChild(slider);
-			
+			slider = new Slider(this);
+			Panel.addChild(slider);
+
 			
 			//########################## M E N U ############################
 			
@@ -105,10 +103,12 @@ package {
 		
 			this.addEventListener("XML_LOADED", xmlLoaded);
 			
+			this.addEventListener("Slider_Moved", dotsdots);
 
            fieldArray["History"] = new theXML('people_population.xml', this);
            //fieldArray["PreHistorics"] = new theXML('PreHistorics.xml', this);
            
+          // sliderArray["History"] = new Slider(this);
            
 		}
 		
@@ -136,8 +136,9 @@ package {
 		private function init():void {
 			
 			oHistory._myXML = fieldArray["History"];
+			//oHistory._Slider = sliderArray["History"];
 			oHistory.getCoords();
-			
+			trace("Slider position: "+slider._position);
 			slider.contentLength = oHistory.lengthXML;
 			trace("Slider Length: "+slider._contentLength);
          
@@ -175,13 +176,25 @@ package {
 			}	
 				
 		}
-		
-		//### TEST DOTS GENERIEREN! ##
-		public function generator(evt:MouseEvent):void
-		{
+	
+		public function dotsdots(event:Event):void
+		{	
+			
+			oHistory.position = slider._position;
 			oHistory.generateDots();
 			Map.addChild(oHistory);
-			trace("generate function");
+			trace("dots dots");
+			trace("Slider position: "+slider._position);
+		}			
+
+		//### TEST DOTS GENERIEREN! ##
+		public function generator(evt:MouseEvent):void
+		{	
+			
+			oHistory.position = slider._position;
+			oHistory.generateDots();
+			Map.addChild(oHistory);
+			trace("generate function"); 
 		}
 	}
 }
