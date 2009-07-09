@@ -13,6 +13,7 @@ package classes
 		public var _lengthXML:int;
 		public var _Slider:Slider;
 		public var _Position:int=0;
+		public var _Year:String;
 		
 		public var speechBubble:MovieClip;
 		public var exit_btn:Screen_Speechbaloon_Exit_btn = new Screen_Speechbaloon_Exit_btn;
@@ -133,6 +134,13 @@ package classes
 		public function set position(pos:int):void {
 			
 			_Position = pos;
+		}
+		
+		public function get year():String {
+			
+			_Year = _myXML.myXML..date[_Position].text();
+			
+			return _Year;
 		}
 	}
 }

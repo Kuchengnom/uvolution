@@ -28,7 +28,7 @@ package classes
 		
 		public function Slider(dispatcher:DisplayObject)
 		{
-			//year.txt
+			
 			_Dispatcher = dispatcher;
 			
 			xMin = 0;
@@ -114,14 +114,17 @@ package classes
 			event = oThumb.x / percental;
 			oThumb.x=0;
 		}
-		
-		
+
 		public function get position():int {
 			
 			return _position;
 		}
 		
+		public function set year(input:String):void {
+			
+			oThumb.year_txt.text = input;
 		
+		}
 
 	}
 }
