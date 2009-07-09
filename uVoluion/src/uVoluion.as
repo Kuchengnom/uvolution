@@ -1,4 +1,5 @@
 package {
+	
 	import classes.*;
 	
 	import flash.display.Sprite;
@@ -35,10 +36,6 @@ package {
 		
 		private var aktuell:String;
 		
-		private var oClimate:Climate;
-		private var oHistory:History;
-	
-		
 		private var fieldArray:Array = new Array();
 		private var fArray:Array = new Array();
 		
@@ -68,7 +65,6 @@ package {
 			Background.addChild(Map);
 			
 
-			//Map.addChild(Pop_Ticker);
 			
 			Panel.y = Background.height - Panel.height;
 			Background.addChild(Panel);
@@ -132,9 +128,13 @@ package {
 
           	fieldArray["History"] = new theXML('people_population.xml', this);
            	fieldArray["Climate"] = new theXML('testtest.xml', this);
+         	fieldArray["Evolution"] = new theXML('testtest.xml',this);
+         	fieldArray["People"] = new theXML('people_population.xml', this);
            
-           fArray["History"] = new History();
-           fArray["Climate"] = new Climate();
+          	fArray["History"] = new History();
+           	fArray["Climate"] = new Climate();
+           	fArray["Evolution"] = new PreHistorics();
+           	fArray["People"] = new People();
            
 		}
 		
@@ -156,20 +156,9 @@ package {
 			
 			fArray["History"]._myXML = fieldArray["History"];
 			fArray["Climate"]._myXML = fieldArray["Climate"];
+			fArray["Evolution"]._myXML = fieldArray["Evolution"];
+			fArray["People"]._myXML = fieldArray["People"];
 			
-			//oHistory.getCoords();
-			//oClimate.getCoords();
-			
-			//oHistory.generateDots();
-			//oClimate.generateDots();
-			//trace("Slider position: "+slider._position);
-			
-			//trace("Slider Length: "+slider._contentLength);
-         	
-			
-			//Map.addChild(oHistory);
-			
-			//generator(null);
 		}
 		
 
@@ -202,9 +191,19 @@ package {
 	            		break;
 	            	case "Evolution":
 	            		trace("new Evolution");
+	            		fArray["Evolution"].getCoords();
+	            		fArray["Evolution"].generateDots();
+	            		slider.contentLength = fArray["Evolution"].lengthXML;
+	            		aktuell="Evolution";
+	            		Map.addChild(fArray["Evolution"]);
 	            		break;
 	            	case "Völker":
 	            		trace("new People");
+	            		fArray["People"].getCoords();
+	            		fArray["People"].generateDots();
+	            		slider.contentLength = fArray["People"].lengthXML;
+	            		aktuell="People";
+	            		Map.addChild(fArray["People"]);
 	            		break;
 	            	default:
 	            		trace("NOTHING!");
