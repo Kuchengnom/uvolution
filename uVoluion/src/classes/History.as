@@ -13,7 +13,7 @@ package classes
 			
 			super();
 			
-			//_myXML = new theXML('PreHistorics.xml', this);
+			
 		
 		}
 		

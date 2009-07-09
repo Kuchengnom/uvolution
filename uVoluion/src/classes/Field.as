@@ -31,10 +31,11 @@ package classes
 			
 			speechBubble = new Screen_Speechbaloon;
 			speechBubble.mouseChildren = true;
+			speechBubble.exit_btn.addEventListener(MouseEvent.CLICK, closeSpeechBubble);
 			
 			Pop_Ticker.x = 1024 - Pop_Ticker.width - 20;
 			Pop_Ticker.y = 20;
-			//Pop_Ticker.text.text = "";
+			Pop_Ticker.population_txt.text = "";
 			this.addChild(Pop_Ticker);
 		}
 		
@@ -85,6 +86,7 @@ package classes
 			if(_Position<0)
 				_Position = 0;
 			
+			Pop_Ticker.population_txt.text = _myXML.myXML..population[_Position].text();
 			
 			this.addChild(dotArray[_Position]);
 			dotArray[_Position].visible=true;
