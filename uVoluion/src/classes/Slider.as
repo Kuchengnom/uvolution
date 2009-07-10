@@ -80,8 +80,11 @@ package classes
 			trace(Math.floor(oThumb.x/percental));
 			_position = Math.floor(oThumb.x/percental);
 			
-			this.dispatchEvent(new Event("Slider_Moved", true));
-			
+			//if(_contentLength != 0) {
+				
+				this.dispatchEvent(new Event("Slider_Moved", true));
+				
+			//}
 			
 			evt.updateAfterEvent();	
 		}

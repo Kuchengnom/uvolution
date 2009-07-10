@@ -32,9 +32,9 @@ package {
 		private var slider:Slider;
 		private var counter:int=0;
 		private var complete:Boolean = false;
-		private var coun:int=0;
+		private var countLoad:int=0;
 		
-		private var aktuell:String;
+		private var currentField:String;
 		
 		private var fieldArray:Array = new Array();
 		private var fArray:Array = new Array();
@@ -48,16 +48,16 @@ package {
 			startscreen.y = ((Background.height - Panel.height)/2) - (startscreen.height/2);
 			Background.addChild(startscreen);
 			
-			start_btn.x = 20;
-			start_btn.y = 20;
+			start_btn.x = 30;
+			start_btn.y = 30;
 			start_btn.visible = false;
 			startscreen.addChild(start_btn);
 			start_btn.addEventListener(MouseEvent.CLICK, startMap);
 			
 			start_loader.x = 50;
-			start_loader.y = 60;
-			start_loader.width = 60;
-			start_loader.height = 60;
+			start_loader.y = 50;
+			start_loader.width = 50;
+			start_loader.height = 50;
 			startscreen.addChild(start_loader);
 			
 			
@@ -65,8 +65,9 @@ package {
 			Background.addChild(Map);
 			
 
-			
 			Panel.y = Background.height - Panel.height;
+			Panel.mouseChildren = false;
+			Panel.alpha=0.3;
 			Background.addChild(Panel);
 			
 			Search_btn.x = 930;
@@ -117,7 +118,7 @@ package {
 			//##############################################################
 
 
-			var timer:Timer = new Timer(100, 50);
+			var timer:Timer = new Timer(80, 30);
 			timer.addEventListener(TimerEvent.TIMER, loading);
 			timer.start();
 			
@@ -169,6 +170,8 @@ package {
 			
 				startscreen.visible=false;
 				Map.visible=true;
+				Panel.alpha=1;
+				Panel.mouseChildren = true;
 				
 				
 				switch (evt.target.text)
@@ -178,7 +181,7 @@ package {
 	            		fArray["History"].getCoords();
 	            		fArray["History"].generateDots();
 	            		slider.contentLength = fArray["History"].lengthXML;
-	            		aktuell="History";
+	            		currentField="History";
 	            		Map.addChild(fArray["History"]);
 	            		break;
 	            	case "Klima":
@@ -186,7 +189,7 @@ package {
 	            		fArray["Climate"].getCoords();
 	            		fArray["Climate"].generateDots();
 	            		slider.contentLength = fArray["Climate"].lengthXML;
-	            		aktuell="Climate";
+	            		currentField="Climate";
 	            		Map.addChild(fArray["Climate"]);
 	            		break;
 	            	case "Evolution":
@@ -194,7 +197,7 @@ package {
 	            		fArray["Evolution"].getCoords();
 	            		fArray["Evolution"].generateDots();
 	            		slider.contentLength = fArray["Evolution"].lengthXML;
-	            		aktuell="Evolution";
+	            		currentField="Evolution";
 	            		Map.addChild(fArray["Evolution"]);
 	            		break;
 	            	case "Völker":
@@ -202,7 +205,7 @@ package {
 	            		fArray["People"].getCoords();
 	            		fArray["People"].generateDots();
 	            		slider.contentLength = fArray["People"].lengthXML;
-	            		aktuell="People";
+	            		currentField="People";
 	            		Map.addChild(fArray["People"]);
 	            		break;
 	            	default:
@@ -217,8 +220,17 @@ package {
 			//### TEST DOTS GENERIEREN! ##
 		public function generator(event:Event):void
 		{	
-			fArray[aktuell].position = slider._position;
-			fArray[aktuell].showDot();
+			if(currentField != null) {
+				
+				fArray[currentField].position = slider._position;
+				slider.year = fArray[currentField].year;
+				fArray[currentField].showDot();
+			
+			}
+			else {
+				
+				trace("kein Field ausgewählt!");
+			}
 			
 			trace("Slider position: "+slider._position);
 			trace("numChildren: "+Map.numChildren);
@@ -236,8 +248,9 @@ package {
 			
 			start_loader.rotation+=10;
 			
-			coun++;
-			if(coun>=50 && complete){
+			countLoad++;
+			
+			if(countLoad>=30 && complete){
 				start_loader.visible=false;
 				start_btn.visible=true;
 			}	
