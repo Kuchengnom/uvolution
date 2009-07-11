@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TimelineEvents>
+<TimelineEventsTyp type="PeoplePopulation">Völker und Bevölkerung</TimelineEventsTyp>
+<Events>
+		<item>
+			<title>Akkadisches Reich</title>
+			<description>2350 - 1700 v. Chr.</description>
+			<date year="-2300">2350 v. Chr.</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population></population>
+		</item>
+		<item>
+			<title>Indogermanen</title>
+			<description>2050 - 1700 v. Chr.</description>
+			<date year="-2050">2050 v. Chr.</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population>9</population>
+		</item>
+		<item>
+			<title>Altassyrisches Reich</title>
+			<description>1800 - 1375 v. Chr.</description>
+			<date year="-1800">1800 v. Chr.</date>
+			<text>...</text>
+			<coordinates>495, 279</coordinates>
+			<population>800</population>
+		</item>
+		<item>
+			<title>Babylonisches Reich</title>
+			<description>1728 - 1531 v. Chr.</description>
+			<date year="-1728">1728 v. Chr.</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population>1000</population>
+		</item>
+		<item>
+			<title>Hethitenreich</title>
+			<description>2000 - 1350 v. Chr.</description>
+			<date year="-2000">2000 v. Chr.</date>
+			<text>...</text>
+			<coordinates>625, 338</coordinates>
+			<population>1000</population>
+		</item>
+		<item>
+			<title>Kassitenreich</title>
+			<description>1530 - 1160 c. Chr.</description>
+			<date year="-1530">1530 v. Chr.</date>
+			<text>...</text>
+			<coordinates>733, 337</coordinates>
+			<population>13000</population>
+		</item>
+		<item>
+			<title>Urartisches Reich</title>
+			<description>1400 - 714 v. Chr.</description>
+			<date year="-1400">1400 v. Chr.</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population>13000</population>
+		</item>
+		<item>
+			<title>Palästina, Israel</title>
+			<description>Ab 1500 v. Chr.</description>
+			<date year="-1500">1500 v. Chr.</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population>15000</population>
+		</item>
+		<item>
+			<title>Mederreich</title>
+			<description>Ab 1500 v. Chr.</description>
+			<date year="-1500">1500 v. Chr.</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population>15000</population>
+		</item>
+		<item>
+			<title>König Nebukadnezar</title>
+			<description>...</description>
+			<date year="-1137">1137 v. Chr.</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population>15000</population>
+		</item>
+		<item>
+			<title>Phöniken</title>
+			<description>1000 - 774 c. Chr.</description>
+			<date year="-1000">1000 v. Chr.</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population>15000</population>
+		</item>
+		<item>
+			<title>Neurassyrisches Reich</title>
+			<description>883 - 612 v. Chr.</description>
+			<date year="-883">883 v. Chr.</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population>15000</population>
+		</item>
+		<item>
+			<title>Gründung Karthagos</title>
+			<description>814 v. Chr. wird Karthago gegründet.</description>
+			<date year="-814">814 v. Chr.</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population>15000</population>
+		</item>
+		<item>
+			<title>Perserreich</title>
+			<description>550 - 330 v. Chr.</description>
+			<date year="-550">550 v. Chr.</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population>15000</population>
+		</item>
+		<item>
+			<title>Das Mittelalter</title>
+			<description>Beginn ca. ab 500 n. Chr.</description>
+			<date year="500">500 n. Chr.</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population>15000</population>
+		</item>
+		<item>
+			<title>Das Hochmittelalter</title>
+			<description>Beginn ca. ab 900 n. Chr.</description>
+			<date year="900">900 n. Chr.</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population>15000</population>
+		</item>
+		<item>
+			<title>Das Spätmittelalter</title>
+			<description>Von ca. 1250 bis 1450</description>
+			<date year="1250">1250</date>
+			<text>Endet 1450 mit der Erfindung des Buchdrucks</text>
+			<coordinates>530, 393</coordinates>
+			<population>15000</population>
+		</item>
+		<item>
+			<title>15. Jahrhundert</title>
+			<description>Übergang von Spätmittelalter zur frühen Neuzeit</description>
+			<date year="1500">1500</date>
+			<text>...</text>
+			<coordinates>530, 393</coordinates>
+			<population>15000</population>
+		</item>
+
+		
+</Events>
+</TimelineEvents>

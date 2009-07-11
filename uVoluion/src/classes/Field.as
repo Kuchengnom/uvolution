@@ -6,6 +6,8 @@ package classes
 	import flash.display.Sprite;
 	import flash.events.MouseEvent;
 	
+	
+	
 	public class Field extends Sprite
 	{
 		
@@ -32,7 +34,10 @@ package classes
 			
 			speechBubble = new Screen_Speechbaloon;
 			speechBubble.mouseChildren = true;
+			speechBubble.alpha=0.5;
 			speechBubble.exit_btn.addEventListener(MouseEvent.CLICK, closeSpeechBubble);
+			
+			
 			
 			Pop_Ticker.x = 1024 - Pop_Ticker.width - 20;
 			Pop_Ticker.y = 20;
@@ -98,6 +103,7 @@ package classes
 			
 				
 			this.addChild(speechBubble);
+			speechBubble.alpha=0.5;
 			speechBubble.x=evt.target.x - (speechBubble.width/2);
 			speechBubble.y=evt.target.y - speechBubble.height;
 			Tweener.addTween(speechBubble,{alpha:1,time:2,transition:"easeInOut"});
@@ -107,6 +113,7 @@ package classes
 		}
 		
 		public function closeSpeechBubble(evt:MouseEvent):void {
+			
 			
 			this.removeChild(speechBubble);
 		}
