@@ -49,15 +49,16 @@ package {
 			Background.addChild(startscreen);
 			
 			start_btn.x = 30;
-			start_btn.y = 30;
+			start_btn.y = 45;
 			start_btn.visible = false;
 			startscreen.addChild(start_btn);
 			start_btn.addEventListener(MouseEvent.CLICK, startMap);
 			
 			start_loader.x = 50;
-			start_loader.y = 50;
+			start_loader.y = 65;
 			start_loader.width = 50;
 			start_loader.height = 50;
+			start_loader.alpha = 0.5;
 			startscreen.addChild(start_loader);
 			
 			
@@ -127,7 +128,7 @@ package {
 			
 			this.addEventListener("Slider_Moved", generator);
 
-          	fieldArray["History"] = new theXML('people_population.xml', this);
+          	fieldArray["History"] = new theXML('History.xml', this);
            	fieldArray["Climate"] = new theXML('testtest.xml', this);
          	fieldArray["Evolution"] = new theXML('testtest.xml',this);
          	fieldArray["People"] = new theXML('people_population.xml', this);
