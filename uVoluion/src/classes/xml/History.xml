@@ -7,144 +7,184 @@
 			<description>2350 - 1700 v. Chr.</description>
 			<date year="-2300">2350 v. Chr.</date>
 			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population></population>
+			<coordinates>586, 330</coordinates>
+			<population>42500000</population>
 		</item>
 		<item>
 			<title>Indogermanen</title>
 			<description>2050 - 1700 v. Chr.</description>
 			<date year="-2050">2050 v. Chr.</date>
 			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population>9</population>
+			<coordinates>530, 290</coordinates>
+			<population>43750000</population>
 		</item>
 		<item>
 			<title>Altassyrisches Reich</title>
 			<description>1800 - 1375 v. Chr.</description>
 			<date year="-1800">1800 v. Chr.</date>
 			<text>...</text>
-			<coordinates>495, 279</coordinates>
-			<population>800</population>
+			<coordinates>581, 331</coordinates>
+			<population>45200000</population>
 		</item>
 		<item>
 			<title>Babylonisches Reich</title>
 			<description>1728 - 1531 v. Chr.</description>
 			<date year="-1728">1728 v. Chr.</date>
 			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population>1000</population>
+			<coordinates>578, 328</coordinates>
+			<population>45632000</population>
 		</item>
 		<item>
 			<title>Hethitenreich</title>
 			<description>2000 - 1350 v. Chr.</description>
 			<date year="-2000">2000 v. Chr.</date>
 			<text>...</text>
-			<coordinates>625, 338</coordinates>
-			<population>1000</population>
+			<coordinates>569, 321</coordinates>
+			<population>46046000</population>
 		</item>
 		<item>
 			<title>Kassitenreich</title>
 			<description>1530 - 1160 c. Chr.</description>
 			<date year="-1530">1530 v. Chr.</date>
 			<text>...</text>
-			<coordinates>733, 337</coordinates>
-			<population>13000</population>
+			<coordinates>578, 327</coordinates>
+			<population>46820000</population>
 		</item>
 		<item>
 			<title>Urartisches Reich</title>
 			<description>1400 - 714 v. Chr.</description>
 			<date year="-1400">1400 v. Chr.</date>
 			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population>13000</population>
+			<coordinates>588, 319</coordinates>
+			<population>48398000</population>
 		</item>
 		<item>
 			<title>Palästina, Israel</title>
 			<description>Ab 1500 v. Chr.</description>
 			<date year="-1500">1500 v. Chr.</date>
 			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population>15000</population>
+			<coordinates>568, 336</coordinates>
+			<population>48398000</population>
 		</item>
 		<item>
 			<title>Mederreich</title>
 			<description>Ab 1500 v. Chr.</description>
 			<date year="-1500">1500 v. Chr.</date>
 			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population>15000</population>
-		</item>
-		<item>
-			<title>König Nebukadnezar</title>
-			<description>...</description>
-			<date year="-1137">1137 v. Chr.</date>
-			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population>15000</population>
+			<coordinates>604, 333</coordinates>
+			<population>48626000</population>
 		</item>
 		<item>
 			<title>Phöniken</title>
 			<description>1000 - 774 c. Chr.</description>
 			<date year="-1000">1000 v. Chr.</date>
 			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population>15000</population>
+			<coordinates>561, 320</coordinates>
+			<population>50000000</population>
 		</item>
 		<item>
 			<title>Neurassyrisches Reich</title>
 			<description>883 - 612 v. Chr.</description>
 			<date year="-883">883 v. Chr.</date>
 			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population>15000</population>
+			<coordinates>581, 331</coordinates>
+			<population>54680000</population>
 		</item>
 		<item>
 			<title>Gründung Karthagos</title>
 			<description>814 v. Chr. wird Karthago gegründet.</description>
 			<date year="-814">814 v. Chr.</date>
 			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population>15000</population>
+			<coordinates>503, 328</coordinates>
+			<population>57440000</population>
 		</item>
 		<item>
 			<title>Perserreich</title>
 			<description>550 - 330 v. Chr.</description>
 			<date year="-550">550 v. Chr.</date>
 			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population>15000</population>
+			<coordinates>621, 340</coordinates>
+			<population>57440000</population>
 		</item>
 		<item>
-			<title>Das Mittelalter</title>
+			<title>Das Frühmittelalter</title>
 			<description>Beginn ca. ab 500 n. Chr.</description>
 			<date year="500">500 n. Chr.</date>
-			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population>15000</population>
+			<text>Die Völkerwanderung wird von der Forschung als Bindeglied zwischen Antike und Mittelalter angesehen und der Spätantike zugerechnet. Mit dem Ende der Völkerwanderung beginnt das Frühmittelalter. Etwa um 500 beginnt unter König Chlodwig I., der mit seinem Volk geschlossen zum Christentum übergetreten war, der Aufstieg des Fränkischen Reiches, das sehr bald auf den Überresten des Weströmischen Reiches und der Reiche der anderen germanischen Völker seine Vorherrschaft in West- und Mitteleuropa begründet.</text>
+			<coordinates>511, 282</coordinates>
+			<population>197500000</population>
 		</item>
 		<item>
 			<title>Das Hochmittelalter</title>
 			<description>Beginn ca. ab 900 n. Chr.</description>
 			<date year="900">900 n. Chr.</date>
-			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population>15000</population>
+			<text>Das Hochmittelalter ist die Blütezeit des Rittertums und des römisch-deutschen Kaiserreichs, des Lehnswesens und des Minnesangs. Man kann diese Ära auch als Zeitalter der Wiedererstarkung Europas bezeichnen, denn die europäischen Staaten entwickeln seit etwa 900 immer mehr Macht. Die Bevölkerung beginnt zu wachsen, Handwerk und Handel werden gefördert und auch die Bildung ist nun nicht länger ausschließlich ein Privileg des Klerus.</text>
+			<coordinates>511, 282</coordinates>
+			<population>226000000</population>
 		</item>
 		<item>
 			<title>Das Spätmittelalter</title>
 			<description>Von ca. 1250 bis 1450</description>
 			<date year="1250">1250</date>
-			<text>Endet 1450 mit der Erfindung des Buchdrucks</text>
-			<coordinates>530, 393</coordinates>
-			<population>15000</population>
+			<text>Das Spätmittelalter ist die Zeit des aufsteigenden Bürgertums der Städte und der Geldwirtschaft. Während das Byzantinische Reich nach der Eroberung Konstantinopels 1204 während des Vierten Kreuzzuges langsam aber sicher seinem Untergang entgegengeht, gewinnen die christlichen Staaten auf der iberischen Halbinsel nach dem Sieg bei Las Navas de Tolosa im Jahre 1212 immer weiter an Boden. Endet 1450 mit der Erfindung des Buchdrucks</text>
+			<coordinates>511, 282</coordinates>
+			<population>400000000</population>
 		</item>
 		<item>
 			<title>15. Jahrhundert</title>
 			<description>Übergang von Spätmittelalter zur frühen Neuzeit</description>
-			<date year="1500">1500</date>
-			<text>...</text>
-			<coordinates>530, 393</coordinates>
-			<population>15000</population>
+			<date year="1450">1450</date>
+			<text>Erfindung des Buchdrucks durch Gutenberg</text>
+			<coordinates>500, 284</coordinates>
+			<population>468500000</population>
+		</item>
+		<item>
+			<title>16. Jahrhundert</title>
+			<description>Schlacht bei Mohács</description>
+			<date year="1526">1526</date>
+			<text>In der Schlacht von Mohács erlitt das Heer des Vielvölker-Königreiches Ungarn unter König Ludwig II. und Pál Tomori gegen die Osmanen unter Süleyman I. am 29. August 1526 bei Mohács in Südungarn eine vernichtende Niederlage. Nach der Schlacht konnten die Türken wenig später große Teile Ungarns und Kroatiens einnehmen und in das Osmanische Reich eingliedern.</text>
+			<coordinates>521, 292</coordinates>
+			<population>519500000</population>
+		</item>
+		<item>
+			<title>17. Jahrhundert</title>
+			<description>Der Dreißigjährige Krieg (1618-1648)</description>
+			<date year="1618">1618</date>
+			<text>Auseinandersetzungen um die konfessionelle Orientierung der Territorien im Heiligen Römischen Reich und die vom Kaiserhaus betriebene Gegenreformation eskalierten 1618 im Ausbruch des Dreißigjährigen Kriegs. Er führte in Mitteleuropa zu einer politischen und wirtschaftlichen Katastrophe.</text>
+			<coordinates>501, 284</coordinates>
+			<population>572500000</population>
+		</item>
+		<item>
+			<title>18. Jahrhundert</title>
+			<description>Französische Revolution (1789-1799)</description>
+			<date year="1789">1789</date>
+			<text>Die Französische Revolution gehört zu den folgenreichsten Ereignissen der neuzeitlichen europäischen Geschichte. Die Abschaffung des damaligen feudalabsolutistischen Ständestaats sowie die Propagierung und Umsetzung grundlegender Werte und Ideen der Aufklärung als Ziele der Französischen Revolution – das betrifft insbesondere die Menschenrechte – waren mitursächlich für tiefgreifende macht- und gesellschaftspolitische Veränderungen in ganz Europa und haben das moderne Demokratieverständnis entscheidend mitbeeinflusst.</text>
+			<coordinates>491, 287</coordinates>
+			<population>790000000</population>
+		</item>
+		<item>
+			<title>19. Jahrhundert</title>
+			<description>Der Wiener Kongress (18. September 1814)</description>
+			<date year="1814">1814</date>
+			<text>Der Wiener Kongress (18. September 1814 bis 9. Juni 1815) legte in Europa die Grenzen neu fest und definierte neue Staaten. Anlass war die Niederlage von Napoléon Bonaparte, der zuvor die politische Landkarte des Kontinentes erheblich verändert hatte.</text>
+			<coordinates>508, 291</coordinates>
+			<population>1260000000</population>
+		</item>
+		<item>
+			<title>20. Jahrhundert</title>
+			<description>Machtergreifung Hitlers</description>
+			<date year="1933">1933</date>
+			<text>Am 30. Januar wird Adolf Hitler zum Reichskanzler ernannt. Von Beginn der Machtergreifung an beginnen die Nationalsozialisten mit der Ausschaltung der Demokratie und der Gleichschaltung des Reiches.</text>
+			<coordinates>500, 274</coordinates>
+			<population>4071666667</population>
+		</item>
+		<item>
+			<title>21. Jahrhundert</title>
+			<description>Barack Obama</description>
+			<date year="2009">2009</date>
+			<text>Barack Hussein Obama (* 4. August 1961 in Honolulu, Hawaii) ist seit dem 20. Januar 2009 der 44. Präsident der Vereinigten Staaten. Der Jurist und Politiker der Demokratischen Partei ist amerikanisch-kenianischer Abstammung und damit der erste Afroamerikaner in diesem Amt.</text>
+			<coordinates>291, 315</coordinates>
+			<population>6790000000</population>
 		</item>
 
 		
