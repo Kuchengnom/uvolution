@@ -11,7 +11,7 @@ package classes
 			super();
 			
 			oMap.x = 0;
-			oMap.y = 300;
+			oMap.y = 200;
 			this.addChild(oMap);
 			
 			
