@@ -94,6 +94,7 @@ package classes
 			
 			Pop_Ticker.population_txt.text = _myXML.myXML..population[_Position].text();
 			
+			
 			this.addChild(dotArray[_Position]);
 			dotArray[_Position].visible=true;
 			
@@ -104,7 +105,7 @@ package classes
 				
 			this.addChild(speechBubble);
 			speechBubble.alpha=0.5;
-			speechBubble.x=evt.target.x - (speechBubble.width/2);
+			speechBubble.x=evt.target.x - (speechBubble.width/2)+4;
 			speechBubble.y=evt.target.y - speechBubble.height;
 			Tweener.addTween(speechBubble,{alpha:1,time:2,transition:"easeInOut"});
 			_n = parseInt(evt.target.name);
@@ -124,7 +125,7 @@ package classes
 			trace("item anzahl: "+_myXML.myXML.Events.item.length());
 			
 			speechBubble.Headline.text = _myXML.myXML..title[_n].text();
-			speechBubble.Subline.text = _myXML.myXML..description[_n].text();
+			//speechBubble.Subline.text = _myXML.myXML..description[_n].text();
 			speechBubble.Text.text = _myXML.myXML..text[_n].text();
 			speechBubble.Date.text = _myXML.myXML..date[_n].text();
 			
