@@ -66,8 +66,8 @@ package classes
 			for(var j:int=0;j<_myXML.myXML.Events.item.length();j++) {
 				
 				var clip:MovieClip = new MovieClip();
-				clip.graphics.beginFill(0x996600,1);
-				clip.graphics.drawCircle(2,2,6);
+				clip.graphics.beginFill(0x696e7e,1);
+				clip.graphics.drawCircle(2,2,3);
 				clip.graphics.endFill();
 				clip.name = j.toString();
 				dotArray.push(clip);
