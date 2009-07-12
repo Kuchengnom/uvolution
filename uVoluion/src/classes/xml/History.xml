@@ -4,25 +4,17 @@
 <Events>
 		<item>
 			<title>Akkadisches Reich</title>
-			<description>2350 - 1700 v. Chr.</description>
+			<description>2350 - 2200 v. Chr.</description>
 			<date year="-2300">2350 v. Chr.</date>
-			<text>...</text>
+			<text>Akkad oder Akkade war eine Königsstadt in Mesopotamien, im späten 3. Jahrtausend v. Chr. wurde sie von Sargon von Akkad zum Zentrum seines Reiches erhoben. Man spricht daher vom "Reich von Akkad" bzw. "Akkadischen Großreich" und nennt die entsprechende Periode der mesopotamischen Geschichte die "Akkad-Zeit". Außerdem ist die in verschiedenen Sprachstufen und Dialekten bis ins 1. Jahrhundert n. Chr. belegte semitische Sprache Mesopotamiens nach der Stadt benannt: Akkadisch. Die Lage der Stadt war noch in neubabylonischer und persischer Zeit (6./5. Jh. v. Chr.) bekannt, wurde aber später vergessen und ist auch heute noch nicht bekannt.</text>
 			<coordinates>586, 330</coordinates>
 			<population>42500000</population>
-		</item>
-		<item>
-			<title>Indogermanen</title>
-			<description>2050 - 1700 v. Chr.</description>
-			<date year="-2050">2050 v. Chr.</date>
-			<text>...</text>
-			<coordinates>530, 290</coordinates>
-			<population>43750000</population>
 		</item>
 		<item>
 			<title>Altassyrisches Reich</title>
 			<description>1800 - 1375 v. Chr.</description>
 			<date year="-1800">1800 v. Chr.</date>
-			<text>...</text>
+			<text>Das assyrische Reich existierte etwa 1.000 Jahre, vom 18. Jahrhundert v. Chr. bis zu seiner Vernichtung um 609 v. Chr. Es ist von der Forschung in drei Perioden eingeteilt worden: das alt-, mittel- und neuassyrische Reich. Die Assyrer sind seit dem 2. Jahrtausend v. Chr. am mittleren Tigris nachgewiesen. Besonders bekannt ist die altassyrische Kultur durch die Auswertung der umfangreichen Keilschriftfunde von Kaneš. Assyrische Händler hatten in Anatolien ein Netz von Handelskolonien angelegt, um v.a. Metalle gegen Stoffe einzuhandeln.</text>
 			<coordinates>581, 331</coordinates>
 			<population>45200000</population>
 		</item>
@@ -30,7 +22,7 @@
 			<title>Babylonisches Reich</title>
 			<description>1728 - 1531 v. Chr.</description>
 			<date year="-1728">1728 v. Chr.</date>
-			<text>...</text>
+			<text>Babylon wurde 1894/1830 v. Chr. vom semitischen Stamm der Amoriter unter Sumu-abum gegründet. Er ließ um die Stadt die Mauer Imgur-Enlil errichten, die allerdings erst durch seinen Nachfolger Sumulael fertiggestellt wurde. Hammurapi, der als 6. König den Thron bestieg, verstand es, die politische Situation der Stadtstaaten auszunutzen und kontrollierte durch die schmalste Stelle zwischen Euphrat und Tigris die Handelswege. Schon bald stieg Babylon zur Metropole auf.</text>
 			<coordinates>578, 328</coordinates>
 			<population>45632000</population>
 		</item>
@@ -38,7 +30,7 @@
 			<title>Hethitenreich</title>
 			<description>2000 - 1350 v. Chr.</description>
 			<date year="-2000">2000 v. Chr.</date>
-			<text>...</text>
+			<text>Die Hethiter waren ein kleinasiatisches Volk des Altertums mit einer indoeuropäischen Sprache. Die Hethiter bildeten im 2. Jahrtausend v. Chr. ein Großreich. Ihre Hauptstadt war die meiste Zeit Hattuša, das heutige Boğazkale (bis 1960 Boğazköy genannt).</text>
 			<coordinates>569, 321</coordinates>
 			<population>46046000</population>
 		</item>
@@ -46,39 +38,23 @@
 			<title>Kassitenreich</title>
 			<description>1530 - 1160 c. Chr.</description>
 			<date year="-1530">1530 v. Chr.</date>
-			<text>...</text>
+			<text>Die Kassiten (kaššū) waren ein Volk im alten Mesopotamien, das zum ersten Mal im 9. Regierungsjahr des Šamšu-iluna (1741 v. Chr) erwähnt wird. Nach dem hethitischen Überfall auf Babylon 1595 (oder 1531 nach anderer Chronologie) v. Chr. erlangten sie um 1475 v. Chr. die Obermacht in Babylonien, das sie von da an bis zur Eroberung durch die Elamiter im Jahr 1155 v. Chr., also für einen Zeitraum von 400 bis 500 Jahren, beherrschten. Ihre Macht in Babylonien dauerte somit länger als die jeder anderen Dynastie dort.</text>
 			<coordinates>578, 327</coordinates>
 			<population>46820000</population>
 		</item>
 		<item>
-			<title>Urartisches Reich</title>
-			<description>1400 - 714 v. Chr.</description>
-			<date year="-1400">1400 v. Chr.</date>
-			<text>...</text>
-			<coordinates>588, 319</coordinates>
-			<population>48398000</population>
-		</item>
-		<item>
-			<title>Palästina, Israel</title>
-			<description>Ab 1500 v. Chr.</description>
-			<date year="-1500">1500 v. Chr.</date>
-			<text>...</text>
+			<title>Israel</title>
+			<description>Ab etwa 1211. Chr.</description>
+			<date year="-1211">1211 v. Chr.</date>
+			<text>Die älteste Quelle für das Wort „Israel“ ist die ägyptische Merenptah-Stele (heute im Ägyptischen Museum in Kairo). Sie beschreibt einen Feldzug gegen ein Volk Israel im Lande Kanaan und wird auf das Jahr 1211 v. Chr. datiert.</text>
 			<coordinates>568, 336</coordinates>
 			<population>48398000</population>
-		</item>
-		<item>
-			<title>Mederreich</title>
-			<description>Ab 1500 v. Chr.</description>
-			<date year="-1500">1500 v. Chr.</date>
-			<text>...</text>
-			<coordinates>604, 333</coordinates>
-			<population>48626000</population>
 		</item>
 		<item>
 			<title>Phöniken</title>
 			<description>1000 - 774 c. Chr.</description>
 			<date year="-1000">1000 v. Chr.</date>
-			<text>...</text>
+			<text>Die Phönizier waren ein semitisches Volk der Antike und lebten hauptsächlich im Bereich des jetzigen Libanons und Syriens an der Mittelmeerküste in voneinander unabhängigen Stadtstaaten. Die wichtigsten waren Akko, Arados, Byblos, Berytos, Sidon und Tyros, wobei Tyros zwischen 1000 und etwa 774 v. Chr. die führende Macht war.</text>
 			<coordinates>561, 320</coordinates>
 			<population>50000000</population>
 		</item>
@@ -86,7 +62,7 @@
 			<title>Neurassyrisches Reich</title>
 			<description>883 - 612 v. Chr.</description>
 			<date year="-883">883 v. Chr.</date>
-			<text>...</text>
+			<text>Die unmittelbaren Vorgänger von Aššur-nasir-apli II. (883–859 v. Chr.) machten Assyrien durch zahlreiche Feldzüge zur Vormacht im mesopotamischen Tiefland. In mehreren Schlachten brachte Aššur-nasir-apli II. die Routen zum Mittelmeer, die bereits unter Tiglat-pileser I. kurzfristig kontrolliert worden waren, unter assyrische Herrschaft.</text>
 			<coordinates>581, 331</coordinates>
 			<population>54680000</population>
 		</item>
@@ -94,7 +70,7 @@
 			<title>Gründung Karthagos</title>
 			<description>814 v. Chr. wird Karthago gegründet.</description>
 			<date year="-814">814 v. Chr.</date>
-			<text>...</text>
+			<text>Karthago wurde im 8. oder 9. Jahrhundert v. Chr. von phönizischen Siedlern aus Tyros gegründet. In Abgrenzung zur älteren Utica nannten sie die Stadt Qart-Hadašt, was „neue Stadt“ bedeutet. Die antike Überlieferung datiert die Gründung Karthagos auf das Jahr 814 v. Chr. Die ersten archäologischen Funde lassen sich auf die zweite Hälfte des 8. Jahrhunderts v. Chr. datieren, weshalb einige Historiker diese literarische Tradition ablehnen und die Gründung der Stadt in die Mitte des 8. Jahrhunderts v. Chr. datieren.</text>
 			<coordinates>503, 328</coordinates>
 			<population>57440000</population>
 		</item>
@@ -102,7 +78,7 @@
 			<title>Perserreich</title>
 			<description>550 - 330 v. Chr.</description>
 			<date year="-550">550 v. Chr.</date>
-			<text>...</text>
+			<text>Das Achämenidenreich (auch als Altpersisches Reich bezeichnet) war das erste persische Großreich, das sich vom späten 6. Jahrhundert v. Chr. bis ins späte 4. Jahrhundert v. Chr. über die Gebiete der heutigen Staaten Iran, Irak, Afghanistan, Usbekistan, Türkei, Zypern, Syrien, Libanon, Israel und Ägypten erstreckte.</text>
 			<coordinates>621, 340</coordinates>
 			<population>57440000</population>
 		</item>
