@@ -8,6 +8,7 @@
 			<cycle>Big Bang</cycle>
 			<era year="15 - 20 Billion years BC">Big Bang</era>
 			<text>Eine unendlich dichte Masse aus Wasserstoff explodiert. Die Teile fliegen auseinander und entfernen sich mit ungeheurer Geschwindigkeit vom Zentrum. Im Laufe von Milliarden von Jahren bilden die Materienteilchen Kugeln. Supanova: In den Sternen entstehen andere Elemente, dies vor allem, wenn eine Supernova, also ein riesiger glühender Stern, explodiert. Im Universum gibt es Milliarden von Supernoven. Sonnen: Im Zentrum einer Supernova bildet sich eine neuer Stern und aus Gaswolken am Rande bilden sich Planeten, die durch die Anziehungskraft in Umlaufbahnen um ihre Sonne einlenken. Unser Sonnensystem liegt am Rande der Milchstraße, einer Galaxis von ca. 10 Milliarden Sternen. Im Universum gibt es wiederum  Millionen von Galaxien. Bedingt durch den Urknall entfernen sich die Galaxien heute immer noch mit einer Geschwindigkeit von mehreren 100 000 km/Std. voneinander.</text>
+			<coordinates>85, 181</coordinates>
 		</item>
 		<item>
 			<title>4 – 5 Billion years BC</title>
@@ -15,93 +16,108 @@
 			<era year="4 - 5 Billion years BC">Earth</era>
 			<text>Um unsere Sonne kreisen glühende Feuerbälle, die im Laufe der folgenden Milliarden Jahren erkalten. Am nächsten zur Sonne kreist Merkur, dann Venus, Erde, Mars, Jupiter, Saturn, Uranus, Neptun und am weitesten entfernt ist Pluto. 
 Mit der Zeit nahm die Masse der Erde zu und damit wuchs auch die Gravitation (Erdanziehungskraft). Durch die Komprimierung der Masse erhitzte sich das Zentrum der Kugel und begann zu schmelzen. Wenn der Druck im Inneren zu groß wird, entlädt er sich durch einen Vulkanausbruch.Die Erdkruste erkaltet und verfestigt sich. Kondensiertes Wasser sammelt sich in Ozeanen. Meere und Landmassen entstehen.</text>
+			<coordinates>275, 181</coordinates>
 		</item>
 		<item>
 			<title>4 Billion years BC</title>
 			<cycle>Archaikum</cycle>
 			<era year="4 Billion years BC">Präkambrium</era>
 			<text>Die Erdkruste erstarrt langsam. Erste Lebensspuren (Bakterien) Entwicklung der Atmosphäre.</text>
+			<coordinates>483, 181</coordinates>
 		</item>
 		<item>
 			<title>2.7 Billion years BC</title>
 			<cycle>Proterozoikum</cycle>
 			<era year="2.7 Billion years BC">Präkambrium</era>
 			<text>Die größte Fläche auf der Erde wird bedeckt von Wasser. Aber es ragen auch, oft durch Vulkanausbrüche, große Inseln heraus. Erste Urtierchen und Einzeller tummeln sich. Durch Zellteilung entstehen Mehrzeller. Das Klima ist feucht und kühl. Die ersten Pflanzen sind Algen.</text>
+			<coordinates>743, 181</coordinates>
 		</item>
 		<item>
 			<title>570 Million years BC</title>
 			<cycle>Kambrium</cycle>
 			<era year="570 Million years BC">Paläozoikum</era>
 			<text>Die ersten wirbellosen Wassertierchen beleben die Erde. Die Kontinentalschollen bilden sich. Es herrscht ein warmes und trockenes Klima.</text>
+			<coordinates>1403, 181</coordinates>
 		</item>
 		<item>
 			<title>500 Million years BC</title>
 			<cycle>Ordivizium</cycle>
 			<era year="500 Million years BC">Paläozoikum</era>
 			<text>Erste fischförmige Wirbeltiere. Das Wasser zieht sich allmählich zurück. Trockene Landmassen entstehen. Es herrscht ein warmes und feuchtes Klima.</text>
+			<coordinates>1863, 181</coordinates>
 		</item>
 		<item>
 			<title>440 Million years BC</title>
 			<cycle>Silur</cycle>
 			<era year="440 Million years BC">Paläozoikum</era>
 			<text>Die ersten Fische, Muscheln, Krebse tummeln sich. Pflanzen weiten sich auf dem Festland aus. Es herrscht meist ein warmes und trockenes Klima.</text>
+			<coordinates>2383, 181</coordinates>
 		</item>
 		<item>
 			<title>400 Million years BC</title>
 			<cycle>Devon</cycle>
 			<era year="400 Million years BC">Paläozoikum</era>
 			<text>Immer mehr Fischarten bevölkern die Meere, dazu kommen noch erste Amphibien und Insekten. Es herrscht meist ein warmes und trockenes Klima.</text>
+			<coordinates>2833, 181</coordinates>
 		</item>
 		<item>
 			<title>360 Million years BC</title>
 			<cycle>Karbon</cycle>
 			<era year="360 Million years BC">Paläozoikum</era>
 			<text>Es entsteht ein Riesenkontinent. Reptilien und weitere Insekten kommen zum Tierreich dazu. Es entstehen Moore und die ersten Nadelbäume wachsen. Die Steinkohlenbildung beginnt. Es herrscht meist ein warmes und feuchtes Klima.</text>
+			<coordinates>3353, 181</coordinates>
 		</item>
 		<item>
 			<title>290 Million years BC</title>
 			<cycle>Perm</cycle>
 			<era year="290 Million years BC">Paläozoikum</era>
 			<text>Raubechsen bevölkern die Erde. Einzelne Wüsten entstehen, da das Klima nun heiß und trocken ist.</text>
+			<coordinates>4473, 181</coordinates>
 		</item>
 		<item>
 			<title>250 Million years BC</title>
 			<cycle>Trias</cycle>
 			<era year="250 Million years BC">Mesozoikum</era>
 			<text>Es gibt die ersten Säugetiere und es ist die Zeit der Dinosauriere. Der Riesenkontinent driftet  langsam auseinander. Es herrscht meist ein warmes und trockenes Klima.</text>
+			<coordinates>4887, 181</coordinates>
 		</item>
 		<item>
 			<title>210 Million years BC</title>
 			<cycle>Jura</cycle>
 			<era year="210 Million years BC">Mesozoikum</era>
 			<text>Die ersten Vögel erobern den Luftraum. Immer mehr Tierarten bilden sich. Es herrscht meist ein warmes und trockenes Klima.</text>
+			<coordinates>5267, 181</coordinates>
 		</item>
 		<item>
 			<title>140 Million years BC</title>
 			<cycle>Kreide</cycle>
 			<era year="140 Million years BC">Mesozoikum</era>
 			<text>Das Festland bekommt Farbtupfer durch Blütenpflanzen. Außer den Dinosaurieren sterben weitere Tierarten aus. Es herrscht überwiegend ein feuchtes und kühles Klima.</text>
+			<coordinates>5651, 181</coordinates>
 		</item>
 		<item>
 			<title>65 Million years BC</title>
 			<cycle>Tertiär</cycle>
 			<era year="65 Million years BC">Känozoikum</era>
 			<text>Erste menschenähnliche Wesen, die Prähominiden treiben sich auf dem afrikanischen Kontinent herum. Weitere Säugetierarten entstehen. Das Festland ist überzogen von Moorlandschaften und Urwäldern. Es setzt die Braunkohlenbildung ein.</text>
+			<coordinates>6079, 181</coordinates>
 		</item>
 		<item>
 			<title>3 Million years BC</title>
 			<cycle>Quartiär</cycle>
 			<era year="3 Million years BC">Känozoikum</era>
 			<text>Entwicklung des Menschen und Ausbreitung über die ganze Erde. Die heutige Tier- und Pflanzenwelt bildet sich. Das Klima wechselt ständig (Kalt- und Warmzeiten). Gletscher und Flüsse gestalten die Landschaft.</text>
+			<coordinates>6599, 181</coordinates>
 		</item>
 		<item>
 			<title>600.000 - 10.000 years BC</title>
 			<cycle>Pleistozän - Würm</cycle>
 			<era year="600.000 - 10.000 years BC">Pleistozän</era>
 			<text>In der Erdgeschichte gab es immer wieder kühlere Perioden. Mögliche Gründe sind die wechselnde Neigung der Erdachse (ca. alle 40 000 Jahre), aber auch Meteoriteneinschläge und Kontinentaldriftungen. Die Eiszeiten in den letzten 2,5 Mio. Jahren sind für uns interessant, weil sie auch das Leben verschiedener Menschengruppen beeinflussten, (die Eiszeiten vor 600 000 - 10 000 Jahren). Diese Periode wird Pleistozän genannt. Zwischen den Eiszeiten liegen Perioden eines ausgeglichenen, subtropisch feucht-warmen Klimas. Benannt werden die Perioden nach den Flüssen, bis zu denen jeweils das Gletschereis reichte.
-In der Eiszeit lagen die durchschnittlichen Temperaturen ca. 7-15° unter den Temperaturen heute. Dies genügte, dass die Gletscher weit ins Alpenvorland reichten und auch große Teile Norddeutschlands unter einer Eisschicht lagen.Sind heute ca. 10% der Eroberfläche mit Eis bedeckt, so waren es in der Mitte der Eiszeiten über 30%. 
+In der Eiszeit lagen die durchschnittlichen Temperaturen ca. 7-15° unter den Temperaturen heute. Dies genügte, dass die Gletscher weit ins Alpenvorland reichten und auch große Teile Nordtextlands unter einer Eisschicht lagen.Sind heute ca. 10% der Eroberfläche mit Eis bedeckt, so waren es in der Mitte der Eiszeiten über 30%. 
 Verschiedene Menschengruppen: z.B. Neandertaler, Steinheimmensch, Pekingmensch, Javamensch usw. (genannt nach ihren Fundorten)
 Tiere: Mammut, Rentier, Wolf, Nashorn, Wildschwein, Ur, Hirsch, Säbeltiger usw.</text>
 		</item>
+		<coordinates>6599, 181</coordinates>
 </Events>
 </TimelineEvents>
