@@ -56,6 +56,8 @@ package {
 		private var fieldArray:Array = new Array();
 		private var fArray:Array = new Array();
 		
+		private var Haasi:Boolean = false;
+		
 		public function uVoluion():void
 		{
 
@@ -262,6 +264,7 @@ package {
 	            		Map.alpha=1;
 	            		prehisMap.visible = false;
 	            		colorBG(0);
+	            		Haasi = false;
 	            		fArray["History"].getCoords();
 	            		fArray["History"].generateDots();
 	            		slider.contentLength = fArray["History"].lengthXML;
@@ -273,6 +276,7 @@ package {
 	            		Map.alpha=1;
 	            		prehisMap.visible = false;
 	            		colorBG(1);
+	            		Haasi = false;
 	            		fArray["Climate"].getCoords();
 	            		fArray["Climate"].generateDots();
 	            		slider.contentLength = fArray["Climate"].lengthXML;
@@ -284,6 +288,7 @@ package {
 	            		Map.alpha=0;
 	            		prehisMap.visible = true;
 	            		colorBG(2);
+	            		Haasi = true;
 	            		fArray["Evolution"].getCoords();
 	            		fArray["Evolution"].generateDots();
 	            		slider.contentLength = fArray["Evolution"].lengthXML;
@@ -295,6 +300,7 @@ package {
 	            		Map.alpha=1;
 	            		prehisMap.visible = false;
 	            		colorBG(3);
+	            		Haasi = false;
 	            		fArray["People"].getCoords();
 	            		fArray["People"].generateDots();
 	            		slider.contentLength = fArray["People"].lengthXML;
@@ -318,7 +324,10 @@ package {
 				fArray[currentField].position = slider._position;
 				slider.year = fArray[currentField].year;
 				fArray[currentField].showDot();
-			
+				if (Haasi == true)
+				{
+					prehisMap.x = (-1)*slider._position*100;
+				}
 			}
 			else {
 				
