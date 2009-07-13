@@ -127,7 +127,7 @@ package {
 			//########################## M E N U ############################
 			
 			var format:TextFormat = new TextFormat();
-            format.color = 0x000000;
+            format.color = 0x333333;
             format.size = 24;
             format.font = 'HelveticaNeueLT Std Lt';
             
@@ -135,7 +135,9 @@ package {
 			Geschichte.y=20;
 			Geschichte.text = "Geschichte";
 			Geschichte.height=30;
-			Geschichte.width = 110;
+			Geschichte.width = 115;
+			Geschichte.background=true;
+			Geschichte.backgroundColor=0xFFFFFF;
 			Geschichte.selectable=false;
 			Geschichte.setTextFormat(format);
 			Geschichte.addEventListener(MouseEvent.CLICK, startMap);
@@ -145,25 +147,34 @@ package {
 			Klima.y = 20;
 			Klima.text = "Klima";
 			Klima.height=30;
+			Klima.width=65;
+			Klima.background=true;
+			Klima.backgroundColor=0xFFFFFF;
 			Klima.selectable=false;
 			Klima.setTextFormat(format);
 			Klima.addEventListener(MouseEvent.CLICK, startMap);
 			Panel.addChild(Klima);
 			
-			Evolution.x = 60 + Geschichte.width + Klima.width;
+			Evolution.x = 100 + Geschichte.width + Klima.width;
 			Evolution.y = 20;
 			Evolution.selectable=false;
 			Evolution.text = "Evolution";
 			Evolution.height=30;
+			Evolution.width = 100;
+			Evolution.background=true;
+			Evolution.backgroundColor=0xFFFFFF;
 			Evolution.setTextFormat(format);
 			Evolution.addEventListener(MouseEvent.CLICK, startMap);
 			Panel.addChild(Evolution);
 			
-			Voelker.x = 80 + Geschichte.width + Klima.width + Evolution.width;
+			Voelker.x = 140 + Geschichte.width + Klima.width + Evolution.width;
 			Voelker.y = 20;
 			Voelker.selectable=false;
 			Voelker.text = "Völker";
 			Voelker.height=30;
+			Voelker.width = 75;
+			Voelker.background=true;
+			Voelker.backgroundColor=0xFFFFFF;
 			Voelker.setTextFormat(format);
 			Voelker.addEventListener(MouseEvent.CLICK, startMap);
 			Panel.addChild(Voelker);
