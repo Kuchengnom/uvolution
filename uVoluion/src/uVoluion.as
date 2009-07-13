@@ -11,7 +11,7 @@ package {
 	
 	
 
-	[SWF(width="1024", height = "768", backgroundColor = "0xFFFFFF", frameRate = "24")]
+	[SWF(width="1024", height = "768", backgroundColor = "0x000000", frameRate = "24")]
 	
 	public class uVoluion extends Sprite
 	{	

@@ -6,10 +6,14 @@ package classes
 	import flash.display.Sprite;
 	import flash.events.MouseEvent;
 	
-	
+	import flash.text.*;
 	
 	public class Field extends Sprite
 	{
+		[Embed(source='HelveticaNeueLTStd-Hv.otf', fontFamily = 'HelveticaHeavy')]
+        private var HeavyHelvetica:Class;
+        [Embed(source='HelveticaNeueLTStd-Lt.otf', fontFamily = 'HelveticaLite')]
+        private var LiteHelvetica:Class;
 		
 		public var _myXML:theXML;
 		public var _lengthXML:int;
@@ -32,8 +36,24 @@ package classes
 		public function Field()
 		{	
 			
+			var format:TextFormat = new TextFormat();
+            format.color = 0x000000;
+            format.size = 15;
+            format.font = 'HelveticaHeavy';
+            
+            var format2:TextFormat = new TextFormat();
+            format2.color = 0x000000;
+            format2.size = 12;
+            format2.font = 'HelveticaLite';
+			
 			speechBubble = new Screen_Speechbaloon;
 			speechBubble.mouseChildren = true;
+			speechBubble.Headline.embedFonts = true; 
+			speechBubble.Headline.antiAliasType = AntiAliasType.ADVANCED; 
+			speechBubble.Headline.defaultTextFormat = format;
+			speechBubble.Date.embedFonts = true;
+			speechBubble.Date.antiAliasType = AntiAliasType.ADVANCED; 
+			speechBubble.Date.defaultTextFormat = format2;
 			speechBubble.alpha=0.5;
 			speechBubble.exit_btn.addEventListener(MouseEvent.CLICK, closeSpeechBubble);
 			
