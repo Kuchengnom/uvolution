@@ -21,6 +21,9 @@ package {
 	public class uVoluion extends Sprite
 	{	
 		
+		[Embed(source='classes/HelveticaNeueLTStd-Lt.otf', fontFamily = 'HelveticaLite')]
+        private var LiteHelvetica:Class;
+		
 		private var startscreen:Screen_Startpanel = new Screen_Startpanel;
 		private var start_btn:Screen_Go_btn = new Screen_Go_btn;
 		private var start_loader:Screen_Wait_mc = new Screen_Wait_mc;
@@ -135,19 +138,20 @@ package {
 			var format:TextFormat = new TextFormat();
             format.color = 0x333333;
             format.size = 24;
-            format.font = 'HelveticaNeueLT Std Lt';
+            format.font = 'HelveticaLite';
             
 			Geschichte.x=20;
 			Geschichte.y=20;
 			Geschichte.text = "Geschichte";
 			Geschichte.height=30;
 			Geschichte.width = 115;
-			Geschichte.background=true;
-			Geschichte.backgroundColor=0xFFFFFF;
+			Geschichte.background=false;
+			Geschichte.backgroundColor=0x9fad93;
 			Geschichte.selectable=false;
 			Geschichte.setTextFormat(format);
 			Geschichte.addEventListener(MouseEvent.CLICK, startMap);
 			Geschichte.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
+			Geschichte.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
 			Panel.addChild(Geschichte);
 			
 			Klima.x = 60 + Geschichte.width;
@@ -155,12 +159,13 @@ package {
 			Klima.text = "Klima";
 			Klima.height=30;
 			Klima.width=65;
-			Klima.background=true;
-			Klima.backgroundColor=0xFFFFFF;
+			Klima.background=false;
+			Klima.backgroundColor=0x708d9f;
 			Klima.selectable=false;
 			Klima.setTextFormat(format);
 			Klima.addEventListener(MouseEvent.CLICK, startMap);
 			Klima.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
+			Klima.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
 			Panel.addChild(Klima);
 			
 			Evolution.x = 100 + Geschichte.width + Klima.width;
@@ -169,11 +174,12 @@ package {
 			Evolution.text = "Evolution";
 			Evolution.height=30;
 			Evolution.width = 100;
-			Evolution.background=true;
-			Evolution.backgroundColor=0xFFFFFF;
+			Evolution.background=false;
+			Evolution.backgroundColor=0xDDDDDD;
 			Evolution.setTextFormat(format);
 			Evolution.addEventListener(MouseEvent.CLICK, startMap);
 			Evolution.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
+			Evolution.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
 			Panel.addChild(Evolution);
 			
 			Voelker.x = 140 + Geschichte.width + Klima.width + Evolution.width;
@@ -182,11 +188,12 @@ package {
 			Voelker.text = "Völker";
 			Voelker.height=30;
 			Voelker.width = 75;
-			Voelker.background=true;
-			Voelker.backgroundColor=0xFFFFFF;
+			Voelker.background=false;
+			Voelker.backgroundColor=0xb18e5c;
 			Voelker.setTextFormat(format);
 			Voelker.addEventListener(MouseEvent.CLICK, startMap);
 			Voelker.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
+			Voelker.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
 			Panel.addChild(Voelker);
 			
 			//##############################################################
@@ -375,7 +382,11 @@ package {
 		}
 		private function hoverTxt(e:MouseEvent):void
 		{
-			e.target.alpha = 0.8;
+			e.target.background=true;
+		}
+		private function UNhoverTxt(e:MouseEvent):void
+		{
+			e.target.background=false;
 		}
 	}
 }
