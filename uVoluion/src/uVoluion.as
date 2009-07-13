@@ -361,13 +361,13 @@ package {
 		{
 			switch (i)
 			{
-				case 0: colorableBG.transform.colorTransform = new ColorTransform(0,0,0,1,0,255,0,0);
+				case 0: colorableBG.transform.colorTransform = new ColorTransform(0,0,0,1,159,173,147,0);
 					break;
-				case 1: colorableBG.transform.colorTransform = new ColorTransform(0,0,0,1,0,0,255,0);
+				case 1: colorableBG.transform.colorTransform = new ColorTransform(0,0,0,1,104,134,153,0);
 					break;
 				case 2: colorableBG.transform.colorTransform = new ColorTransform(0,0,0,1,0,0,0,0);
 					break;
-				case 3: colorableBG.transform.colorTransform = new ColorTransform(0,0,0,1,255,0,0,0);
+				case 3: colorableBG.transform.colorTransform = new ColorTransform(0,0,0,1,177,142,92,0);
 					break;
 				default: trace('need number in colorBG(i); function');
 					break
