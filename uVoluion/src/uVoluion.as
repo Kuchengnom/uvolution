@@ -3,15 +3,18 @@ package {
 	import classes.*;
 	
 	import flash.display.Sprite;
+	import flash.display.MovieClip;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.events.TimerEvent;
 	import flash.text.TextField;
+	import flash.text.TextFieldType;
 	import flash.utils.*;
 	
-	
+
 
 	[SWF(width="1024", height = "768", backgroundColor = "0x000000", frameRate = "24")]
+
 	
 	public class uVoluion extends Sprite
 	{	
@@ -23,6 +26,13 @@ package {
 		private var Background:Screen_Background = new Screen_Background;
 		private var Map:Screen_Map = new Screen_Map;
 		private var Search_btn:Screen_Search_btn = new Screen_Search_btn;
+		
+		private var SearchPanel:Screen_Search_Panel = new Screen_Search_Panel;
+		private var SearchInput:Screen_Search_TextInput = new Screen_Search_TextInput;
+		private var SearchButton:Screen_Go_btn = new Screen_Go_btn;
+		private var SearchExit:Screen_Speechbaloon_Exit_btn = new Screen_Speechbaloon_Exit_btn;
+		private var SearchInputText:TextField = new TextField;
+		private var clip:MovieClip = new MovieClip();
 		
 		private var Geschichte:TextField = new TextField;
 		private var Klima:TextField = new TextField;
@@ -70,15 +80,46 @@ package {
 			Panel.mouseChildren = false;
 			Panel.alpha=0.3;
 			Background.addChild(Panel);
+
 			
 			Search_btn.x = 930;
 			Search_btn.y = 20;
 			Panel.addChild(Search_btn);
+			Search_btn.addEventListener(MouseEvent.CLICK, startSearch);
 			
-			Map.addEventListener(MouseEvent.CLICK, generator);
+	
 		
 			slider = new Slider(this);
 			Panel.addChild(slider);
+			
+
+			SearchPanel.x = 512 - (SearchPanel.width/2);
+			SearchPanel.y = ((Background.height - Panel.height)/2) - (SearchPanel.height/2);
+			Map.addChild(SearchPanel);
+			
+			clip.graphics.beginFill(0xb4b4b4,1);
+			clip.graphics.drawRect(SearchPanel.x,(SearchPanel.y+SearchPanel.height),SearchPanel.width,25);
+			clip.graphics.endFill();
+			Map.addChild(clip);
+			
+			SearchInput.x = 60;
+			SearchInput.y = 135;
+			SearchPanel.addChild(SearchInput);
+			
+			SearchInputText.text="";
+			SearchInputText.type = TextFieldType.INPUT;
+			SearchInputText.width = SearchInput.width;
+			SearchInput.addChild(SearchInputText);
+			
+			SearchButton.x = 90 + SearchInput.width;
+			SearchButton.y = 135;
+			SearchPanel.addChild(SearchButton);
+			SearchButton.addEventListener(MouseEvent.CLICK, Search);
+			
+			SearchExit.x = SearchPanel.width - 50;
+			SearchExit.y = 10;
+			SearchPanel.addChild(SearchExit);
+			SearchExit.addEventListener(MouseEvent.CLICK, closeSearch);
 			
 
 			
@@ -129,7 +170,7 @@ package {
 			this.addEventListener("Slider_Moved", generator);
 
           	fieldArray["History"] = new theXML('History.xml', this);
-           	fieldArray["Climate"] = new theXML('testtest.xml', this);
+           	fieldArray["Climate"] = new theXML('Climate.xml', this);
          	fieldArray["Evolution"] = new theXML('testtest.xml',this);
          	fieldArray["People"] = new theXML('people_population.xml', this);
            
@@ -255,6 +296,22 @@ package {
 				start_loader.visible=false;
 				start_btn.visible=true;
 			}	
+		}
+		
+		private function startSearch(evt:MouseEvent):void {
+			
+			Map.addChild(SearchPanel);	
+		}
+		
+		private function Search(evt:MouseEvent):void {
+			
+			clip.height = 50;
+	
+		}
+		
+		private function closeSearch(evt:MouseEvent):void {
+			Map.removeChild(SearchPanel);
+			SearchInputText.text="";
 		}
 
 	}
