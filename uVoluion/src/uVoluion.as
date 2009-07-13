@@ -2,13 +2,14 @@ package {
 	
 	import classes.*;
 	
-	import flash.display.Sprite;
 	import flash.display.MovieClip;
+	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.events.TimerEvent;
 	import flash.text.TextField;
 	import flash.text.TextFieldType;
+	import flash.text.TextFormat;
 	import flash.utils.*;
 	
 
@@ -95,12 +96,12 @@ package {
 
 			SearchPanel.x = 512 - (SearchPanel.width/2);
 			SearchPanel.y = ((Background.height - Panel.height)/2) - (SearchPanel.height/2);
-			Map.addChild(SearchPanel);
+			//Map.addChild(SearchPanel);
 			
 			clip.graphics.beginFill(0xb4b4b4,1);
 			clip.graphics.drawRect(SearchPanel.x,(SearchPanel.y+SearchPanel.height),SearchPanel.width,25);
 			clip.graphics.endFill();
-			Map.addChild(clip);
+			//Map.addChild(clip);
 			
 			SearchInput.x = 60;
 			SearchInput.y = 135;
@@ -125,35 +126,45 @@ package {
 			
 			//########################## M E N U ############################
 			
+			var format:TextFormat = new TextFormat();
+            format.color = 0x000000;
+            format.size = 24;
+            format.font = 'HelveticaNeueLT Std Lt';
+            
 			Geschichte.x=20;
 			Geschichte.y=20;
 			Geschichte.text = "Geschichte";
-			Geschichte.height=20;
+			Geschichte.height=30;
+			Geschichte.width = 110;
 			Geschichte.selectable=false;
+			Geschichte.setTextFormat(format);
 			Geschichte.addEventListener(MouseEvent.CLICK, startMap);
 			Panel.addChild(Geschichte);
 			
-			Klima.x = 20 + Geschichte.width;
+			Klima.x = 60 + Geschichte.width;
 			Klima.y = 20;
 			Klima.text = "Klima";
-			Klima.height=20;
+			Klima.height=30;
 			Klima.selectable=false;
+			Klima.setTextFormat(format);
 			Klima.addEventListener(MouseEvent.CLICK, startMap);
 			Panel.addChild(Klima);
 			
-			Evolution.x = 20 + Geschichte.width + Klima.width;
+			Evolution.x = 60 + Geschichte.width + Klima.width;
 			Evolution.y = 20;
 			Evolution.selectable=false;
 			Evolution.text = "Evolution";
-			Evolution.height=20;
+			Evolution.height=30;
+			Evolution.setTextFormat(format);
 			Evolution.addEventListener(MouseEvent.CLICK, startMap);
 			Panel.addChild(Evolution);
 			
-			Voelker.x = 20 + Geschichte.width + Klima.width + Evolution.width;
+			Voelker.x = 80 + Geschichte.width + Klima.width + Evolution.width;
 			Voelker.y = 20;
 			Voelker.selectable=false;
 			Voelker.text = "Völker";
-			Voelker.height=20;
+			Voelker.height=30;
+			Voelker.setTextFormat(format);
 			Voelker.addEventListener(MouseEvent.CLICK, startMap);
 			Panel.addChild(Voelker);
 			
