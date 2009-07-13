@@ -7,6 +7,7 @@ package {
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.events.TimerEvent;
+	import flash.geom.ColorTransform;
 	import flash.text.TextField;
 	import flash.text.TextFieldType;
 	import flash.text.TextFormat;
@@ -26,6 +27,8 @@ package {
 		private var Panel:Screen_Panel = new Screen_Panel;
 		private var Background:Screen_Background = new Screen_Background;
 		private var Map:Screen_Map = new Screen_Map;
+		private var prehisMap:Screen_Map_PreHis = new Screen_Map_PreHis;
+		private var colorableBG:Screen_Background = new Screen_Background;
 		private var Search_btn:Screen_Search_btn = new Screen_Search_btn;
 		
 		private var SearchPanel:Screen_Search_Panel = new Screen_Search_Panel;
@@ -54,6 +57,7 @@ package {
 		{
 
 			this.addChild(Background);
+			Background.addChild(colorableBG);
 			
 			startscreen.x = 512 - (startscreen.width/2);
 			startscreen.y = ((Background.height - Panel.height)/2) - (startscreen.height/2);
@@ -72,7 +76,9 @@ package {
 			start_loader.alpha = 0.5;
 			startscreen.addChild(start_loader);
 			
-			
+			prehisMap.visible=false;
+			prehisMap.y = 170;
+			Background.addChild(prehisMap);
 			Map.visible=false;
 			Background.addChild(Map);
 			
@@ -141,6 +147,7 @@ package {
 			Geschichte.selectable=false;
 			Geschichte.setTextFormat(format);
 			Geschichte.addEventListener(MouseEvent.CLICK, startMap);
+			Geschichte.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
 			Panel.addChild(Geschichte);
 			
 			Klima.x = 60 + Geschichte.width;
@@ -153,6 +160,7 @@ package {
 			Klima.selectable=false;
 			Klima.setTextFormat(format);
 			Klima.addEventListener(MouseEvent.CLICK, startMap);
+			Klima.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
 			Panel.addChild(Klima);
 			
 			Evolution.x = 100 + Geschichte.width + Klima.width;
@@ -165,6 +173,7 @@ package {
 			Evolution.backgroundColor=0xFFFFFF;
 			Evolution.setTextFormat(format);
 			Evolution.addEventListener(MouseEvent.CLICK, startMap);
+			Evolution.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
 			Panel.addChild(Evolution);
 			
 			Voelker.x = 140 + Geschichte.width + Klima.width + Evolution.width;
@@ -177,6 +186,7 @@ package {
 			Voelker.backgroundColor=0xFFFFFF;
 			Voelker.setTextFormat(format);
 			Voelker.addEventListener(MouseEvent.CLICK, startMap);
+			Voelker.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
 			Panel.addChild(Voelker);
 			
 			//##############################################################
@@ -242,6 +252,9 @@ package {
 	        	{
 	        		case "Geschichte":
 	            		trace("new History");
+	            		Map.alpha=1;
+	            		prehisMap.visible = false;
+	            		colorBG(0);
 	            		fArray["History"].getCoords();
 	            		fArray["History"].generateDots();
 	            		slider.contentLength = fArray["History"].lengthXML;
@@ -250,6 +263,9 @@ package {
 	            		break;
 	            	case "Klima":
 	            		trace("new Climate");
+	            		Map.alpha=1;
+	            		prehisMap.visible = false;
+	            		colorBG(1);
 	            		fArray["Climate"].getCoords();
 	            		fArray["Climate"].generateDots();
 	            		slider.contentLength = fArray["Climate"].lengthXML;
@@ -258,6 +274,9 @@ package {
 	            		break;
 	            	case "Evolution":
 	            		trace("new Evolution");
+	            		Map.alpha=0;
+	            		prehisMap.visible = true;
+	            		colorBG(2);
 	            		fArray["Evolution"].getCoords();
 	            		fArray["Evolution"].generateDots();
 	            		slider.contentLength = fArray["Evolution"].lengthXML;
@@ -266,6 +285,9 @@ package {
 	            		break;
 	            	case "Völker":
 	            		trace("new People");
+	            		Map.alpha=1;
+	            		prehisMap.visible = false;
+	            		colorBG(3);
 	            		fArray["People"].getCoords();
 	            		fArray["People"].generateDots();
 	            		slider.contentLength = fArray["People"].lengthXML;
@@ -335,6 +357,25 @@ package {
 			Map.removeChild(SearchPanel);
 			SearchInputText.text="";
 		}
-
+		private function colorBG(i:int = 2):void //2 evolution schwarz
+		{
+			switch (i)
+			{
+				case 0: colorableBG.transform.colorTransform = new ColorTransform(0,0,0,1,0,255,0,0);
+					break;
+				case 1: colorableBG.transform.colorTransform = new ColorTransform(0,0,0,1,0,0,255,0);
+					break;
+				case 2: colorableBG.transform.colorTransform = new ColorTransform(0,0,0,1,0,0,0,0);
+					break;
+				case 3: colorableBG.transform.colorTransform = new ColorTransform(0,0,0,1,255,0,0,0);
+					break;
+				default: trace('need number in colorBG(i); function');
+					break
+			}
+		}
+		private function hoverTxt(e:MouseEvent):void
+		{
+			e.target.alpha = 0.8;
+		}
 	}
 }
