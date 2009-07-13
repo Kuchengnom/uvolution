@@ -211,8 +211,8 @@ package {
 			this.addEventListener("Slider_Moved", generator);
 
           	fieldArray["History"] = new theXML('History.xml', this);
-           	fieldArray["Climate"] = new theXML('Climate.xml', this);
-         	fieldArray["Evolution"] = new theXML('testtest.xml',this);
+           	fieldArray["Climate"] = new theXML('climateKopie.xml', this);
+         	fieldArray["Evolution"] = new theXML('PreHistorics.xml',this);
          	fieldArray["People"] = new theXML('people_population.xml', this);
            
           	fArray["History"] = new History();

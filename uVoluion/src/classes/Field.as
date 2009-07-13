@@ -146,7 +146,7 @@ package classes
 			
 			speechBubble.Headline.text = _myXML.myXML..title[_n].text();
 			//speechBubble.Subline.text = _myXML.myXML..description[_n].text();
-			speechBubble.Text.text = _myXML.myXML..text[_n].text();
+			speechBubble.Text.text = _myXML.myXML..description[_n].text() + '\n' + _myXML.myXML..text[_n].text();
 			speechBubble.Date.text = _myXML.myXML..date[_n].text();
 			
 		}

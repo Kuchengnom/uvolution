@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TimelineEvents>
+<TimelineEventsTyp type="History">History</TimelineEventsTyp><!-- im type steht nur das was wir accessen, zwischen den <> was dargestellt wird.-->
+<Events>
+		<item>
+			<title>Evolution</title><!-- Epoche-->
+			<description>Evolution des Menschen</description><!-- Titel für das Segment-->
+			<date year="- 6.000.000">6 Mio v. Chr.</date><!-- Genaues Jahr, auch wenn wir nur nach Jahr sortieren, aber im falle des falles-->
+			<text>Ein Klimawandel löst die Evolution des Menschen aus. Als das gesamte Erdklima sich abkühlt, spalten sich die Hominiden von den Menschenaffen ab und erobern neuen Lebensraum.</text>			
+			<coordinates>543, 375</coordinates>
+		</item>
+		
+		
+		<item><!-- Ja einfach mehrere Items, kein Item2 oder so n scheiß-->
+			<title>Landschaft</title><!-- Gehört ja noch zum selben abschnitt-->
+			<description>Savannenlandschaften entstehen</description>
+			<date year="- 5.000.000">5 Mio v. Chr.</date>
+			<text>Durch den Klimawandel entstehen auch im südlichen Eurasien Savannenlandschaften. </text>
+			<coordinates>594, 255</coordinates>
+		</item>
+		
+		
+		<item>
+			<title>Eiszeit</title>
+			<description>Letzte Eiszeit</description>
+			<date year="- 16.000">16.000 v. Chr.</date>
+			<text>Höhepunkt der letzten Eiszeit (Würm/Weichseleiszeit). Die Temperaturen liegen 8 bis 10 Grad unter den heutigen Werten. Das Inlandeis hat seine größte Ausdehnung: Breite Teile Europas, Asiens und Nordamerikas liegen unter einer Eisschicht von mehreren Tausend Metern Dicke. Die Gletscher Skandinaviens reichen südlich bis Berlin, die Alpengletscher erreichen München. Durch das im Eis gebundene Wasser fällt der Meeresspiegel um rund 120 Meter.</text>
+			<coordinates>510, 228</coordinates>
+			<population>2000000</population>
+		</item>
+		
+		
+		
+		<item>
+			<title>Holozän</title>
+			<description>Das Holozän</description>
+			<date year="- 8.000">8.000 v. Chr.</date>
+			<text>Klimaoptimum: die wärmsten Jahre der Nacheiszeit (Holozän). Die Temperatur liegt etwa ein bis zwei Grad höher als heute und das Klima ist erheblich feuchter. Das Abschmelzen des Inlandeises führt zu einem Anstieg des Meeresspiegels. In der Sahara wachsen Oliven, Zypressen und Lorbeer, der Wasserspiegel des Tschadsees am Südrand der Sahara liegt 40 Meter höher als heute. Die Induskultur erreicht in dieser Zeit ihren Höhepunkt.</text>
+			<coordinates>510, 363</coordinates>
+			<population>13000000</population>
+		</item>
+		
+		
+		<item>
+			<title>Sintflut</title>
+			<description>Die Sintflut</description>
+			<date year="- 2.500">2.500 v. Chr.</date>
+			<text>Sintflut: Als Sintflut wird im 1. Buch Mose der Bibel eine große weltumspannende Flut bezeichnet, mit der Gott die Menschen für ihr sündiges Leben bestraft haben soll. Gemäß dem biblischen Bericht im Alten Testament soll die Sintflut 40 Tage und 40 Nächte gedauert haben. Der Zeitpunkt der Sintflut wurde vom irischen Theologen James Ussher im 17. Jahrhundert berechnet. Einer These der amerikanischen Wissenschaftler William Ryan und Walter Pitman zufolge ist die überlieferte Geschichte der "Sintflut" in der Bibel eine Folge des Anstiegs des Meeresspiegels nach der letzten Eiszeit und die dadurch ausgelöste Überschwemmung der Schwarzmeer-Region durch Wasser aus dem Mittelmeer. Ähnliche Berichte gibt es auch aus anderen Teilen der Welt bzw. in anderen Kulturen und Religionen, z.B. im Chinesischen Altertum, in Indien oder im Judentum.</text>
+			<coordinates>552, 302</coordinates>
+			<population>41500000</population>
+		</item>
+		
+		
+		<item>
+			<title>Warmphase</title>
+			<description>Die Warmphase</description>
+			<date year="900">900 n. Chr.</date>
+			<text>"Kleines Klimaoptimum": Warmphase mit trockenen Sommern und milden Wintern im frühen Mittelalter, die Temperaturen liegen etwa ein Grad über den heutigen. Grönland ist tatsächlich grün und wird besiedelt, in Schottland ist sogar Weinanbau möglich. Das sppielte sich alles zwischen 900 bis 1300 nach Christus ab.</text>
+			<coordinates>367, 170</coordinates>
+			<population>226000000</population>
+		</item>
+		
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in China</description>
+			<date year="1057">1057 n. Chr.</date>
+			<text>China: Erdbeben in Chihli (im Gebiet der heutigen Provinz Hopek), 25.000 Tote.</text>
+			<coordinates>797, 282</coordinates>
+			<population>304870000</population>
+		</item>		
+
+		<item>
+			<title>Sturm</title>
+			<description>Sturmflut in der Nordsee</description>
+			<date year="1164">17.02.1164</date>
+			<text>Nordsee: Sturmflut, der Jadebusen beginnt zu entstehen.</text>
+			<coordinates>492, 264</coordinates>
+			<population>338760000</population>
+		</item>	
+		
+		<item>
+			<title>Sturm</title>
+			<description>Sturmflut in der Nordsee</description>
+			<date year="1228">1228 n. Chr.</date>
+			<text>Friesland und Holland: Eine Sturmflut fordert wahrscheinlich 100.000 Menschenleben.</text>
+			<coordinates>491, 265</coordinates>
+			<population>382400000</population>
+		</item>	
+		
+		<item>
+			<title>Sturm</title>
+			<description>Sturmflut in der Nordsee</description>
+			<date year="1277">24.12.1277</date>
+			<text>Nordseeküste: Eine Sturmflut zerstört etwa 50 Dörfer.</text>
+			<coordinates>491, 265</coordinates>
+			<population>407740009</population>
+		</item>		
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in China</description>
+			<date year="1290">27.09.1290</date>
+			<text>China. Ein Erdeben in Chihli (Gebiet der heutigen Provinz Hopek), 100.000 Tote.</text>
+			<coordinates>797, 282</coordinates>
+			<population>411466680</population>
+		</item>	
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in Japan und Südchina</description>
+			<date year="1290">20.05.1293</date>
+			<text>Japan und Südchina: Ein Erdeben an der Sagamibucht fordert etwa 22.000 Menschenleben.</text>
+			<coordinates>807, 300</coordinates>
+			<population>412326681</population>
+		</item>	
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in der Schweiz</description>
+			<date year="1356">18.10.1356</date>
+			<text>Schweiz: Erdebeben in der Gegend von Basel, etwa 3.000 Tote. Sog. Basler Erdbeben.</text>
+			<coordinates>497, 287</coordinates>
+			<population>430386702</population>
+		</item>	
+		
+		<item>
+			<title>Sturm</title>
+			<description>Sturmflut in der Nordsee</description>
+			<date year="1362">15.01.1362</date>
+			<text>Nordseeküste: Eine Sturmflut an der Nordseeküste hat große Landverluste zur Folge, der Dollart beginnt zu entstehen, etwa 7.600 Tote.</text>
+			<coordinates>491, 265</coordinates>
+			<population>432106704</population>
+		</item>	
+		
+		<item>
+			<title>Eiszeit</title>
+			<description>Kleine Eiszeit</description>
+			<date year="1400">1400 n. Chr.</date>
+			<text>"Kleine Eiszeit": Nach der relativ warmen Periode setzte eine Klimawende ein: Die Temperaturen fielen deutlich und lagen etwa 1 bis 1,5 Grad unter den heutigen. Die Gletscher rückten weiter in die Täler vor. Kalte Winter und nasse Sommer führten zu Missernten, Hungersnöten und einer Häufung von Sturmfluten und Überschwemmungen. Diese Eiszeit hielt bis 1850.</text>
+			<coordinates>505, 290</coordinates>
+			<population>443000000</population>
+		</item>		
+
+		<item>
+			<title>Sturmflut</title>
+			<description>St.-Elisabeth-Flut</description>
+			<date year="1421">18.11.1421</date>
+			<text>Holland: Sturmflut an der holländischen Küste, die sog. St.-Elisabeth-Flut.</text>
+			<coordinates>491, 265</coordinates>
+			<population>453710000</population>
+		</item>	
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben zerstört Neapel</description>
+			<date year="1456">05.12.1456</date>
+			<text>Italien: Ein Erdbeben zerstört Neapel, etwa 30.000 bis 40.000 Menschen sterben.</text>
+			<coordinates>508, 307</coordinates>
+			<population>471560000</population>
+		</item>	
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in der Türkei</description>
+			<date year="1509">14.09.1509</date>
+			<text>Türkei: Erdbeben in der Gegend von Konstantinopel (heute Istanbul), ein Viertel der Stadt wird zerstört, etwa 13.000 Tote.</text>
+			<coordinates>542, 308</coordinates>
+			<population>498590000</population>
+		</item>	
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben zerstört Lissabon</description>
+			<date year="1531">26.01.1531</date>
+			<text>Portugal: Ein Erdbeben zerstört Lissabon, 30.000 Tote.</text>
+			<coordinates>456, 312</coordinates>
+			<population>509810000</population>
+		</item>	
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in China</description>
+			<date year="1556">23.01.1556</date>
+			<text>China: Erdbeben, ein Gebiet zwischen den Provinzen Schensi und Kansu sinkt ab, etwa 830.000 Tote.</text>
+			<coordinates>797, 282</coordinates>
+			<population>522560000</population>
+		</item>			
+		
+		<item>
+			<title>Sturmflut</title>
+			<description>Allerheiligenflut</description>
+			<date year="1570">01.11.1570</date>
+			<text>Holland: Eine Sturmflut an der Nordsee zerstört Deiche von Holland bis Jütland, sog. Allerheiligenflut.</text>
+			<coordinates>491, 265</coordinates>
+			<population>529700000</population>
+		</item>			
+
+		<item>
+			<title>Vulkanausbruch</title>
+			<description>Der Vesuv bricht aus</description>
+			<date year="1631">17.12.1631</date>
+			<text>Italien: Der Vesuv bricht aus, fast 80.000 Ortschaften werden beschädigt, etwa 3.000 bis 4.000 Menschen sterben.</text>
+			<coordinates>508, 307</coordinates>
+			<population>562050000</population>
+		</item>	
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben zerstört Tokio</description>
+			<date year="1649">30.07.1649</date>
+			<text>Japan: Ein Erdbeben zerstört Tokio und Nikko.</text>
+			<coordinates>821, 325</coordinates>
+			<population>571950000</population>
+		</item>		
+
+		<item>
+			<title>Vulkanausbruch</title>
+			<description>Ätna bricht aus</description>
+			<date year="1669">08.03.1669</date>
+			<text>Italien: Der Ätna bricht aus, die Stadt Malpasso und sechs weitere Orte werden zerstört, die Stadt Catania beschädigt.</text>
+			<coordinates>507, 316</coordinates>
+			<population>582950000</population>
+		</item>	
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in Jamaika</description>
+			<date year="1692">1692 n. Chr.</date>
+			<text>Jamaika: Erdbeben, Port Royal versinkt im Meer.</text>
+			<coordinates>290, 375</coordinates>
+			<population>595600000</population>
+		</item>		
+		
+		<item>
+			<title>Sturmflut</title>
+			<description>Sturm in der Nordsee</description>
+			<date year="1717">24.12.1717</date>
+			<text>Ostfriesland: Eine Sturmflut an der ostfriesischen Küste fordert 8.500 Menschenleben.</text>
+			<coordinates>491, 265</coordinates>
+			<population>664600000</population>
+		</item>		
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in Peru</description>
+			<date year="1746">28.10.1746</date>
+			<text>Erdbeben der Stärke 8,4 im Gebiet Limas (Peru), 600.0000 Tote.</text>
+			<coordinates>291, 448</coordinates>
+			<population>774800000</population>
+		</item>			
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben zerstört Lissabon</description>
+			<date year="1755">01.11.1755</date>
+			<text>Portugal: Ein Erdbeben zerstört die portugiesische Hauptstadt Lissabon, etwa 60.000 Menschen kommen ums Leben.</text>
+			<coordinates>456, 312</coordinates>
+			<population>809000000</population>
+		</item>			
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in Deutschland</description>
+			<date year="1756">18.02.1756</date>
+			<text>Erdbeben im Rheinland mit Epizentrum bei Düren. Das stärkste bekannte Erdbeben in Deutschland. Nach geologischen Untersuchungen hatte das Beben eine Stärke von 6,2 nach Richter.</text>
+			<coordinates>496, 274</coordinates>
+			<population>812800000</population>
+		</item>
+		
+		<item>
+			<title>Vulkanausbruch</title>
+			<description>Vulkanausbrüche auf Island</description>
+			<date year="1783">1783 n. Chr.</date>
+			<text>Island: 20 Vulkane brechen aus, es kommt zu Eruptionen im Bereich des Skaftá, einfünftel der Inselbevölkerung (über 10.000 Menschen) sterben an den Folgen, die Hälfte des Viehbestandes verenden (vierfünftel der Schafe, dreiviertel der Pferde).</text>
+			<coordinates>430, 208</coordinates>
+			<population>915400000</population>
+		</item>			
+
+		<item>
+			<title>Sturmflut</title>
+			<description>Sturmflut in Sankt Petersburg</description>
+			<date year="1824">1824 n. Chr.</date>
+			<text>Russland: Sturmflut in Sankt Petersburg (heute Leningrad), etwa 10.000 Tote, andere Quellen geben 25.000 Todesopfer an.</text>
+			<coordinates>543, 238</coordinates>
+			<population>1114400000</population>
+		</item>	
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in Tokio</description>
+			<date year="1855">11.11.1855</date>
+			<text>Japan: Ein Erdbeben zerstört große Teile Tokios, etwa 106.000 Tote.</text>
+			<coordinates>821, 325</coordinates>
+			<population>1299000000</population>
+		</item>			
+		
+		<item>
+			<title>Wirbelsturm</title>
+			<description>Wirbelsturm zerstört Kalkutta</description>
+			<date year="1864">01.10.1864</date>
+			<text>Indien: Ein Wirbelsturm zerstört Kalkutta, 70.000 Tote.</text>
+			<coordinates>695, 361</coordinates>
+			<population>1369200000</population>
+		</item>			
+		
+		<item>
+			<title>Tornados</title>
+			<description>Tornados über Nordamerika</description>
+			<date year="1884">18.02.1884</date>
+			<text>USA: Eine Serie von Tornados wütet durch Nordamerika, 10.000 Häuser werden zerstört, etwa 800 Menschen getötet.</text>
+			<coordinates>209, 233</coordinates>
+			<population>1525200000</population>
+		</item>						
+		
+		<item>
+			<title>Hurrikan</title>
+			<description>Hurrikan in Texas</description>
+			<date year="1884">18.02.1884</date>
+			<text>USA: Ein Hurrikan verwüstet Galveston in Texas, 6000 Tote.</text>
+			<coordinates>240, 332</coordinates>
+			<population>1525200000</population>
+		</item>
+	
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in China</description>
+			<date year="1887">1887 n. Chr.</date>
+			<text>China: Überschwemmungen, etwa 900.000 Tote.</text>
+			<coordinates>797, 282</coordinates>
+			<population>1525200000</population>
+		</item>					
+		
+		
+<!-- =========== -->
+<!-- ! 1900   -->
+<!-- =========== -->
+
+		<item>
+			<title>Vulkanausbruch</title>
+			<description>Vulkanausbruch in der Karibik</description>
+			<date year="1902">08.05.1902</date>
+			<text>Martinique: Der Vulkan Montagne Pelée auf der Insel Martinique bricht aus, die Stadt Saint-Pierre wird zerstört, etwa 28.000 Menschen sterben</text>
+			<coordinates>289, 368</coordinates>
+			<population>1670000000</population>
+		</item>		
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in San Francisco</description>
+			<date year="1906">18.04.1906</date>
+			<text>USA: Ein Erdbeben in San Francisco fordert etwa 700 Menschenleben, 250.000 Menschen werden obdachlos.</text>
+			<coordinates>178, 322</coordinates>
+			<population>1710000000</population>
+		</item>		
+			
+		<item>
+			<title>Meteoritenabsturz</title>
+			<description>Meteoritenabsturz in Sibirien</description>
+			<date year="1908">30.06.1908</date>
+			<text>Sibirien: Im Umkreis von 80 Kilometern wird in der Steingen Tunguska (Sibirien) durch einen Meteoritensturz verwüstet.</text>
+			<coordinates>609, 245</coordinates>
+			<population>1730000000</population>
+		</item>		
+	
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in Italien</description>
+			<date year="1908">28.12.1908</date>
+			<text>Italien. Erdbeben in Messina und Kalabrien, ungefähr 83.000 Menschen sterben, 1 Millionen werden obdachlos.</text>
+			<coordinates>516, 315</coordinates>
+			<population>1730000000</population>
+		</item>		
+	
+		<item>
+			<title>Flut</title>
+			<description>Überschwemmung in China</description>
+			<date year="1911">1911 n. Chr.</date>
+			<text>China: Überschwemmung des Jangtse-Kiang, 100.000 Tote.</text>
+			<coordinates>803, 282</coordinates>
+			<population>1761000000</population>
+		</item>	
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in Italien</description>
+			<date year="1915">13.01.1915</date>
+			<text>Italien: Ein Erdbeben in Avezzano fordert 29.980 Menschenleben.</text>
+			<coordinates>510, 308</coordinates>
+			<population>1805000000</population>
+		</item>			
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben zerstört Tokio</description>
+			<date year="1923">01.09.1923</date>
+			<text>Japan: Ein Erdbeben in der Sagamibucht zerstört Tokio und Jokohama, etwa 100.000 Tote.</text>
+			<coordinates>821, 325</coordinates>
+			<population>1923000000</population>
+		</item>			
+		
+		<item>
+			<title>Tornados</title>
+			<description>Tornados in Nordamerika</description>
+			<date year="1925">18.03.1925</date>
+			<text>USA: Tornados richten in den Staaten Missouri, Illinois und Indiana schwere Verwüstungen an, etwa 700 Tote.</text>
+			<coordinates>239, 308</coordinates>
+			<population>1965000000</population>
+		</item>			
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in China</description>
+			<date year="22.05.1927">22.05.1927</date>
+			<text>China: Erdbeben in Naschan, 200.000 Tote.</text>
+			<coordinates>803, 282</coordinates>
+			<population>2007000000</population>
+		</item>		
+	
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in Italien</description>
+			<date year="1930">23.07.1930</date>
+			<text>Italien: Erdbeben in der Umgebung von Benevent (Süditalien), etwa 1.500 Tote.</text>
+			<coordinates>516, 315</coordinates>
+			<population>2070000000</population>
+		</item>			
+	
+		<item>
+			<title>Flut</title>
+			<description>Überschwemmung in China</description>
+			<date year="1931">13.07.1931</date>
+			<text>China: Überschwemmung des Jangtsekiang und des Hwangho, etwa 150.000 Tote, 2 Millionen Menschen werden obdachlos.</text>
+			<coordinates>803, 282</coordinates>
+			<population>2093000000</population>
+		</item>		
+	
+		<item>
+			<title>Flut</title>
+			<description>Überschwemmung in China</description>
+			<date year="1935">11.04.1935</date>
+			<text>Überschwemmung des Jangtsekian, etwa 400.000 Tote.</text>
+			<coordinates>803, 282</coordinates>
+			<population>2185000000</population>
+			
+		</item>		
+	
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben auf den Philipinen</description>
+			<date year="1955">11.04.1955</date>
+			<text>Philippinen: Ein Erdbeben auf der philippinischen Insel Mindanao fordert etwa 700 Menschenleben.</text>
+			<coordinates>775, 384</coordinates>
+			<population>2710000000</population>
+		</item>		
+	
+		<item>
+			<title>Flut</title>
+			<description>Überschwemmung in Indien und Pakistan</description>
+			<date year="1955">12.09.1955</date>
+			<text>Indien und Pakistan: Überschwemmungen fordern etwa 1.700 Menschenleben, 45 Millionen Menschen werden obdachlos.</text>
+			<coordinates>655, 320</coordinates>
+			<population>2710000000</population>
+		</item>		
+		
+		<item>
+			<title>Schneestürme</title>
+			<description>Schneestürme in West-Europa</description>
+			<date year="1956">01.02.1956</date>
+			<text>West-Europa wird von Schneestürmen heimgesucht, 1.000 Tote.</text>
+			<coordinates>496, 274</coordinates>
+			<population>2772000000</population>
+		</item>
+		
+		<item>
+			<title>Staudammbruch</title>
+			<description>Staudammbruch in Frankreich</description>
+			<date year="1959">02.12.1959</date>
+			<text>Frankreich: Der Malpasset-Staudamms bei Fréjus in Südfrankreich bricht. 421 Menschen sterben.</text>
+			<coordinates>487, 297</coordinates>
+			<population>2958000000</population>
+		</item>		
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in Marokko</description>
+			<date year="1960">29.02.1960</date>
+			<text>Marokko: Erdbeben in Agadir, etwa 12.000 Tote.</text>
+			<coordinates>456, 336</coordinates>
+			<population>3020000000</population>
+		</item>			
+		
+		<item>
+			<title>Sturmflut</title>
+			<description>Sturmflut in Norddeutschland</description>
+			<date year="1962">16.02.1962</date>
+			<text>Nordseeküste: Sturmflut an der Nordseeküste, vor allem Hamburg leidet unter dieser, 315 Menschen sterben. In Hamburg brechen 60 Deiche, in dem Hamburger Stadtteil St. Pauli wird mit 5,73 Meter über Normal Null der höchste Wasserstand aller Zeiten gemessen. 1825 hatte die Flut 5,24 Meter erreicht. Allein in Hamburg sterben 277 Menschen.</text>
+			<coordinates>497, 265</coordinates>
+			<population>3156000000</population>
+		</item>		
+		
+		<item>
+			<title>Sturmflut</title>
+			<description>Sturmflut in Nordeuropa</description>
+			<date year="1962">31.12.1962</date>
+			<text>Europa: Sturmfluten an den nordeuropäischen Küsten richten Schäden an, allein in dem Gebiet der damaligen BRD sterben 309 Menschen.</text>
+			<coordinates>497, 265</coordinates>
+			<population>3156000000</population>
+		</item>		
+
+		<item>
+			<title>Wirbelsturm</title>
+			<description>Wirbelsturm in Pakistan</description>
+			<date year="1963">28.05.1963</date>
+			<text>Pakistan (heute Bangladesch): Ein Wirbelsturm im Osten des Landes tötet etwa 20.000 Menschen.</text>
+			<coordinates>655, 320</coordinates>
+			<population>3224000000</population>
+		</item>			
+	
+		<item>
+			<title>Hurrikan</title>
+			<description>Hurrikan über Kuba und Haiti</description>
+			<date year="1963">08.10.1963</date>
+			<text>Kuba und Haiti: Der Hurrikan Flora verwüstet die beiden karibischen Inseln, etwa 4.000 Tote.</text>
+			<coordinates>289, 368</coordinates>
+			<population>3224000000</population>
+		</item>		
+	
+		<item>
+			<title>Wirbelsturm</title>
+			<description>Wirbelsturm in Pakistan</description>
+			<date year="1965">11.05.1965</date>
+			<text>Pakistan (heutige Bangaldesch): Ein Wirbelsturm im Osten Pakistans, über 12.000 Menschen sterben.</text>
+			<coordinates>655, 320</coordinates>
+			<population>3360000000</population>
+		</item>		
+	
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben im Iran</description>
+			<date year="1968">01.09.1968</date>
+			<text>Iran: Ein Erdbeben erschüttert den Nordosten und Osten Irans, etwa 10.500 Menschen sterben.</text>
+			<coordinates>610, 343</coordinates>
+			<population>3564000000</population>
+		</item>		
+	
+		<item>
+			<title>Lawine</title>
+			<description>Lawinenunglück in der Schweiz</description>
+			<date year="1970">10.02.1970</date>
+			<text>Schweiz: Lawinenunglück im Val-d`Isère, 39 Menschen sterben.</text>
+			<coordinates>498, 293</coordinates>
+			<population>3700000000</population>
+		</item>	
+	
+		<item>
+			<title>Wirbelsturm</title>
+			<description>Wirbelsturm in Bangladesch</description>
+			<date year="1970">31.05.1970</date>
+			<text>Bengalen (heutige Bangladesch): Wirbelstürme und Flutwellen, über 300.000 Tote.</text>
+			<coordinates>655, 320</coordinates>
+			<population>3700000000</population>
+		</item>	
+	
+		<item>
+			<title>Dürre</title>
+			<description>Dürre in Sahel</description>
+			<date year="1974">15.03.1974</date>
+			<text>Dürreperiode (seit 1968) in Sahel (Südrand der Sahara), 25 Millionen Menschen sind vom Hungertod bedroht. Der Südrand der Sahara schiebt sich um 50 Kilometer nach Süden vor. Die Herden verenden zu 80 Prozent, 100.000 Tote.</text>
+			<coordinates>510, 363</coordinates>
+			<population>4000000000</population>
+		</item>	
+		
+		<item>
+			<title>Waldbrand</title>
+			<description>Größter Waldbrand Deutschlands</description>
+			<date year="1974">15.08.1974</date>
+			<text>Brand in der Lüneburger Heide, der bis zu diesem Zeitpunkt größte Waldbrand in Deutschland.</text>
+			<coordinates>501, 272</coordinates>
+			<population>4000000000</population>
+		</item>			
+		
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in China</description>
+			<date year="1976">27.07.1976</date>
+			<text>Peking, China: Erdbeben der Stärke 7,5 in Tangshan (150 Kilometer südlich von Peking). Etwa 650.000 Tote, die offizielle Zahl der Todesopfer wird mit 255.000 angegeben.</text>
+			<coordinates>797, 282</coordinates>
+			<population>4143333334</population>
+		</item>
+
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben im Iran</description>
+			<date year="1990">20.06.1990</date>
+			<text>Iran: Erdbeben der Stärke 7,7, etwa 40.000 bis 50.000 Tote.</text>
+			<coordinates>610, 343</coordinates>
+			<population>5260000000</population>
+		</item>
+
+		<item>
+			<title>Zyklon</title>
+			<description>Ein Zyklon in Bangladesch</description>
+			<date year="1991">10.04.1991</date>
+			<text>Ein Zyklon in Bangladesch fordert 139.000 Menschenleben.</text>
+			<coordinates>655, 320</coordinates>
+			<population>5341000000</population>
+		</item>	
+
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in Indien</description>
+			<date year="1993">30.09.1993</date>
+			<text>Schweres Erdbeben in Indien.</text>
+			<coordinates>695, 361</coordinates>
+			<population>5503000000</population>
+		</item>	
+
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in Los Angeles</description>
+			<date year="1994">17.01.1994</date>
+			<text>Schweres Erdbeben in Los Angeles (USA).</text>
+			<coordinates>175, 317</coordinates>
+			<population>5584000000</population>
+		</item>	
+
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in Japan</description>
+			<date year="1995">17.01.1995</date>
+			<text>Japan: Erdbeben in Kobe, mehr als 6.000 Menschen sterben, über 400.000 werden verletzt.</text>
+			<coordinates>821, 325</coordinates>
+			<population>5665000000</population>
+		</item>	
+
+
+		<item>
+			<title>Hochwasser</title>
+			<description>Die Jahrhundertflut</description>
+			<date year="2002">06.08.2002</date>
+			<text>Im August gingen in Mitteleuropa in zwei Wellen (6.-9. August 2002 und 11.-15. August 2002) gewaltige Niederschlagsmengen nieder, welche zahlreiche Flüsse im Einzugsgebiet der oberen Donau über die Ufer treten ließen. Die Erste Welle war eine typische Nordstaulage. Bei der zweiten Welle lag Österreich am südlichen Rand eines ausgedehnten, von Berlin bis zum Salzkammergut reichenden Niederschlagsgebietes (Vb-Wetterlage im Karpatenbogen), wodurch nicht nur Österreich, sondern auch Teile Tschechiens und das Einzugsgebiet der gesamten Elbe (Elbehochwasser 2002) in Mitleidenschaft gezogen wurden.</text>
+			<coordinates>502, 281</coordinates>
+			<population>6230000000</population>
+		</item>	
+
+
+		<item>
+			<title>Erdbeben</title>
+			<description>Hitze in Südeuropa</description>
+			<date year="2003">17.07.2003</date>
+			<text>Hitzewälle und in der Folge viele Brände in Südeuropa. Etwa 20.000 Menschen sterben vor allem an den Folgen der Hitze.</text>
+			<coordinates>470, 315</coordinates>
+			<population>6310000000</population>
+		</item>	
+
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben im Iran</description>
+			<date year="2003">26.12.2003</date>
+			<text>Iran: Ein Erdbeben der Stärke 6,6 erschüttert Bam, etwa 43.000 Menschen sterben.</text>
+			<coordinates>610, 343</coordinates>
+			<population>6310000000</population>
+		</item>	
+
+		<item>
+			<title>Tsunami</title>
+			<description>Tsunami im Pazifikraum</description>
+			<date year="2004">26.12.2004</date>
+			<text>Vor der Insel Sumatra im Indischen Ozean löst ein Erdbeben der Stärke 9,0 einen Tsunami aus. Dieser ist selbst noch in Nordostafrika zu spüren, über 232.000 Menschen (Schätzung) sterben.</text>
+			<coordinates>720, 415</coordinates>
+			<population>6390000000</population>
+		</item>	
+
+		<item>
+			<title>Hurrikan</title>
+			<description>Hurrikan Katrina</description>
+			<date year="2005">28.08.2005</date>
+			<text>Der Hurrikan Katrina verwüstet die Küstenregion des Golfs von Mexiko. Durch die daraus resultierenden Dammbrüche in New Orleans wird die Stadt zu 80 Prozent überflutet. Schätzungsweise über 1.000 Tote.</text>
+			<coordinates>254, 343</coordinates>
+			<population>6470000000</population>
+		</item>	
+
+		<item>
+			<title>Hurrikan</title>
+			<description>Hurrikan Stan</description>
+			<date year="2005">01.10.2005</date>
+			<text>Der Hurrikan Stan verwüstet zwischen dem 1. und 5. Oktober Mittelamerika. Insbesondere Guatemala, El Salvador, Teile Mexicos, Nicaragua, Honduras und Costa Rica sind betroffen. Etwa 1153 (offiziell) bis 2500 Menschen sterben. Der Hurrikan löst Erdrutsche und Schlammlawinen aus.</text>
+			<coordinates>231, 366</coordinates>
+			<population>6470000000</population>
+		</item>
+
+		<item>
+			<title>Erdbeben</title>
+			<description>Erdbeben in Südasien</description>
+			<date year="2005">08.10.2005</date>
+			<text>Ein schweres Erdbeben erschüttert Südasien. Das Beben erreichte die Stärke 7,6 auf der Richterskala und erschütterte den Norden Pakistans, Nordinien und Afgahnistan mitten während des Berufsverkehrs. Zahlreiche Nachbeben lösten immer wieder Panik in der Bevölkerung aus. Mehr als 30 Tausend Menschen kamen ums Leben.</text>
+			<coordinates>655, 320</coordinates>
+			<population>6470000000</population>
+		</item>	
+
+		<item>
+			<title>Winter</title>
+			<description>Starker Wintereinbruch in Deutschland</description>
+			<date year="2005">26.11.2005</date>
+			<text>Ein Wintereinbruch führt in Deutschland zu Unfällen auf eisglatten Autobahnen, blockierten Bahnstrecken und Stromausfällen.</text>
+			<coordinates>497, 265</coordinates>
+			<population>6470000000</population>
+		</item>	
+
+
+
+
+</Events>
+</TimelineEvents>
