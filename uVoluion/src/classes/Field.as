@@ -100,6 +100,10 @@ package classes
 		
 		public function showDot():void {
 			
+			if(this.contains(speechBubble)){
+				this.removeChild(speechBubble);
+			}
+			
 			for(var i:int=0;i<_myXML.myXML.Events.item.length();i++){
 				
 				dotArray[i].visible=false;
