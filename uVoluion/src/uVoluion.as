@@ -123,17 +123,18 @@ package {
 			
 			SearchField.x = 512 - (SearchField.width/2);
 			SearchField.height = SearchPanel.height;
-			SearchField.y = ((Background.height - Panel.height)/2) - (SearchField.height/2);
+			SearchField.y = ((Background.height - Panel.height)/2) - (SearchField.height/2) - (SearchPanel.height/2);
 			
 			var Result:TextFormat = new TextFormat;
 			Result.font = 'HelveticaLight';
 			Result.color = 0xFFFFFF;
 			Result.size = 22;
 			
+				
 			SearchResult.x = 20;
 			SearchResult.y = 220;
 			SearchResult.width = SearchField.width-50;
-			SearchResult.visible=false;
+			SearchResult.visible=true;
 			SearchResult.embedFonts = true;
 			SearchResult.antiAliasType = AntiAliasType.ADVANCED;
 			SearchResult.selectable=false; // wir muessen nach Obama suchen
@@ -386,8 +387,8 @@ package {
 		private function Search(evt:MouseEvent):void {
 			
 			var yyy:int = SearchPanel.y+SearchPanel.height-100;
-			Tweener.addTween(SearchField,{y:yyy,time:2,transition:"easeInOut"});
 			
+			Tweener.addTween(SearchField,{y:yyy,time:2,transition:"easeInOut"});
 			
 			Tweener.addTween(SearchResult, {visible:true,time:3,transition:"easeInOut"});
 			
