@@ -42,6 +42,8 @@ package classes
 			oThumb.y = -5;
 			oTrack.addChild(oThumb);
 			
+			oThumb.year_txt.selectable=false;
+			
 			oThumb.addEventListener(MouseEvent.MOUSE_DOWN, thumbDown);
 			
 			oTrack.addEventListener(MouseEvent.CLICK, moveThumb);
