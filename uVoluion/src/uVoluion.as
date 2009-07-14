@@ -44,6 +44,7 @@ package {
 		private var SearchExit:Screen_Speechbaloon_Exit_btn = new Screen_Speechbaloon_Exit_btn;
 		private var SearchInputText:TextField = new TextField;
 		private var SearchField:Screen_Search_Display = new Screen_Search_Display;
+		private var SearchResult:TextField = new TextField;
 		
 		private var Geschichte:TextField = new TextField;
 		private var Klima:TextField = new TextField;
@@ -99,27 +100,30 @@ package {
 			Panel.mouseChildren = false;
 			Panel.alpha=0.3;
 			Background.addChild(Panel);
-
+		
+			slider = new Slider(this);
+			Panel.addChild(slider);
 			
+			
+			//++++++++++++++++++++++ SEARCH +++++++++++++++++++++++++++++++
 			Search_btn.x = 930;
 			Search_btn.y = 20;
 			Panel.addChild(Search_btn);
 			Search_btn.addEventListener(MouseEvent.CLICK, startSearch);
 			
-	
-		
-			slider = new Slider(this);
-			Panel.addChild(slider);
-			
 			SearchField.x = 512 - (SearchField.width/2);
 			SearchField.height = SearchPanel.height;
 			SearchField.y = ((Background.height - Panel.height)/2) - (SearchField.height/2)-100;
 			
+			SearchResult.x = 20;
+			SearchResult.y = 170;
+			SearchResult.alpha = 0 ;
+			SearchResult.text = "ERgebnis lol bla dasd";
+			SearchField.addChild(SearchResult);
 			
 			SearchPanel.x = 512 - (SearchPanel.width/2);
 			SearchPanel.y = ((Background.height - Panel.height)/2) - (SearchPanel.height/2)-100;		
 			
-
 			SearchInput.x = 60;
 			SearchInput.y = 135;
 			SearchPanel.addChild(SearchInput);
@@ -141,14 +145,19 @@ package {
 			SearchPanel.addChild(SearchExit);
 			SearchExit.addEventListener(MouseEvent.CLICK, closeSearch);
 			
+			//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+			
 			Background.addChild(lightbox);
 			Background.addChild(startscreen);
+			
 			//########################## M E N U ############################
 			
 			var format:TextFormat = new TextFormat();
             format.color = 0x333333;
             format.size = 24;
             format.font = 'HelveticaLite';
+            
+            SearchResult.setTextFormat(format);
             
 			Geschichte.x=20;
 			Geschichte.y=20;
@@ -209,6 +218,8 @@ package {
 			//##############################################################
 
 
+		
+
 			var timer:Timer = new Timer(80, 30);
 			timer.addEventListener(TimerEvent.TIMER, loading);
 			timer.start();
@@ -257,7 +268,7 @@ package {
 		
 		private function startMap(evt:MouseEvent):void {
 			
-			Tweener.addTween(lightbox,{alpha:0,visible:false,time:2,transition:"easeInOut"});
+			Tweener.addTween(lightbox,{alpha:0,visible:false,time:3,transition:"easeInOut"});
 			
 		
 			if(complete) {
@@ -277,7 +288,6 @@ package {
 				switch (evt.target.text)
 	        	{
 	        		case "Geschichte":
-	            		trace("new History");
 	            		oMap.alpha=1;
 	            		prehisMap.visible = false;
 	            		colorBG(0);
@@ -289,7 +299,6 @@ package {
 	            		Map.addChild(fArray["History"]);
 	            		break;
 	            	case "Klima":
-	            		trace("new Climate");
 	            		oMap.alpha=1;
 	            		prehisMap.visible = false;
 	            		colorBG(1);
@@ -301,7 +310,6 @@ package {
 	            		Map.addChild(fArray["Climate"]);
 	            		break;
 	            	case "Evolution":
-	            		trace("new Evolution");
 	            		oMap.alpha=0;
 	            		prehisMap.visible = true;
 	            		colorBG(2);
@@ -313,7 +321,6 @@ package {
 	            		Map.addChild(fArray["Evolution"]);
 	            		break;
 	            	case "Völker":
-	            		trace("new People");
 	            		oMap.alpha=1;
 	            		prehisMap.visible = false;
 	            		colorBG(3);
@@ -325,12 +332,12 @@ package {
 	            		Map.addChild(fArray["People"]);
 	            		break;
 	            	default:
-	            		trace("NOTHING!");
+	            		
 	            		break;
 	        	}
 		}
 		
-			//### TEST DOTS GENERIEREN! ##
+			
 		public function generator(event:Event):void
 		{	
 			if(currentField != null) {
@@ -345,12 +352,7 @@ package {
 			}
 			else {
 				
-				trace("kein Field ausgewählt!");
 			}
-			
-			trace("Slider position: "+slider._position);
-			trace("numChildren: "+Map.numChildren);
-			
 			
 			if(Map.numChildren>2){
 				
@@ -373,23 +375,28 @@ package {
 		}
 		
 		private function startSearch(evt:MouseEvent):void {
+			
 			Map.addChild(SearchField);
-			Map.addChild(SearchPanel);
-				
+			Map.addChild(SearchPanel);	
 		}
 		
 		private function Search(evt:MouseEvent):void {
 			
-			var yyy:int = SearchPanel.y+SearchPanel.height-50;
+			var yyy:int = SearchPanel.y+SearchPanel.height-100;
 			Tweener.addTween(SearchField,{y:yyy,time:2,transition:"easeInOut"});
 			
+			
+			Tweener.addTween(SearchResult, {alpha:1,time:2,transition:"easeInOut"});
+			
 		}
+		
+		
 		
 		private function closeSearch(evt:MouseEvent):void {
 			
 			SearchField.y = 101;
-			Map.removeChild(SearchPanel);
 			Map.removeChild(SearchField);
+			Map.removeChild(SearchPanel);
 			SearchInputText.text="";
 		}
 		private function colorBG(i:int = 2):void //2 evolution schwarz
@@ -405,7 +412,7 @@ package {
 				case 3: colorableBG.transform.colorTransform = new ColorTransform(0,0,0,1,177,142,92,0);
 					break;
 				default: trace('need number in colorBG(i); function');
-					break
+					break;
 			}
 		}
 		private function hoverTxt(e:MouseEvent):void
