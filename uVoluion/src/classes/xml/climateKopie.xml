@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TimelineEvents type="climate">
-<TimelineEventsTyp>climate</TimelineEventsTyp><!-- im type steht nur das was wir accessen, zwischen den <> was dargestellt wird.-->
+<TimelineEvents>
+<TimelineEventsTyp type="History">History</TimelineEventsTyp><!-- im type steht nur das was wir accessen, zwischen den <> was dargestellt wird.-->
 <Events>
 		<item>
 			<title>Evolution</title><!-- Epoche-->
@@ -711,7 +711,7 @@
 		<item>
 			<title>Weltuntergang</title>
 			<description>Komet zerstört Erde</description>
-			<date year="2012">26.12.2012</date>
+			<date year="2005">26.12.2012</date>
 			<text>Ein großer Komet trifft die Erde und vernichtet sie restlos.</text>
 			<coordinates>497, 265</coordinates>
 			<population>0</population>
