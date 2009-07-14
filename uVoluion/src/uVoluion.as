@@ -15,7 +15,15 @@ package {
 	import flash.text.TextFormat;
 	import flash.utils.*;
 	
-
+	/**	  .-~~-.____
+		 / |  '     \
+		(  )         O        _
+		 \_/-, ,----'        //
+		    ====        ___ //
+		    /  \-~;    /---(O)     
+		   /  __/'~;__/      | 
+		==(______| (_________|   
+	**/
 
 	[SWF(width="1024", height = "768", backgroundColor = "0x000000", frameRate = "24")]
 
@@ -23,8 +31,8 @@ package {
 	public class uVoluion extends Sprite
 	{	
 		
-		[Embed(source='classes/HelveticaNeueLTStd-Lt.otf', fontFamily = 'HelveticaLite')]
-        private var LiteHelvetica:Class;
+		[Embed(source='classes/HelveticaNeueLTStd-Lt.otf', fontFamily = 'HelveticaLight')]
+        private var LightHelvetica:Class;
 		
 		private var startscreen:Screen_Startpanel = new Screen_Startpanel;
 		private var start_btn:Screen_Go_btn = new Screen_Go_btn;
@@ -116,7 +124,7 @@ package {
 			SearchField.y = ((Background.height - Panel.height)/2) - (SearchField.height/2)-100;
 			
 			var Result:TextFormat = new TextFormat;
-			Result.font = 'Helvetica';
+			Result.font = 'HelveticaLight';
 			Result.color = 0xFFFFFF;
 			Result.size = 30;
 			
@@ -137,7 +145,7 @@ package {
 			SearchPanel.addChild(SearchInput);
 			
 			var Input:TextFormat = new TextFormat;
-			Input.font = 'Helvetica';
+			Input.font = 'HelveticaLight';
 			Input.color = 0x454545;
 			Input.size = 24;
 			
@@ -171,7 +179,7 @@ package {
 			var format:TextFormat = new TextFormat();
             format.color = 0x333333;
             format.size = 24;
-            format.font = 'HelveticaLite';
+            format.font = 'HelveticaLight';
             
 
             
