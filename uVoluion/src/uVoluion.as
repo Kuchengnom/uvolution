@@ -54,6 +54,7 @@ package {
 		private var SearchField:Screen_Search_Display = new Screen_Search_Display;
 		private var SearchResult:TextField = new TextField;
 		
+		
 		private var Geschichte:Screen_Panel_Geschichte = new Screen_Panel_Geschichte;
 		private var Klima:Screen_Panel_Klima = new Screen_Panel_Klima;
 		private var Evolution:Screen_Panel_Evolution = new Screen_Panel_Evolution;
@@ -121,7 +122,7 @@ package {
 			
 			SearchField.x = 512 - (SearchField.width/2);
 			SearchField.height = SearchPanel.height;
-			SearchField.y = ((Background.height - Panel.height)/2) - (SearchField.height/2)-100;
+			SearchField.y = ((Background.height - Panel.height)/2) - (SearchField.height/2);
 			
 			var Result:TextFormat = new TextFormat;
 			Result.font = 'HelveticaLight';
@@ -175,16 +176,10 @@ package {
 			Background.addChild(startscreen);
 			
 			//########################## M E N U ############################
-			
-			var format:TextFormat = new TextFormat();
-            format.color = 0x333333;
-            format.size = 24;
-            format.font = 'HelveticaLight';
-            
-
-            
+			         
 			Geschichte.x=20;
 			Geschichte.y=20;
+			Geschichte.name="Geschichte";
 			Geschichte.stop();
 			Geschichte.addEventListener(MouseEvent.CLICK, navigation);
 			Geschichte.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
@@ -193,6 +188,7 @@ package {
 			
 			Klima.x = 60 + Geschichte.width;
 			Klima.y = 20;
+			Klima.name="Klima";
 			Klima.stop();
 			Klima.addEventListener(MouseEvent.CLICK, navigation);
 			Klima.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
@@ -201,6 +197,7 @@ package {
 			
 			Evolution.x = 100 + Geschichte.width + Klima.width;
 			Evolution.y = 20;
+			Evolution.name="Evolution";
 			Evolution.stop();
 			Evolution.addEventListener(MouseEvent.CLICK, navigation);
 			Evolution.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
@@ -209,6 +206,7 @@ package {
 			
 			Voelker.x = 140 + Geschichte.width + Klima.width + Evolution.width;
 			Voelker.y = 20;
+			Voelker.name="Voelker";
 			Voelker.stop();
 			Voelker.addEventListener(MouseEvent.CLICK, navigation);
 			Voelker.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
@@ -285,7 +283,7 @@ package {
 		private function navigation(evt:MouseEvent):void{
 			
 							
-				switch (evt.target.text)
+				switch (evt.target.name)
 	        	{
 	        		case "Geschichte":
 	            		oMap.alpha=1;
@@ -320,7 +318,7 @@ package {
 	            		currentField="Evolution";
 	            		Map.addChild(fArray["Evolution"]);
 	            		break;
-	            	case "Völker":
+	            	case "Voelker":
 	            		oMap.alpha=1;
 	            		prehisMap.visible = false;
 	            		colorBG(3);

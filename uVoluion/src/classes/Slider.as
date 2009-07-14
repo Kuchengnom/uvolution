@@ -76,17 +76,12 @@ package classes
 				
 			if(oThumb.x >= xMax)
 				oThumb.x = xMax;
-	
-			//trace(oThumb.x);
-		
-			trace(Math.floor(oThumb.x/percental));
+
 			_position = Math.floor(oThumb.x/percental);
 			
-			//if(_contentLength != 0) {
 				
-				this.dispatchEvent(new Event("Slider_Moved", true));
-				
-			//}
+			this.dispatchEvent(new Event("Slider_Moved", true));
+
 			
 			evt.updateAfterEvent();	
 		}
@@ -104,11 +99,9 @@ package classes
 			
 			Tweener.addTween(oThumb, {x:xTarget, time:0.8, transition:"easeOutCubic"});
 			
-			
-			trace(Math.floor(xTarget/percental));
 			_position = Math.floor(xTarget/percental);
 			this.dispatchEvent(new Event("Slider_Moved", true));
-			//trace(xTarget);
+			
 		}
 		
 		public function set contentLength(length:int):void {
