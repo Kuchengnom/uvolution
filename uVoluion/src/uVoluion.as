@@ -115,10 +115,18 @@ package {
 			SearchField.height = SearchPanel.height;
 			SearchField.y = ((Background.height - Panel.height)/2) - (SearchField.height/2)-100;
 			
+			var Result:TextFormat = new TextFormat;
+			Result.font = 'Helvetica';
+			Result.color = 0xFFFFFF;
+			Result.size = 30;
+			
 			SearchResult.x = 20;
-			SearchResult.y = 170;
-			SearchResult.alpha = 0 ;
-			SearchResult.text = "ERgebnis lol bla dasd";
+			SearchResult.y = 220;
+			SearchResult.width = SearchField.width-50;
+			SearchResult.visible=false;
+			SearchResult.selectable=false;
+			SearchResult.text = "Es wurden 5 Einträge gefunden!";
+			SearchResult.setTextFormat(Result);
 			SearchField.addChild(SearchResult);
 			
 			SearchPanel.x = 512 - (SearchPanel.width/2);
@@ -128,9 +136,17 @@ package {
 			SearchInput.y = 135;
 			SearchPanel.addChild(SearchInput);
 			
+			var Input:TextFormat = new TextFormat;
+			Input.font = 'Helvetica';
+			Input.color = 0x454545;
+			Input.size = 24;
+			
 			SearchInputText.text="";
 			SearchInputText.type = TextFieldType.INPUT;
+			SearchInputText.defaultTextFormat = Input;
 			SearchInputText.width = SearchInput.width;
+			SearchInputText.height = SearchInput.height;
+			SearchInputText.setTextFormat(Input);
 			SearchInput.addChild(SearchInputText);
 			
 			SearchButton.x = 90 + SearchInput.width;
@@ -157,7 +173,7 @@ package {
             format.size = 24;
             format.font = 'HelveticaLite';
             
-            SearchResult.setTextFormat(format);
+
             
 			Geschichte.x=20;
 			Geschichte.y=20;
@@ -386,7 +402,7 @@ package {
 			Tweener.addTween(SearchField,{y:yyy,time:2,transition:"easeInOut"});
 			
 			
-			Tweener.addTween(SearchResult, {alpha:1,time:2,transition:"easeInOut"});
+			Tweener.addTween(SearchResult, {visible:true,time:3,transition:"easeInOut"});
 			
 		}
 		
