@@ -29,7 +29,8 @@ package {
 		private var start_loader:Screen_Wait_mc = new Screen_Wait_mc;
 		private var Panel:Screen_Panel = new Screen_Panel;
 		private var Background:Screen_Background = new Screen_Background;
-		private var Map:Screen_Map = new Screen_Map;
+		private var Map:MovieClip = new MovieClip;
+		private var oMap:Screen_Map = new Screen_Map;
 		private var prehisMap:Screen_Map_PreHis = new Screen_Map_PreHis;
 		private var colorableBG:Screen_Background = new Screen_Background;
 		private var Search_btn:Screen_Search_btn = new Screen_Search_btn;
@@ -86,6 +87,7 @@ package {
 			Background.addChild(prehisMap);
 			Map.visible=false;
 			Background.addChild(Map);
+			Map.addChild(oMap);
 			
 
 			Panel.y = Background.height - Panel.height;
@@ -261,7 +263,7 @@ package {
 	        	{
 	        		case "Geschichte":
 	            		trace("new History");
-	            		Map.alpha=1;
+	            		oMap.alpha=1;
 	            		prehisMap.visible = false;
 	            		colorBG(0);
 	            		Haasi = false;
@@ -273,7 +275,7 @@ package {
 	            		break;
 	            	case "Klima":
 	            		trace("new Climate");
-	            		Map.alpha=1;
+	            		oMap.alpha=1;
 	            		prehisMap.visible = false;
 	            		colorBG(1);
 	            		Haasi = false;
@@ -285,7 +287,7 @@ package {
 	            		break;
 	            	case "Evolution":
 	            		trace("new Evolution");
-	            		Map.alpha=0;
+	            		oMap.alpha=0;
 	            		prehisMap.visible = true;
 	            		colorBG(2);
 	            		Haasi = true;
@@ -297,7 +299,7 @@ package {
 	            		break;
 	            	case "Völker":
 	            		trace("new People");
-	            		Map.alpha=1;
+	            		oMap.alpha=1;
 	            		prehisMap.visible = false;
 	            		colorBG(3);
 	            		Haasi = false;
