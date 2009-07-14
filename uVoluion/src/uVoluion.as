@@ -351,7 +351,7 @@ package {
 				fArray[currentField].showDot();
 				if (Haasi == true)
 				{
-					prehisMap.x = (-1)*slider._position*430;
+					prehisMap.x = (-1)*slider._position*500;
 				}
 			}
 			else {
