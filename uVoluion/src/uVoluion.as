@@ -268,7 +268,7 @@ package {
 		
 		private function startMap(evt:MouseEvent):void {
 			
-			Tweener.addTween(lightbox,{alpha:0,visible:false,time:3,transition:"easeInOut"});
+			Tweener.addTween(lightbox,{alpha:0,visible:false,time:1,transition:"easeInOut"});
 			
 		
 			if(complete) {
