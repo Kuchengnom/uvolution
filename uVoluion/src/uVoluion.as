@@ -10,6 +10,7 @@ package {
 	import flash.events.MouseEvent;
 	import flash.events.TimerEvent;
 	import flash.geom.ColorTransform;
+	import flash.text.AntiAliasType;
 	import flash.text.TextField;
 	import flash.text.TextFieldType;
 	import flash.text.TextFormat;
@@ -127,12 +128,14 @@ package {
 			var Result:TextFormat = new TextFormat;
 			Result.font = 'HelveticaLight';
 			Result.color = 0xFFFFFF;
-			Result.size = 30;
+			Result.size = 22;
 			
 			SearchResult.x = 20;
 			SearchResult.y = 220;
 			SearchResult.width = SearchField.width-50;
 			SearchResult.visible=false;
+			SearchResult.embedFonts = true;
+			SearchResult.antiAliasType = AntiAliasType.ADVANCED;
 			SearchResult.selectable=false; // wir muessen nach Obama suchen
 			SearchResult.text = "Zum Begriff "+SearchInputText.text+" wurde 1 Ereigniss/e gefunden:\n\nIn der Rubrik: Geschichte im Jahre 2009";
 			SearchResult.setTextFormat(Result);
@@ -155,6 +158,8 @@ package {
 			SearchInputText.defaultTextFormat = Input;
 			SearchInputText.width = SearchInput.width;
 			SearchInputText.height = SearchInput.height;
+			SearchInputText.embedFonts = true;
+			SearchInputText.antiAliasType = AntiAliasType.ADVANCED;
 			SearchInputText.setTextFormat(Input);
 			SearchInput.addChild(SearchInputText);
 			
