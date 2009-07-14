@@ -15,7 +15,7 @@ package {
 	import flash.text.TextFormat;
 	import flash.utils.*;
 	
-	/**	  .-~~-.____
+	/**	  .-~~-.____		fuer Gerrit
 		 / |  '     \
 		(  )         O        _
 		 \_/-, ,----'        //
@@ -54,10 +54,10 @@ package {
 		private var SearchField:Screen_Search_Display = new Screen_Search_Display;
 		private var SearchResult:TextField = new TextField;
 		
-		private var Geschichte:TextField = new TextField;
-		private var Klima:TextField = new TextField;
-		private var Evolution:TextField = new TextField;
-		private var Voelker:TextField = new TextField;
+		private var Geschichte:Screen_Panel_Geschichte = new Screen_Panel_Geschichte;
+		private var Klima:Screen_Panel_Klima = new Screen_Panel_Klima;
+		private var Evolution:Screen_Panel_Evolution = new Screen_Panel_Evolution;
+		private var Voelker:Screen_Panel_Voelker = new Screen_Panel_Voelker;
 	
 		private var slider:Slider;
 		private var counter:int=0;
@@ -185,13 +185,7 @@ package {
             
 			Geschichte.x=20;
 			Geschichte.y=20;
-			Geschichte.text = "Geschichte";
-			Geschichte.height=30;
-			Geschichte.width = 115;
-			Geschichte.background=false;
-			Geschichte.backgroundColor=0x9fad93;
-			Geschichte.selectable=false;
-			Geschichte.setTextFormat(format);
+			Geschichte.stop();
 			Geschichte.addEventListener(MouseEvent.CLICK, navigation);
 			Geschichte.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
 			Geschichte.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
@@ -199,13 +193,7 @@ package {
 			
 			Klima.x = 60 + Geschichte.width;
 			Klima.y = 20;
-			Klima.text = "Klima";
-			Klima.height=30;
-			Klima.width=65;
-			Klima.background=false;
-			Klima.backgroundColor=0x708d9f;
-			Klima.selectable=false;
-			Klima.setTextFormat(format);
+			Klima.stop();
 			Klima.addEventListener(MouseEvent.CLICK, navigation);
 			Klima.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
 			Klima.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
@@ -213,13 +201,7 @@ package {
 			
 			Evolution.x = 100 + Geschichte.width + Klima.width;
 			Evolution.y = 20;
-			Evolution.selectable=false;
-			Evolution.text = "Evolution";
-			Evolution.height=30;
-			Evolution.width = 100;
-			Evolution.background=false;
-			Evolution.backgroundColor=0xDDDDDD;
-			Evolution.setTextFormat(format);
+			Evolution.stop();
 			Evolution.addEventListener(MouseEvent.CLICK, navigation);
 			Evolution.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
 			Evolution.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
@@ -227,13 +209,7 @@ package {
 			
 			Voelker.x = 140 + Geschichte.width + Klima.width + Evolution.width;
 			Voelker.y = 20;
-			Voelker.selectable=false;
-			Voelker.text = "Völker";
-			Voelker.height=30;
-			Voelker.width = 75;
-			Voelker.background=false;
-			Voelker.backgroundColor=0xb18e5c;
-			Voelker.setTextFormat(format);
+			Voelker.stop();
 			Voelker.addEventListener(MouseEvent.CLICK, navigation);
 			Voelker.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
 			Voelker.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
@@ -441,11 +417,11 @@ package {
 		}
 		private function hoverTxt(e:MouseEvent):void
 		{
-			e.target.background=true;
+			e.target.gotoAndStop(2);
 		}
 		private function UNhoverTxt(e:MouseEvent):void
 		{
-			e.target.background=false;
+			e.target.gotoAndStop(1);
 		}
 	}
 }
