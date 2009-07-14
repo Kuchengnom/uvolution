@@ -133,8 +133,8 @@ package {
 			SearchResult.y = 220;
 			SearchResult.width = SearchField.width-50;
 			SearchResult.visible=false;
-			SearchResult.selectable=false;
-			SearchResult.text = "Es wurden 5 Einträge gefunden!";
+			SearchResult.selectable=false; // wir muessen nach Obama suchen
+			SearchResult.text = "Zum Begriff "+SearchInputText.text+" wurde 1 Ereigniss/e gefunden:\n\nIn der Rubrik: Geschichte im Jahre 2009";
 			SearchResult.setTextFormat(Result);
 			SearchField.addChild(SearchResult);
 			
