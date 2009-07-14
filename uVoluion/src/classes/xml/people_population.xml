@@ -8,7 +8,7 @@
 			<date year="-2500000">2.500.000 v. Chr.</date>
 			<text>The first ape-similar-creatures get the ability to walk on their feet.</text>
 			<coordinates>530, 393</coordinates>
-			<population>0</population>
+			<population></population>
 		</item>
 		<item>
 			<title>Der erste Mensch</title>
@@ -131,12 +131,60 @@
 			<population>196250000</population>
 		</item>
 		<item>
-			<title>Sachsen</title>
-			<description>Die Völkerbewegung der Sachsen startete in Deutschland (Germanien).</description>
-			<date year="451">451 n. Chr.</date>
-			<text>Die Sachsen erreichten ihr Ziel Groß Britannien von Deutschland (Germanien) aus im Jahr 451 n. Chr..</text>
-			<coordinates>469, 271</coordinates>
-			<population>196275000</population>
+			<title>DDR</title>
+			<description>Ein neuer Staat</description>
+			<date year="1949">7. Oktober 1949</date>
+			<text>Heute erklärte die Deutsche Demokratische Republik ihre Unabhängigkeit von der Bundersrepublik Deutschland.</text>
+			<coordinates>508, 273</coordinates>
+			<population>2390000000</population>
+		</item>
+		<item>
+			<title>DDR</title>
+			<description>Wiedervereinigung</description>
+			<date year="1990">3. Oktober 1990</date>
+			<text>Seit heute gehört die Deutsche Demokratische Republik wieder zur Bundersrepublik Deutschland.</text>
+			<coordinates>508, 273</coordinates>
+			<population>5260000000</population>
+		</item>
+		<item>
+			<title>EU</title>
+			<description>Gründung der Europäischen Union</description>
+			<date year="1990">1. November 1993</date>
+			<text>Der Staatenverbund mit dem größten Bruttoinlandprodukts der Welt wird gegründet.</text>
+			<coordinates>490, 277</coordinates>
+			<population>5503000000</population>
+		</item>
+		<item>
+			<title>Atombombe</title>
+			<description>Terroristischer Anschlag in Rumänien</description>
+			<date year="2020">25. August 2020</date>
+			<text>Der östliche Terrorismus-Verbund schießt eine Atombombe auf Rumänien ab und läutet damit den Beginn des dritten Weldkrieges ein.</text>
+			<coordinates>526, 285</coordinates>
+			<population>7021875000</population>
+		</item>
+		<item>
+			<title>NATEU</title>
+			<description>Weltmacht</description>
+			<date year="2023">1. Juni 2023</date>
+			<text>Die Verbünde NATO und EU fusionieren zu einer Super-Weltmacht.</text>
+			<coordinates>279, 316</coordinates>
+			<population>7848750000</population>
+		</item>
+		<item>
+			<title>3. Weltkrieg</title>
+			<description>Kein ferner Osten mehr</description>
+			<date year="2024">12. April 2024</date>
+			<text>Die NATEU zerbombt sämtliche Länder im fernen Osten.</text>
+			<coordinates>585, 287</coordinates>
+			<population>7924375000</population>
+		</item>
+		<item>
+			<title>Alle Menschen tot</title>
+			<description>Tod und Zerstörung</description>
+			<date year="2025">2. November 2025</date>
+			<text>Aufgrund des dritten Weltkrieges und unkontrollierter Atomwaffenbenutzung sind alle Menschen auf der Erde gestorben. Lediglich die Kakerlaken haben überlebt.</text>
+			<coordinates>490, 277</coordinates>
+			<population>0</population>
 		</item>
 </Events>
 </TimelineEvents>
