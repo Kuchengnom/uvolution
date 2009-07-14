@@ -36,6 +36,7 @@ package {
 		private var prehisMap:Screen_Map_PreHis = new Screen_Map_PreHis;
 		private var colorableBG:Screen_Background = new Screen_Background;
 		private var Search_btn:Screen_Search_btn = new Screen_Search_btn;
+		private var lightbox:Screen_Background = new Screen_Background;
 		
 		private var SearchPanel:Screen_Search_Panel = new Screen_Search_Panel;
 		private var SearchInput:Screen_Search_TextInput = new Screen_Search_TextInput;
@@ -67,18 +68,20 @@ package {
 			this.addChild(Background);
 			Background.addChild(colorableBG);
 			
+			lightbox.transform.colorTransform = new ColorTransform(0,0,0,0.5,0,0,0,0);
+			
 			startscreen.x = 512 - (startscreen.width/2);
 			startscreen.y = ((Background.height - Panel.height)/2) - (startscreen.height/2);
-			Background.addChild(startscreen);
 			
-			start_btn.x = 30;
-			start_btn.y = 45;
+			
+			start_btn.x = startscreen.width-start_btn.width-30;
+			start_btn.y = 80;
 			start_btn.visible = false;
 			startscreen.addChild(start_btn);
 			start_btn.addEventListener(MouseEvent.CLICK, startMap);
 			
-			start_loader.x = 50;
-			start_loader.y = 65;
+			start_loader.x = startscreen.width-start_loader.width-20;
+			start_loader.y = 95;
 			start_loader.width = 50;
 			start_loader.height = 50;
 			start_loader.alpha = 0.5;
@@ -138,8 +141,8 @@ package {
 			SearchPanel.addChild(SearchExit);
 			SearchExit.addEventListener(MouseEvent.CLICK, closeSearch);
 			
-
-			
+			Background.addChild(lightbox);
+			Background.addChild(startscreen);
 			//########################## M E N U ############################
 			
 			var format:TextFormat = new TextFormat();
@@ -156,7 +159,7 @@ package {
 			Geschichte.backgroundColor=0x9fad93;
 			Geschichte.selectable=false;
 			Geschichte.setTextFormat(format);
-			Geschichte.addEventListener(MouseEvent.CLICK, startMap);
+			Geschichte.addEventListener(MouseEvent.CLICK, navigation);
 			Geschichte.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
 			Geschichte.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
 			Panel.addChild(Geschichte);
@@ -170,7 +173,7 @@ package {
 			Klima.backgroundColor=0x708d9f;
 			Klima.selectable=false;
 			Klima.setTextFormat(format);
-			Klima.addEventListener(MouseEvent.CLICK, startMap);
+			Klima.addEventListener(MouseEvent.CLICK, navigation);
 			Klima.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
 			Klima.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
 			Panel.addChild(Klima);
@@ -184,7 +187,7 @@ package {
 			Evolution.background=false;
 			Evolution.backgroundColor=0xDDDDDD;
 			Evolution.setTextFormat(format);
-			Evolution.addEventListener(MouseEvent.CLICK, startMap);
+			Evolution.addEventListener(MouseEvent.CLICK, navigation);
 			Evolution.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
 			Evolution.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
 			Panel.addChild(Evolution);
@@ -198,7 +201,7 @@ package {
 			Voelker.background=false;
 			Voelker.backgroundColor=0xb18e5c;
 			Voelker.setTextFormat(format);
-			Voelker.addEventListener(MouseEvent.CLICK, startMap);
+			Voelker.addEventListener(MouseEvent.CLICK, navigation);
 			Voelker.addEventListener(MouseEvent.MOUSE_OVER, hoverTxt);
 			Voelker.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
 			Panel.addChild(Voelker);
@@ -254,14 +257,23 @@ package {
 		
 		private function startMap(evt:MouseEvent):void {
 			
-			if(complete) {
+			Tweener.addTween(lightbox,{alpha:0,visible:false,time:2,transition:"easeInOut"});
 			
-				startscreen.visible=false;
+		
+			if(complete) {
+						
+				Background.removeChild(startscreen);
 				Map.visible=true;
 				Panel.alpha=1;
 				Panel.mouseChildren = true;
+
+			}	
 				
-				
+		}
+		
+		private function navigation(evt:MouseEvent):void{
+			
+							
 				switch (evt.target.text)
 	        	{
 	        		case "Geschichte":
@@ -316,9 +328,6 @@ package {
 	            		trace("NOTHING!");
 	            		break;
 	        	}
-	        	
-			}	
-				
 		}
 		
 			//### TEST DOTS GENERIEREN! ##
