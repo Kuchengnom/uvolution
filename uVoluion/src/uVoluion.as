@@ -106,7 +106,7 @@ package {
 
 			Panel.y = Background.height - Panel.height;
 			Panel.mouseChildren = false;
-			Panel.alpha=0.3;
+			Panel.alpha=1;
 			Background.addChild(Panel);
 		
 			slider = new Slider(this);
