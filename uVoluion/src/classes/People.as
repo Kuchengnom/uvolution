@@ -5,6 +5,8 @@ package classes
 		public function People()
 		{
 			super();
+			
+			
 		}
 		
 	}

@@ -24,8 +24,7 @@ package classes
 		public var speechBubble:MovieClip;
 		public var exit_btn:Screen_Speechbaloon_Exit_btn = new Screen_Speechbaloon_Exit_btn;
 		public var _n:int=0;
-		public var active:Boolean;
-		public var itemID:int;
+
 		
 		public var dotArray:Array = new Array();
 		public var coArray:Array = new Array();
@@ -86,7 +85,7 @@ package classes
 			for(var j:int=0;j<_myXML.myXML.Events.item.length();j++) {
 				
 				var clip:MovieClip = new MovieClip();
-				clip.graphics.beginFill(0x696e7e,1);
+				clip.graphics.beginFill(0x35363a,1);
 				clip.graphics.drawCircle(2,2,3);
 				clip.graphics.endFill();
 				clip.name = j.toString();

@@ -1,5 +1,7 @@
 package {
 	
+	import caurina.transitions.Tweener;
+	
 	import classes.*;
 	
 	import flash.display.MovieClip;
@@ -40,7 +42,7 @@ package {
 		private var SearchButton:Screen_Go_btn = new Screen_Go_btn;
 		private var SearchExit:Screen_Speechbaloon_Exit_btn = new Screen_Speechbaloon_Exit_btn;
 		private var SearchInputText:TextField = new TextField;
-		private var clip:MovieClip = new MovieClip();
+		private var SearchField:Screen_Search_Display = new Screen_Search_Display;
 		
 		private var Geschichte:TextField = new TextField;
 		private var Klima:TextField = new TextField;
@@ -106,16 +108,15 @@ package {
 			slider = new Slider(this);
 			Panel.addChild(slider);
 			
-
+			SearchField.x = 512 - (SearchField.width/2);
+			SearchField.height = SearchPanel.height;
+			SearchField.y = ((Background.height - Panel.height)/2) - (SearchField.height/2)-100;
+			
+			
 			SearchPanel.x = 512 - (SearchPanel.width/2);
-			SearchPanel.y = ((Background.height - Panel.height)/2) - (SearchPanel.height/2);
-			//Map.addChild(SearchPanel);
+			SearchPanel.y = ((Background.height - Panel.height)/2) - (SearchPanel.height/2)-100;		
 			
-			clip.graphics.beginFill(0xb4b4b4,1);
-			clip.graphics.drawRect(SearchPanel.x,(SearchPanel.y+SearchPanel.height),SearchPanel.width,25);
-			clip.graphics.endFill();
-			//Map.addChild(clip);
-			
+
 			SearchInput.x = 60;
 			SearchInput.y = 135;
 			SearchPanel.addChild(SearchInput);
@@ -130,8 +131,10 @@ package {
 			SearchPanel.addChild(SearchButton);
 			SearchButton.addEventListener(MouseEvent.CLICK, Search);
 			
-			SearchExit.x = SearchPanel.width - 50;
-			SearchExit.y = 10;
+			SearchExit.x = SearchPanel.width - 25;
+			SearchExit.y = 5;
+			SearchExit.width/=2;
+			SearchExit.height/=2;
 			SearchPanel.addChild(SearchExit);
 			SearchExit.addEventListener(MouseEvent.CLICK, closeSearch);
 			
@@ -361,18 +364,23 @@ package {
 		}
 		
 		private function startSearch(evt:MouseEvent):void {
-			
-			Map.addChild(SearchPanel);	
+			Map.addChild(SearchField);
+			Map.addChild(SearchPanel);
+				
 		}
 		
 		private function Search(evt:MouseEvent):void {
 			
-			clip.height = 50;
-	
+			var yyy:int = SearchPanel.y+SearchPanel.height-50;
+			Tweener.addTween(SearchField,{y:yyy,time:2,transition:"easeInOut"});
+			
 		}
 		
 		private function closeSearch(evt:MouseEvent):void {
+			
+			SearchField.y = 101;
 			Map.removeChild(SearchPanel);
+			Map.removeChild(SearchField);
 			SearchInputText.text="";
 		}
 		private function colorBG(i:int = 2):void //2 evolution schwarz
