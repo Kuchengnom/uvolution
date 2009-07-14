@@ -56,7 +56,7 @@ package classes
 			speechBubble.alpha=0.5;
 			speechBubble.exit_btn.addEventListener(MouseEvent.CLICK, closeSpeechBubble);
 			
-			
+			_Year = "";
 			
 			Pop_Ticker.x = 1024 - Pop_Ticker.width - 20;
 			Pop_Ticker.y = 20;
