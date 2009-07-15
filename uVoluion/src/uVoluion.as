@@ -79,7 +79,7 @@ package {
 			this.addChild(Background);
 			Background.addChild(colorableBG);
 			
-			lightbox.transform.colorTransform = new ColorTransform(0,0,0,0.5,0,0,0,0);
+			lightbox.transform.colorTransform = new ColorTransform(0,0,0,0.8,0,0,0,0);
 			
 			startscreen.x = 512 - (startscreen.width/2);
 			startscreen.y = ((Background.height - Panel.height)/2) - (startscreen.height/2);
