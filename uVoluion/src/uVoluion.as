@@ -301,6 +301,10 @@ package {
 	            		slider.contentLength = fArray["History"].lengthXML;
 	            		currentField="History";
 	            		Map.addChild(fArray["History"]);
+	            		Geschichte.removeEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
+	            		Klima.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
+	          			Voelker.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
+	          			Evolution.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
 	            		Geschichte.gotoAndStop(2);
 	            		Evolution.gotoAndStop(1);
 	            		Voelker.gotoAndStop(1);
@@ -316,6 +320,11 @@ package {
 	            		slider.contentLength = fArray["Climate"].lengthXML;
 	            		currentField="Climate";
 	            		Map.addChild(fArray["Climate"]);
+	            		Klima.gotoAndStop(2);
+	            		Klima.removeEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
+	            		Geschichte.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
+	            		Evolution.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
+	            		Voelker.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
 	            		Geschichte.gotoAndStop(1);
 	            		Evolution.gotoAndStop(1);
 	            		Voelker.gotoAndStop(1);
@@ -331,6 +340,10 @@ package {
 	            		slider.contentLength = fArray["Evolution"].lengthXML;
 	            		currentField="Evolution";
 	            		Map.addChild(fArray["Evolution"]);
+	            		Evolution.removeEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
+	            		Geschichte.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
+	            		Voelker.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
+	            		Klima.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
 	            		Geschichte.gotoAndStop(1);
 	            		Evolution.gotoAndStop(2);
 	            		Voelker.gotoAndStop(1);
@@ -346,6 +359,10 @@ package {
 	            		slider.contentLength = fArray["People"].lengthXML;
 	            		currentField="People";
 	            		Map.addChild(fArray["People"]);
+	            		Voelker.removeEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
+	            		Geschichte.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
+	            		Klima.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
+	            		Evolution.addEventListener(MouseEvent.MOUSE_OUT, UNhoverTxt);
 	            		Geschichte.gotoAndStop(1);
 	            		Evolution.gotoAndStop(1);
 	            		Voelker.gotoAndStop(2);
