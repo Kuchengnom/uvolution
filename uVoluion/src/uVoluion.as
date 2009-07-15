@@ -130,15 +130,17 @@ package {
 			Result.color = 0xFFFFFF;
 			Result.size = 22;
 			
+
 				
 			SearchResult.x = 20;
 			SearchResult.y = 220;
-			SearchResult.width = SearchField.width-50;
-			SearchResult.visible=true;
+			SearchResult.width = SearchField.width-70;
+			SearchResult.height = 170;
+			SearchResult.visible=true;	
 			SearchResult.embedFonts = true;
 			SearchResult.antiAliasType = AntiAliasType.ADVANCED;
 			SearchResult.selectable=false; // wir muessen nach Obama suchen
-			SearchResult.text = "Zum Begriff "+SearchInputText.text+" wurde 1 Ereigniss/e gefunden:\n\nIn der Rubrik: Geschichte im Jahre 2009";
+			SearchResult.text = "Zum Begriff "+SearchInputText.text+" wurde 1 Ereignis gefunden:\n\nIn der Rubrik: Geschichte im Jahre 2009";
 			SearchResult.setTextFormat(Result);
 			SearchField.addChild(SearchResult);
 			
@@ -420,6 +422,8 @@ package {
 		private function Search(evt:MouseEvent):void {
 			
 			var yyy:int = SearchPanel.y+SearchPanel.height-100;
+			
+			
 			
 			Tweener.addTween(SearchField,{y:yyy,time:2,transition:"easeInOut"});
 			
