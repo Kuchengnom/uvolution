@@ -140,7 +140,7 @@ package {
 			SearchResult.embedFonts = true;
 			SearchResult.antiAliasType = AntiAliasType.ADVANCED;
 			SearchResult.selectable=false; // wir muessen nach Obama suchen
-			SearchResult.text = "Zum Begriff "+SearchInputText.text+" wurde 1 Ereignis gefunden:\n\nIn der Rubrik: Geschichte im Jahre 2009";
+			SearchResult.text = "Zum Begriff Obama wurde 1 Ereignis gefunden:\n\nIn der Rubrik: Geschichte im Jahre 2009";
 			SearchResult.setTextFormat(Result);
 			SearchField.addChild(SearchResult);
 			
