@@ -301,6 +301,10 @@ package {
 	            		slider.contentLength = fArray["History"].lengthXML;
 	            		currentField="History";
 	            		Map.addChild(fArray["History"]);
+	            		Geschichte.gotoAndStop(2);
+	            		Evolution.gotoAndStop(1);
+	            		Voelker.gotoAndStop(1);
+	            		Klima.gotoAndStop(1);
 	            		break;
 	            	case "Klima":
 	            		oMap.alpha=1;
@@ -312,6 +316,10 @@ package {
 	            		slider.contentLength = fArray["Climate"].lengthXML;
 	            		currentField="Climate";
 	            		Map.addChild(fArray["Climate"]);
+	            		Geschichte.gotoAndStop(1);
+	            		Evolution.gotoAndStop(1);
+	            		Voelker.gotoAndStop(1);
+	            		Klima.gotoAndStop(2);
 	            		break;
 	            	case "Evolution":
 	            		oMap.alpha=0;
@@ -323,6 +331,10 @@ package {
 	            		slider.contentLength = fArray["Evolution"].lengthXML;
 	            		currentField="Evolution";
 	            		Map.addChild(fArray["Evolution"]);
+	            		Geschichte.gotoAndStop(1);
+	            		Evolution.gotoAndStop(2);
+	            		Voelker.gotoAndStop(1);
+	            		Klima.gotoAndStop(1);
 	            		break;
 	            	case "Voelker":
 	            		oMap.alpha=1;
@@ -334,6 +346,10 @@ package {
 	            		slider.contentLength = fArray["People"].lengthXML;
 	            		currentField="People";
 	            		Map.addChild(fArray["People"]);
+	            		Geschichte.gotoAndStop(1);
+	            		Evolution.gotoAndStop(1);
+	            		Voelker.gotoAndStop(2);
+	            		Klima.gotoAndStop(1);
 	            		break;
 	            	default:
 	            		
