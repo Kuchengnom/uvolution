@@ -36,6 +36,22 @@ package classes
 		{
 			return _myXML;
 		}
-		
+		/**
+		 * The final screen shot. - a rare breed, usually spotted near to the finishing
+		 * of an amazing project. Humans often disrespect the final screen shot for it's 
+		 * beauty and perfection. Together with the final draft the screen shot marks the 
+		 * end of a chapter, which was thought long time to be sealed for all eternity. 
+		 * Only four fearless warriors took on the quest to defeat all sceptists and people 
+		 * who dared to doubt. On their fellowship into the holy halls of applicational fame 
+		 * they rose beyond human strength and intellect. This chapter has been closed... 
+		 * but not for all warriors. Two of them digging deep down in the source code to reach 
+		 * a level of completeness which would bring satisfaction to the Lord Gerrit. 
+		 * As he is known not to judge every application by it's cover. Others might be tricked, 
+		 * but not him.
+		 * This story of the dangerous quest to be told to your kinds and grandkids, and their 
+		 * kids and grand kids, as it shall live forever.
+		 * 
+		 * ~The Storyteller~
+		 **/
 	}
 }
